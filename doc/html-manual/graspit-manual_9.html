@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- XML file produced from file: graspit-manual.tex
+     using Hyperlatex v 2.9-in-waiting-rk (oct06) (c) Otfried Cheong
+     on Emacs 22.1.1, Thu Jul 30 18:34:13 2009 -->
+<head>
+<title>GraspIt! User Manual -- 9 Grasp Planning</title>
+
+<style type="text/css">
+.maketitle { align : center }
+div.abstract { margin-left: 20%; margin-right: 10%; }
+h3.abstract  { align : center }
+div.verse, div.quote, div.quotation {
+  margin-left : 10%; 
+  margin-right : 10%;
+}
+dt {font-weight: bold}
+</style>
+</p>
+</head>
+<body>
+<table width="100%" cellpadding="0" cellspacing="2"><tr>
+<td bgcolor="#99ccff"><a href="graspit-manual_10.html"><img border="0" alt="10 The Dynamics Engine" src="../images/next.png"/></a></td><td bgcolor="#99ccff"><a href="graspit-manual.html"><img border="0" alt="Top" src="../images/up.png"/></a></td><td bgcolor="#99ccff"><a href="graspit-manual_8.html"><img border="0" alt="8 Grasp Force Optimization" src="../images/previous.png"/></a></td><td align="center" bgcolor="#99ccff" width="100%"><b>9 Grasp Planning</b></td><td bgcolor="#99ccff" align="center"><a href="graspit-manual.html#hlxcontents"><p>Contents</a></td></tr></table>
+<h1>9 Grasp Planning</h1>
+</p>
+<ul>
+<li><a href="#id1">9.1 General concepts and planner types</a></li>
+<li><a href="#id2">9.2 The Primitive-based Grasp Planner</a></li>
+</ul>
+
+<h2><a name="id1">9.1 General concepts and planner types</a></h2><p>
+Grasp planning is one the most useful (and most widely used) tools in
+GraspIt!. The core of this process is the ability of the system to
+evaluate many hand postures quickly, and from a functional point of
+view (i.e. through grasp quality measures). Using a simulated
+environment allows us to test grasps much much faster than in real
+life, and also at a lower cost. The quality metrics give us feedback
+on the grasps, often more than just a binary success / fail
+outcome. This is therefore the general concept: try out lots of grasps
+really fast and see which work. Of course, there is an infinite number
+of possible implementations, optimizations, refinements, etc. that can
+be played starting from this simplified idea. GraspIt! comes with a
+couple of grasp planners, each of them different in its own way, but
+all have roots in the same concept presented above.
+</p>
+<p>The grasp planners within GraspIt! are grouped in three families:
+</p>
+<ul><li>the Primitive-based Planner, primitive not in the sense that it
+is ancient but rather in the sense that it uses primitive
+decompositions for the grasped object.
+</li><li>the Eigengrasp Planner family, which relies on hand posture
+space dimensionality reduction.
+</li><li>the Database Planner family, which relies on a huge database of
+pre-computed grasps to plan grasps for novel objects.
+</li></ul>
+<p>This section only presents the Primitive-based Planner; the other two
+families have their own sections in this manual.
+</p>
+<p>All the types of grasp planners have been extensively described in
+various publications. If you are interested in the machinery behind
+the scenes and the theory of the planners, the
+<a href="graspit-manual_18.html">Publications</a> section has many more details
+than presented here.
+</p>
+
+<h2><a name="id2">9.2 The Primitive-based Grasp Planner</a></h2><p>
+The Primitive-based Planner is accessible via the Grasp <i> -&gt; </i> Planner
+menu. It has a couple of restrictions: it only works on the Barrett
+hand, and only if the user also supplies a primitive approximation of
+the object to be grasped. When the Planner dialog is opened, GraspIt!
+will attempt to load the primitive version of the current object from
+the <tt>&#36;GRASPIT/models/objects/primitives</tt> directory. In order
+to create a primitive file, see the examples in the primitives
+directory that are included with the distribution. Note that a
+primitive file may only include spheres, cubes, cylinders and
+cones. For more details, see the relevant publication.
+</p>
+<p>The Planner itself goes through 2 stages. The Planner dialog window
+has two groups, one for each stage. The first stage (accessed through
+the button group on the left) is to generate many pre-grasps for your
+object. Pre-grasps are generated based on the primitive version of
+your object. You can generate as many pre-grasps as your computational
+resources and allocated time will allow you to test. The number of
+pre-grasps generated is controlled by the density factors. You can
+either choose a master density factor (Automated sampling) and allow
+GraspIt! to do the rest, or choose sampling densities along different
+dimensions separately. Alternatively, you can pre-specify the exact
+pre-grasps to be tested by loading them from a file, which is useful
+for debug purposes. Once you have set the desired parameters, click
+the Generate button to generate your pre-grasps.
+</p>
+<p>The second stage is to compute the grasps that result from the chosen
+pre-grasps. Note that grasp execution is done on the actual object
+(even though pre-grasps are generated on the simplified primitive
+version). You can also choose which Quality Measure should be used to
+rank these grasps. If a usable QM exists already, you can select it
+from the drop-down list. If not, use the New button to fire up the QM
+creation dialog and create a new one. Once you have set the desired
+metric, you are ready to test all the pre-grasps by clicking the Test
+button.
+</p>
+<p>After testing is finished, the hand will be set back to its initial
+position and the Show button will become enabled. Use the Show button
+to cycle through the list of found grasps, sorted in order of the
+Quality Metric.
+</p>
+<p><b>IMPORTANT</b>: you can choose to visualize the testing process by
+checking the Visualize process box. This means that the process of
+executing all the grasps will be rendered, and you can see the hand
+trying out each of them. You must check the Visualize box
+<b>before</b> clicking the Generate button for this to
+work. Visualization makes for a more compelling demo, but rendering
+slows down the planning process considerably. For time-sensitive
+applications, we recommend disabling the visualization.
+</p>
+<p>When rendering is disabled, we have found that the computational
+bottleneck for the Primitive-based planner is collision and contact
+detection.
+</p>
+<hr /><address><p>Copyright (C) 2002-2009 Columbia University</address><br />
+<table width="100%" cellpadding="0" cellspacing="2"><tr>
+<td bgcolor="#99ccff"><a href="graspit-manual_10.html"><img border="0" alt="10 The Dynamics Engine" src="../images/next.png"/></a></td><td bgcolor="#99ccff"><a href="graspit-manual.html"><img border="0" alt="Top" src="../images/up.png"/></a></td><td bgcolor="#99ccff"><a href="graspit-manual_8.html"><img border="0" alt="8 Grasp Force Optimization" src="../images/previous.png"/></a></td><td align="center" bgcolor="#99ccff" width="100%"><b>9 Grasp Planning</b></td><td bgcolor="#99ccff" align="center"><a href="graspit-manual.html#hlxcontents">Contents</a></td></tr></table></body></html>

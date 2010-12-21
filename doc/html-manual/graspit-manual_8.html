@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- XML file produced from file: graspit-manual.tex
+     using Hyperlatex v 2.9-in-waiting-rk (oct06) (c) Otfried Cheong
+     on Emacs 22.1.1, Thu Jul 30 18:34:13 2009 -->
+<head>
+<title>GraspIt! User Manual -- 8 Grasp Force Optimization</title>
+
+<style type="text/css">
+.maketitle { align : center }
+div.abstract { margin-left: 20%; margin-right: 10%; }
+h3.abstract  { align : center }
+div.verse, div.quote, div.quotation {
+  margin-left : 10%; 
+  margin-right : 10%;
+}
+dt {font-weight: bold}
+</style>
+</p>
+</head>
+<body>
+<table width="100%" cellpadding="0" cellspacing="2"><tr>
+<td bgcolor="#99ccff"><a href="graspit-manual_9.html"><img border="0" alt="9 Grasp Planning" src="../images/next.png"/></a></td><td bgcolor="#99ccff"><a href="graspit-manual.html"><img border="0" alt="Top" src="../images/up.png"/></a></td><td bgcolor="#99ccff"><a href="graspit-manual_7.html"><img border="0" alt="7 Grasp Quality Metrics" src="../images/previous.png"/></a></td><td align="center" bgcolor="#99ccff" width="100%"><b>8 Grasp Force Optimization</b></td><td bgcolor="#99ccff" align="center"><a href="graspit-manual.html#hlxcontents"><p>Contents</a></td></tr></table>
+<h1>8 Grasp Force Optimization</h1>
+</p>
+<p>The Grasp Quality Metrics that we have discussed so far only deal with
+forces applied at the contacts. The form-closure criterion asks
+whether there exists some combination of legal <b>contact forces</b>
+that add up to a certain resultant on the target object. In practice
+though, robotic hands are controlled by setting <b>joint
+forces</b>. The Grasp Force Optimization (GFO) problem, in a nutshell,
+asks the following questions: is there a combination of legal joint
+forces that result in the desired contact forces? If there are
+multiple solutions to this problem, which one is "optimal"?
+</p>
+<p>GFO is an active area of research in itself, and many publications
+present various formulations and solvers. As a starting point, we
+recommend the Grasping Chapter (authored by Domenico Prattichizzio and
+Jeffrey C. Trinkle) in the <i>Springer Handbook of
+Robotics</i>. Here we just give a very quick overview of the GFO tools
+that are available in GraspIt.
+</p>
+<p>The GraspIt code for performing GFO has gone through two
+iterations. The first one is from GraspIt release 0.9. That version was
+based on the beautiful mathematical formulation presented in the paper
+<i>Grasp Analysis as Linear Matrix Inequality Problems</i>, by Li
+Han, Jeffrey Trinkle and Zexiang Li, IEEE Transactions on Robotics and
+Automation, vol. 16, 1998. However, this code was not thoroughly
+tested and was not commented, and unfortunately has fallen into
+disrepair. As such, it might be removed from future releases; please
+contact us if you are interested in obtaining a copy of that code.
+</p>
+<p>The new version is based on a different mathematical formulation,
+using Quadratic Programming. It has been thoroughly tested and is
+extremely well commented in the source code. However, you will need a
+Quadratic Program solver for it to work. We strongly recommend the
+excellent commercial solver
+<a href="http://www.mosek.com">Mosek</a>. Student licenses are free, and
+the integration with GraspIt is seamless - just uncomment the
+appropriate line in the file <tt>graspit.pro</tt>.
+</p>
+
+<h2><a name="id1">8.1 GFO computations through the main interface</a></h2><p>
+A subset of the GFO functionality is available through a simple dialog
+accessible from the GraspIt GUI. You can use this anytime you have a
+grasp - for example, load the example world file
+<tt>dlr&#95;flask.xml</tt> and then click Grasp <i> -&gt; </i> Auto
+Grasp. You can now use Grasp <i> -&gt; </i> Grasp Force Optimization to
+access the GFO dialog.
+</p>
+<p>The drop-down list allows you to choose the optimization type being
+performed. The main options are:
+</p>
+<ul><li><b>Grasp force</b> - GraspIt will attempt to compute the
+optimal joint forces so that contact forces result in a null wrench
+on the object.
+</li><li><b>Compliant joint equilibrium</b> - GraspIt will attempt to
+compute the contact forces that balance out a set of given joint
+forces, while resulting in an object wrench of the smallest possible
+magnitude. This case is of particular interest for underactuated
+hands with compliant, spring joints where not all joint forces can
+be set independently. See the <a href="graspit-manual_13.html">Joint Coupling</a>
+chapter for details.
+</li><li><b>DOF force equilibrium</b> - GraspIt will attempt to compute
+the contact forces that balance out a set of given DOF forces, while
+resulting in an object wrench of the smallest possible magnitude.
+</li></ul>
+<p>When the <tt>On</tt> button is checked, GraspIt will attempt to solve
+the optimization problem of the specified type each time the grasp is
+changed (contacts are added or broken). The dialog will inform you of
+the outcome of the optimization. Note that some optimization problems
+can be unfeasible in certain hand configurations. If the optimization
+is solved, GraspIt will display the computed contact forces in the
+dedicated space of the main window, and also visually indicate the
+contact forces using the same mechanism used for displaying computed
+contact forces during dynamic simulation (yellow arrows at each
+contact). Note that computed joint torques are not displayed through
+the GUI, but rather printed to the console.
+</p>
+
+<h2><a name="id2">8.2 GFO code and advanced details</a></h2><p>
+We have found that the mathematical formulations for GFO allow for
+almost endless possibilities and combinations of optimization criteria
+vs. constraints. In general, the GFO code in GraspIt is concerned with
+the following aspects:
+</p>
+<ul><li>goal is to compute contacts forces and/or joint torques
+</li><li>contact forces must be legal (inside friction cones)
+</li><li>contact forces must be balanced by joint torques
+</li><li>resultant object wrench should have a small (or null) magnitude
+</li></ul>
+<p>In general, any 1 of these 3 goals can be made into an optimization
+objective, while the other 2 become constraints. You can mix and match
+in many ways, which is why we have not included more options inside
+the GUI. However, the code is really well documented and you should be
+able to write up your own GFO routines to match your project. The best
+place to start is the <tt>Grasp</tt> class, more specifically the
+function <tt>int Grasp::computeQuasistaticForcesAndTorques(Matrix
+*robotTau);</tt>. Inside this function you will find multiple options
+for performing the core optimization, all are documented.
+</p>
+<p>Finally, as of the writing of this chapter, we have one paper in press
+that will detail the GFO engine. Please see the
+<a href="graspit-manual_18.html">Publications</a> section of this manual for
+details.
+</p>
+<hr /><address><p>Copyright (C) 2002-2009 Columbia University</address><br />
+<table width="100%" cellpadding="0" cellspacing="2"><tr>
+<td bgcolor="#99ccff"><a href="graspit-manual_9.html"><img border="0" alt="9 Grasp Planning" src="../images/next.png"/></a></td><td bgcolor="#99ccff"><a href="graspit-manual.html"><img border="0" alt="Top" src="../images/up.png"/></a></td><td bgcolor="#99ccff"><a href="graspit-manual_7.html"><img border="0" alt="7 Grasp Quality Metrics" src="../images/previous.png"/></a></td><td align="center" bgcolor="#99ccff" width="100%"><b>8 Grasp Force Optimization</b></td><td bgcolor="#99ccff" align="center"><a href="graspit-manual.html#hlxcontents">Contents</a></td></tr></table></body></html>

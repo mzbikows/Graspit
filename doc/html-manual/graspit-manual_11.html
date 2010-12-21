@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- XML file produced from file: graspit-manual.tex
+     using Hyperlatex v 2.9-in-waiting-rk (oct06) (c) Otfried Cheong
+     on Emacs 22.1.1, Thu Jul 30 18:34:13 2009 -->
+<head>
+<title>GraspIt! User Manual -- 11 Eigengrasps</title>
+
+<style type="text/css">
+.maketitle { align : center }
+div.abstract { margin-left: 20%; margin-right: 10%; }
+h3.abstract  { align : center }
+div.verse, div.quote, div.quotation {
+  margin-left : 10%; 
+  margin-right : 10%;
+}
+dt {font-weight: bold}
+</style>
+</p>
+</head>
+<body>
+<table width="100%" cellpadding="0" cellspacing="2"><tr>
+<td bgcolor="#99ccff"><a href="graspit-manual_12.html"><img border="0" alt="12 Grasp Planning II - Eigengrasp planning" src="../images/next.png"/></a></td><td bgcolor="#99ccff"><a href="graspit-manual.html"><img border="0" alt="Top" src="../images/up.png"/></a></td><td bgcolor="#99ccff"><a href="graspit-manual_10.html"><img border="0" alt="10 The Dynamics Engine" src="../images/previous.png"/></a></td><td align="center" bgcolor="#99ccff" width="100%"><b>11 Eigengrasps</b></td><td bgcolor="#99ccff" align="center"><a href="graspit-manual.html#hlxcontents"><p>Contents</a></td></tr></table>
+<h1>11 Eigengrasps</h1>
+</p>
+<ul>
+<li><a href="#id1">11.1 Loading Eigengrasp Information</a></li>
+<li><a href="#id2">11.2 Using eigengrasps</a></li>
+</ul>
+<p>Eigengrasps define a subspace of a given hand's DOF space. Assuming
+the hand has <i>d</i> DOF's, each eigengrasp is a <i>d</i>-dimensional vector. A
+basis comprising <i>b</i> orthogonal eigengrasps can define a
+<i>b</i>-dimensional subspace. Additionally, this subspace needs an origin,
+which is also a <i>d</i>-dimensional vector. This gives the following
+options:
+</p>
+<ul><li>define a hand posture using <i>b</i> eigengrasp amplitudes (as opposed
+to <i>d</i> DOFs).
+</li><li>find the Eigengrasp subspace projection of a given hand posture
+which is not necessarily in this subspace.
+</li></ul>
+<p>The term "Eigengrasp" is of our own creation; in the literature
+(particularly regarding the human hand), the same concept is often
+referred to as "hand synergies".
+</p>
+<p>For a complete discussion on Eigengrasps and their application in
+practice, please see the <a href="graspit-manual_18.html">Publications</a>
+section. This is just a brief overview of Eigengrasps in practice, in
+this version of GraspIt!.
+</p>
+<p>This distribution of GraspIt! include Eigengrasp information for many
+dexterous hands. For the human hand, we are providing eigengrasp
+directions matching those discovered through user studies by Santello
+et al. (see M. Santello, M. Flanders, and J. F. Soechting,
+<i>Postural hand synergies for tool use</i>, Journal of
+Neuroscience, vol. 18, no. 23, 1998 for details). The hand model used
+in that study had 16 DOF. Therefore, the only the 16-DOF version of
+the human hand included with GraspIt! has all 6 eigengrasps discovered
+in the study. The 20-DOF version has only the 2 dominant eigengrasps,
+and since an empirical mapping was done between 16 DOF and 20 DOF,
+they might not be as accurate as the ones provided with the 16-DOF
+version.
+</p>
+<p>3 more dexterous hands have eigengrasp information pre-defined in this
+version of GraspIt!: the Robonaut hand, the DLR hand and the Barrett
+hand. For the anthropomorphic models (Robonaut and DLR) we have
+performed an empirical mapping of the 2 dominant eigengrasps from the
+human hand to adapt them to the robotic hand kinematics. The Barrett
+hand natively only has 4 DOF (it can be considered an eigengrasp hand
+by construction, since it has 7 joints). We have still defined 2
+eigengrasps empirically, this is the simplest case of using
+eigengrasps and it will be used as an example in the rest of this
+chapter.
+</p>
+
+<h2><a name="id1">11.1 Loading Eigengrasp Information</a></h2><p>
+For any hand model, eigengrasp information can be defined using a text
+file which is loaded together with the hand configuration
+file. Usually, eigengrasp information files are placed together with
+the rest of the information that defines a robot, such as the
+configuration file or link geometry files. Here is an example file
+defining a 2-dimensional (<i>b=2</i>) eigengrasp subspace for the Barrett
+hand (<i>d=4</i>). The example shown here is found in the file
+<tt>barrett&#95;eigen.egr</tt> included in this distribution.
+</p>
+<ul><li>the first line contains the keyword <tt>DIMENSIONS</tt> followed
+by the number of DOF's of the hand
+</li><li>each eigengrasp begins with the keyword <tt>EG</tt>. On the next
+line, a single value containing the eigenvalue associated with this
+particular eigengrasp. For now this number is not used anywhere in
+the code, but it might have uses in the future. Finally, on the next
+line, the <i>d</i>-dimensional vector that defines the eigengrasp
+</li><li>an arbitrary number of eigengrasps can be defined, as long as
+each is formatted as described above. In this example, we define a
+2-dimensional subspace with two eigengrasps. 
+</li><li>the origin of the subspace is defined exactly like an
+eigengrasp, but it is preceded by the keyword <tt>ORIGIN</tt>. If
+no origin is found in the file, the system will use a pre-defined
+subspace origin: for each DOF, the subspace origin is assumed to be
+at ( maxVal - minVal ) / 2
+</li><li>the normalization information is optional. If desired, it can be
+defined like an eigengrasp, preceded by the keyword
+<tt>NORM</tt>. If this information is not present in the file, no
+normalization is used
+</li></ul>
+<pre>
+
+DIMENSIONS 4
+
+EG
+0.51
+1.0  0.0  0.0  0.0
+
+EG
+0.25
+0.0  1.0  1.0  1.0 
+
+ORIGIN
+0.0000
+1.13 0.79 0.79 0.79
+
+NORM
+0.0000
+1.57 1.22 1.22 1.22
+</pre>
+<p>When loading a robot, GraspIt! will look in the robot configuration
+file for information on what eigengrasps file to load (if any). First
+comes the keyword <tt>EigenGrasps</tt>, followed on the next line by
+the eigengrasp file to be loaded. The path to the Eigengrasp file is
+relative to the robot configuration file. For example, all this
+information can be supplied by placing the following lines anywhere in
+the hand configuration file (in this example, <tt>Barrett.cfg</tt>):
+</p>
+<pre>
+...
+EigenGrasps
+eiegn/barrett_eigen.egr
+...
+</pre>
+
+<h2><a name="id2">11.2 Using eigengrasps</a></h2><p>
+With the desired hand highlighted in the hand drop-down list, use the
+Grasp <i> -&gt; </i> EigenGrasp Interface menu. Two windows will show up: the
+eigengrasp amplitude sliders window and the eigengrasp options window.
+If no eigengrasp information has been loaded from a file, the system
+will display the trivial eigengrasp set, where each eigengrasp
+corresponds to exactly one DOF and the eigengrasp subspace is
+identical to the DOF space.
+</p>
+<ul><li>at launch, the hand is placed in a neutral position (all
+eigengrasp amplitudes are 0). By moving each slider you control the
+amplitude of the respective eigengrasp. You can also move individual
+DOF's like you normally would in GraspIt. The result depends on the
+mode of operation, defined by the <tt>Rigid</tt> checkbox as
+described below.
+</li><li>rigid mode: only movement in Eigengrasp space is allowed. If an
+individual DOF is changed, had posture is projected back into
+eigengrasp space.
+</li><li>non-rigid mode: free movement is allowed. When an individual DOF
+is changed, the eigengrasp sliders still show the eigengrasp
+amplitudes of the projection in eigengrasp space. However, hand
+posture is allowed to leave eigengrasp space.
+</li><li>collision detection is <b>not performed</b> while moving using
+the eigengrasp interface. This is temporary, we will probably add it
+in soon.
+</li><li>when moving the eigengrasp sliders, motion is stopped as soon as
+any DOF reaches its joint limit. Alternatively, it could be possible
+to just block the stopped DOF and allow others to move, but this
+would take the hand out of eigengrasp space. See code
+(<tt>eigengrasp.h</tt>) for details.
+</li></ul>
+<hr /><address><p>Copyright (C) 2002-2009 Columbia University</address><br />
+<table width="100%" cellpadding="0" cellspacing="2"><tr>
+<td bgcolor="#99ccff"><a href="graspit-manual_12.html"><img border="0" alt="12 Grasp Planning II - Eigengrasp planning" src="../images/next.png"/></a></td><td bgcolor="#99ccff"><a href="graspit-manual.html"><img border="0" alt="Top" src="../images/up.png"/></a></td><td bgcolor="#99ccff"><a href="graspit-manual_10.html"><img border="0" alt="10 The Dynamics Engine" src="../images/previous.png"/></a></td><td align="center" bgcolor="#99ccff" width="100%"><b>11 Eigengrasps</b></td><td bgcolor="#99ccff" align="center"><a href="graspit-manual.html#hlxcontents">Contents</a></td></tr></table></body></html>

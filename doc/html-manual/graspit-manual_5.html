@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- XML file produced from file: graspit-manual.tex
+     using Hyperlatex v 2.9-in-waiting-rk (oct06) (c) Otfried Cheong
+     on Emacs 22.1.1, Thu Jul 30 18:34:13 2009 -->
+<head>
+<title>GraspIt! User Manual -- 5 Collision and Contact Detection</title>
+
+<style type="text/css">
+.maketitle { align : center }
+div.abstract { margin-left: 20%; margin-right: 10%; }
+h3.abstract  { align : center }
+div.verse, div.quote, div.quotation {
+  margin-left : 10%; 
+  margin-right : 10%;
+}
+dt {font-weight: bold}
+</style>
+</p>
+</head>
+<body>
+<table width="100%" cellpadding="0" cellspacing="2"><tr>
+<td bgcolor="#99ccff"><a href="graspit-manual_6.html"><img border="0" alt="6 Soft Fingers" src="../images/next.png"/></a></td><td bgcolor="#99ccff"><a href="graspit-manual.html"><img border="0" alt="Top" src="../images/up.png"/></a></td><td bgcolor="#99ccff"><a href="graspit-manual_4.html"><img border="0" alt="4 Main Data Types and Data Files" src="../images/previous.png"/></a></td><td align="center" bgcolor="#99ccff" width="100%"><b>5 Collision and Contact Detection</b></td><td bgcolor="#99ccff" align="center"><a href="graspit-manual.html#hlxcontents"><p>Contents</a></td></tr></table>
+<h1>5 Collision and Contact Detection</h1>
+</p>
+<ul>
+<li><a href="#id1">5.1 Contacts</a></li>
+<li><a href="#id2">5.2 Software implementation</a></li>
+<li><a href="#id3">5.3 Under development: Multi-threading</a></li>
+<li><a href="#id4">5.4 Under development: Object cloning</a></li>
+</ul>
+<p>A key component of the GraspIt! engine is the collision and contact
+detection. When collisions are enabled, anytime you interact with a
+GraspIt! world, either by moving an object or using the joint draggers
+on a robot, the engine will prevent any movement that brings two
+objects in collision and stop it at the moment of contact. Points of
+contact are then marked with contact indicators.
+</p>
+<p>Important note: although GraspIt! (through the Inventor scene graph)
+can display all of these geometry types, the collision detection
+system only works with triangles. When a body geometry is loaded,
+GraspIt! will use the Inventor scene graph to facet it into triangles,
+which are then used to build the body model for the collision
+detection system.
+</p>
+<p>In GraspIt! there is a very important difference between contact and
+collision. We define collision as two bodies that are
+interpenetrating, no matter by how much. In general, most algorithms
+in GraspIt! consider collision to be an <b>illegal</b> state and
+will attempt to find collision-free states. Contact is defined as two
+bodies that are closer together than a given threshold, but are
+<b>not</b> interpenetrating. In general, this threshold is set to be
+<i>0.1mm</i>. If you would like to change this threshold, you will have to
+go inside the code: it is the <tt>THRESHOLD</tt> static member of the
+<tt>Contact</tt> class.
+</p>
+<p>You can also enable or disable collisions, for either the entire
+simulation world, one particular body, or a pair of bodies. This is
+all done using the <tt>Toggle Collision</tt> switch in the main
+GraspIt!  interface. Depending on what is selected when you press the
+button, the following will happen:
+</p>
+<ul><li>if nothing is selected, collisions are toggled for the entire
+simulation world
+</li><li>if a single body is selected, collisions are toggled for that
+particular body (it can / can not collide with any other body in the
+world)
+</li><li>if a pair of bodies is selected, collisions are toggled for that
+particular pair (they can / can not collide with each other;
+collisions with all the other bodies in the world are unaffected).
+</li></ul>
+<p>Most GraspIt! functionality that involves moving bodies around
+(including user interaction with joint draggers) works as follows:
+</p>
+<ul><li>move the bodies freely as long as there is no collision;
+</li><li>when collision is detected, attempt to interpolate between the
+collision state and the last known collision-free state until the
+bodies are no longer colliding, but are separated by less than the
+contact threshold;
+</li><li>find all points where two bodies are separated by less than the
+contact threshold and mark them as contacts.
+</li></ul>
+
+<h2><a name="id1">5.1 Contacts</a></h2><p>
+In GraspIt! a contact is defined as any point where two bodies are
+separated by less than the contact threshold, but <b>not</b>
+interpenetrating. The collision detection engine will find these
+points for you, and also do some pruning, as explained below. A
+GraspIt! contact, defined in the <tt>Contact</tt> class, encapsulates
+the following information:
+</p>
+<ul><li>the location of the contact on each of the two bodies (the
+points on the two bodies that are separated by less than the contact
+threshold)
+</li><li>the contact normal (defined as the normalized vector between the
+two points mentioned above)
+</li><li>the Contact Wrench Space: the space of forces and torques that
+can be applied at the contact. This is a crucial concept, which is
+at the base of most grasp quality computations and dynamic
+simulations. In the simplest case, that of Coulomb friction, this
+space is a 3D cone. See the <a href="graspit-manual_18.html">Publications</a>
+section of this document for more details.
+</li><li>a visual marker showing the location of the contact in the
+GraspIt! GUI. In the case of rigid body contacts, this is actually a
+rendering of the friction cone, aligned with the contact normal.
+</li></ul>
+<p>Note that everywhere in GraspIt! we refer to contacts as
+<b>points</b>. The reason is that geometry in GraspIt! never
+deforms, so we can never explicitly compute <b>areas</b> of
+contact. There are two important aspects though. First, two rigid
+bodies might be locally similar, so that more than one point is within
+the contact threshold. If that happens, the collision detection just
+returns many point contacts in a small area. All these point contacts
+are then pruned, keeping only those contacts that are on the contour
+of the area (the boundary of the convex hull of contact
+locations). According to the theory on contacts that we rely on, this
+will have no net effect on any grasp quality computations, but will
+reduce computation time by reducing the number of contacts).
+</p>
+<p>Second, GraspIt! can simulate some of the effects of soft bodies in
+contact without explicitly computing the deformation. This is done by
+using a different version of the Contact Wrench Space. See the
+<a href="graspit-manual_6.html">Soft Contacts</a> chapter of this manual for
+details.
+</p>
+
+<h2><a name="id2">5.2 Software implementation</a></h2><p>
+For many algorithms, the collision engine is the computational
+bottleneck. It is very important to have an efficient engine, but we
+also require this engine to be very robust and work well on triangle
+meshes (as opposed to analytical primitives). The GPL version of
+GraspIt! comes with its own collision detection implementation, using
+a number of common bounding box hierarchy methods. However, fast
+collision detection is a research area in itself, and we are sure
+there are many ways to improve our implementation. Any bug reports,
+patches or optimizations for the collision detection engine are highly
+appreciated.
+</p>
+<p>From a software perspective, we have built the collision and contact
+detection libraries to be as modular as possible. This allows the
+complete replacement of our current collision detection with the
+library of your choice. If you are interested in doing this, check out
+the <tt>CollisionInterface</tt> class and its subclasses. If you know
+of a good collision detection library that is fast and robust, works
+with triangle meshes, and has a GPL-compatible license, we would love
+to hear about it.
+</p>
+
+<h2><a name="id3">5.3 Under development: Multi-threading</a></h2><p>
+We have also implemented a crude multi-threaded support for the
+collision detection mechanism. This is still very much work in
+progress, both from a design and implementation standpoint. The overall
+concept is as follows: if you have multiple threads in your GraspIt!
+code, each thread can add its own bodies to the simulation world. The
+rule we have implemented is that bodies from different threads never
+collide with each other. The only exception is that all bodies collide
+with bodies from the main thread.
+</p>
+<p>The reason for this implementation is to allow you to test multiple
+scenarios in parallel, without worrying about collision detection. As
+an example, suppose you have a hand and a glass sitting on a table,
+and you want to evaluate many grasps quickly. In this case, you would
+populate the world with the table and the glass in the main
+thread. Then you would fire up many threads, each loading its own copy
+of the hand. Each thread can then tests its own grasps independently,
+without needing to synchronize with the other threads or worrying
+about colliding with the hands from other threads. Of course, if your
+code is single-threaded, you can just ignore all of this and pretend
+it does not exist.
+</p>
+<p>The general steps for GraspIt! multi-threading are:
+</p>
+<ul><li>in the main thread, load all the objects that will be shared
+between threads
+</li><li>fire up all of your computation threads. In each thread, inform
+the collision detection mechanism that it is now servicing a new
+thread (see the CollisionInterface class for what method to call for
+this)
+</li><li>in each thread, load all the objects or robots that are specific
+to that thread
+</li><li>in each thread, run any computation like you normally would.
+</li></ul>
+<p>For examples, see the <tt>EGPlanner</tt> class which has support for
+running in its own thread.
+</p>
+
+<h2><a name="id4">5.4 Under development: Object cloning</a></h2><p>
+We also have a mechanism for "cloning" objects in GraspIt! so you can
+easily create multiple copies of a body or robot without having to
+load it from a file multiple times and without wasting memory. As far
+as any GraspIt! algorithm is concerned, a clone is a totally
+independent body with its own position in the world, contacts,
+etc. However, under the hood, a clone will share all the scene graph
+geometry and collision detection bounding box hierarchy with the
+original. See the <tt>Body::cloneFrom(...)</tt> and
+<tt>Robot::cloneFrom(...)</tt>  methods for details. This mechanism
+works well, with one exception: we never implemented a nice cleanup
+phase that handles the case where the original is deleted and the
+clone still lingers in the world. This situation is almost guaranteed
+to cause a crash.
+</p>
+<p>In practice, cloning and multi-threading often go together. If you
+have lots of computation that you might parallelize, you can create
+clones of your moving objects (usually the robots and hands) and pass
+them to different threads, where each thread will do its own work. See
+again the <tt>EGPlanner</tt> class for details - it can run in its own
+thread using a cloned hand for computations.
+</p>
+<hr /><address><p>Copyright (C) 2002-2009 Columbia University</address><br />
+<table width="100%" cellpadding="0" cellspacing="2"><tr>
+<td bgcolor="#99ccff"><a href="graspit-manual_6.html"><img border="0" alt="6 Soft Fingers" src="../images/next.png"/></a></td><td bgcolor="#99ccff"><a href="graspit-manual.html"><img border="0" alt="Top" src="../images/up.png"/></a></td><td bgcolor="#99ccff"><a href="graspit-manual_4.html"><img border="0" alt="4 Main Data Types and Data Files" src="../images/previous.png"/></a></td><td align="center" bgcolor="#99ccff" width="100%"><b>5 Collision and Contact Detection</b></td><td bgcolor="#99ccff" align="center"><a href="graspit-manual.html#hlxcontents">Contents</a></td></tr></table></body></html>
