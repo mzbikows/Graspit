@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- XML file produced from file: graspit-manual.tex
+     using Hyperlatex v 2.9-in-waiting-rk (oct06) (c) Otfried Cheong
+     on Emacs 22.1.1, Thu Jul 30 18:34:13 2009 -->
+<head>
+<title>GraspIt! User Manual</title>
+
+<style type="text/css">
+.maketitle { align : center }
+div.abstract { margin-left: 20%; margin-right: 10%; }
+h3.abstract  { align : center }
+div.verse, div.quote, div.quotation {
+  margin-left : 10%; 
+  margin-right : 10%;
+}
+dt {font-weight: bold}
+</style>
+</head>
+<body>
+<a name="hlxcontents"></a>
+<h1 class="maketitle">
+<img alt="" src="../images/logo.jpg"/>
+<p>User Manual</h1>
+</p>
+<h3 class="maketitle"><p>Version 2.1</h3>
+</p>
+<ul>
+<li><a href="graspit-manual_1.html">1 Introduction</a></li>
+<ul>
+<li><a href="graspit-manual_1.html#id1">1.1 What GraspIt! is</a></li>
+<li><a href="graspit-manual_1.html#id2">1.2 What GraspIt! is NOT</a></li>
+<li><a href="graspit-manual_1.html#id3">1.3 About this manual</a></li>
+<li><a href="graspit-manual_1.html#id4">1.4 Troubleshooting and contact</a></li>
+<li><a href="graspit-manual_1.html#id5">1.5 Authors and acknowledgements</a></li>
+</ul>
+<li><a href="graspit-manual_2.html">2 Installation</a></li>
+<ul>
+<li><a href="graspit-manual_2.html#id1">2.1 GraspIt! Installation - Linux</a></li>
+<li><a href="graspit-manual_2.html#id7">2.2 GraspIt! Installation - Windows</a></li>
+</ul>
+<li><a href="graspit-manual_3.html">3 Getting Started</a></li>
+<ul>
+<li><a href="graspit-manual_3.html#id1">3.1 The main window and controls</a></li>
+<li><a href="graspit-manual_3.html#id4">3.2 Grasp example</a></li>
+<li><a href="graspit-manual_3.html#id5">3.3 Dynamics example</a></li>
+<li><a href="graspit-manual_3.html#id6">3.4 The menus</a></li>
+</ul>
+<li><a href="graspit-manual_4.html">4 Main Data Types and Data Files</a></li>
+<ul>
+<li><a href="graspit-manual_4.html#sec:bodies">4.1 Bodies</a></li>
+<li><a href="graspit-manual_4.html#sec:robotfile">4.2 Robots</a></li>
+<li><a href="graspit-manual_4.html#id6">4.3 Worlds</a></li>
+<li><a href="graspit-manual_4.html#id7">4.4 Data files from previous versions of GraspIt!</a></li>
+</ul>
+<li><a href="graspit-manual_5.html">5 Collision and Contact Detection</a></li>
+<ul>
+<li><a href="graspit-manual_5.html#id1">5.1 Contacts</a></li>
+<li><a href="graspit-manual_5.html#id2">5.2 Software implementation</a></li>
+<li><a href="graspit-manual_5.html#id3">5.3 Under development: Multi-threading</a></li>
+<li><a href="graspit-manual_5.html#id4">5.4 Under development: Object cloning</a></li>
+</ul>
+<li><a href="graspit-manual_6.html">6 Soft Fingers</a></li>
+<ul>
+<li><a href="graspit-manual_6.html#id1">6.1 Analytical contact area model</a></li>
+</ul>
+<li><a href="graspit-manual_7.html">7 Grasp Quality Metrics</a></li>
+<ul>
+<li><a href="graspit-manual_7.html#id1">7.1 Grasp Wrench Space metrics</a></li>
+<li><a href="graspit-manual_7.html#id2">7.2 Under development: Grasp Force Optimization</a></li>
+</ul>
+<li><a href="graspit-manual_8.html">8 Grasp Force Optimization</a></li>
+<ul>
+<li><a href="graspit-manual_8.html#id1">8.1 GFO computations through the main interface</a></li>
+<li><a href="graspit-manual_8.html#id2">8.2 GFO code and advanced details</a></li>
+</ul>
+<li><a href="graspit-manual_9.html">9 Grasp Planning</a></li>
+<ul>
+<li><a href="graspit-manual_9.html#id1">9.1 General concepts and planner types</a></li>
+<li><a href="graspit-manual_9.html#id2">9.2 The Primitive-based Grasp Planner</a></li>
+</ul>
+<li><a href="graspit-manual_10.html">10 The Dynamics Engine</a></li>
+<ul>
+<li><a href="graspit-manual_10.html#id1">10.1 User interaction in dynamics mode</a></li>
+<li><a href="graspit-manual_10.html#id2">10.2 DOF controllers</a></li>
+<li><a href="graspit-manual_10.html#id3">10.3 Implementation</a></li>
+<li><a href="graspit-manual_10.html#id4">10.4 Under development: dynamics improvements</a></li>
+</ul>
+<li><a href="graspit-manual_11.html">11 Eigengrasps</a></li>
+<ul>
+<li><a href="graspit-manual_11.html#id1">11.1 Loading Eigengrasp Information</a></li>
+<li><a href="graspit-manual_11.html#id2">11.2 Using eigengrasps</a></li>
+</ul>
+<li><a href="graspit-manual_12.html">12 Grasp Planning II - Eigengrasp planning</a></li>
+<ul>
+<li><a href="graspit-manual_12.html#id1">12.1 Grasp planning in Eigengrasp space</a></li>
+<li><a href="graspit-manual_12.html#id2">12.2 Variables</a></li>
+<li><a href="graspit-manual_12.html#id3">12.3 Search energy</a></li>
+<li><a href="graspit-manual_12.html#id4">12.4 Optimization method and planner types</a></li>
+<li><a href="graspit-manual_12.html#id5">12.5 Practical example: the Simulated Annealing planner</a></li>
+<li><a href="graspit-manual_12.html#id6">12.6 Practical example: the Multithreaded planner</a></li>
+</ul>
+<li><a href="graspit-manual_13.html">13 Joint Coupling and Underactuated Hands</a></li>
+<ul>
+<li><a href="graspit-manual_13.html#id1">13.1 Rigid coupling</a></li>
+<li><a href="graspit-manual_13.html#id2">13.2 Breakaway transmission</a></li>
+<li><a href="graspit-manual_13.html#id3">13.3 Under development: compliant joints</a></li>
+</ul>
+<li><a href="graspit-manual_14.html">14 Matlab interface</a></li>
+<ul>
+<li><a href="graspit-manual_14.html#id1">14.1 Commands</a></li>
+<li><a href="graspit-manual_14.html#id2">14.2 One time step</a></li>
+</ul>
+<li><a href="graspit-manual_15.html">15 Hardware connections</a></li>
+<ul>
+<li><a href="graspit-manual_15.html#id1">15.1 Barrett Hand</a></li>
+<li><a href="graspit-manual_15.html#id2">15.2 Flock of Birds</a></li>
+<li><a href="graspit-manual_15.html#id3">15.3 Cyberglove</a></li>
+</ul>
+<li><a href="graspit-manual_16.html">16 The Columbia Grasp Database - Part I</a></li>
+<ul>
+<li><a href="graspit-manual_16.html#id1">16.1 Overview</a></li>
+<li><a href="graspit-manual_16.html#id2">16.2 Caveats</a></li>
+<li><a href="graspit-manual_16.html#id3">16.3 Database installation</a></li>
+<li><a href="graspit-manual_16.html#sec:cgdbinterface">16.4 GraspIt Interface Installation</a></li>
+<li><a href="graspit-manual_16.html#id7">16.5 Connecting to and browsing the database</a></li>
+<li><a href="graspit-manual_16.html#id8">16.6 Geometric similarity</a></li>
+<li><a href="graspit-manual_16.html#id9">16.7 Database-backed grasp planning</a></li>
+</ul>
+<li><a href="graspit-manual_17.html">17 The Columbia Grasp Database: Part II</a></li>
+<ul>
+<li><a href="graspit-manual_17.html#id1">17.1 Overview</a></li>
+<li><a href="graspit-manual_17.html#id2">17.2 3D Models</a></li>
+<li><a href="graspit-manual_17.html#id4">17.3 Robotic Hands</a></li>
+<li><a href="graspit-manual_17.html#id6">17.4 Grasps</a></li>
+<li><a href="graspit-manual_17.html#id9">17.5 Neighbors</a></li>
+<li><a href="graspit-manual_17.html#id12">17.6 Alignments</a></li>
+<li><a href="graspit-manual_17.html#id15">17.7 Stored Procedures</a></li>
+</ul>
+<li><a href="graspit-manual_18.html">18 Publications and References</a></li>
+</ul>
+<hr /><address><p>Copyright (C) 2002-2009 Columbia University</address><br />
+</body></html>

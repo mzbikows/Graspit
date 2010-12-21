@@ -1,0 +1,2263 @@
+<?xml version="1.0" encoding = "Windows-1252"?>
+<VisualStudioProject
+	ProjectType="Visual C++"
+	Version="9,00"
+	Name="graspit"
+	ProjectGUID="{11C5838E-BF72-3F46-95C4-C8169107FD37}"
+	Keyword="Qt4VSv1.0">
+	<Platforms>
+		<Platform
+			Name="Win32"/>
+	</Platforms>
+	<Configurations>
+		<Configuration
+			Name="Debug|Win32"
+			OutputDirectory="."
+			ATLMinimizesCRunTimeLibraryUsage="false"
+			ConfigurationType="1"
+			IntermediateDirectory="debug\"
+			UseOfMfc="0">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalIncludeDirectories="&quot;c:\Qt\4.5.2\include\QtCore&quot;,&quot;c:\Qt\4.5.2\include\QtNetwork&quot;,&quot;c:\Qt\4.5.2\include\QtGui&quot;,&quot;c:\Qt\4.5.2\include\Qt3Support&quot;,&quot;c:\Qt\4.5.2\include&quot;,&quot;c:\Qt\4.5.2\include\QtAssistantClient&quot;,&quot;c:\Qt\4.5.2\include\QtAssistant&quot;,&quot;$(MKLDIR)\include&quot;,&quot;$(QTDIR)\include&quot;,&quot;$(COINDIR)\include&quot;,&quot;qhull&quot;,&quot;src&quot;,&quot;src\Collision&quot;,&quot;include&quot;,&quot;include\math&quot;,&quot;include\Planner&quot;,&quot;include\EGPlanner&quot;,&quot;ui&quot;,&quot;ui\Planner&quot;,&quot;ui\EGPlanner&quot;,&quot;src\Collision\Graspit&quot;,&quot;ui&quot;,&quot;ui\Planner&quot;,&quot;ui\EGPlanner&quot;,&quot;tinyxml&quot;,&quot;c:\Qt\4.5.2\include\ActiveQt&quot;,&quot;debug&quot;,&quot;ui&quot;,c:\Qt\4.5.2\mkspecs\win32-msvc2008"
+				AdditionalOptions="-Zm200 -w34100 -w34189 -w34100 -w34189"
+				AssemblerListingLocation="debug\"
+				BufferSecurityCheck="false"
+				DebugInformationFormat="3"
+				ExceptionHandling="1"
+				GeneratePreprocessedFile="0"
+				ObjectFile="debug\"
+				Optimization ="4"
+				PreprocessorDefinitions="_WINDOWS,UNICODE,WIN32,QT_LARGEFILE_SUPPORT,MKL,COIN_DLL,SOQT_DLL,WIN32,_CRT_SECURE_NO_DEPRECATE,GRASPIT_COLLISION,QT_DLL,QT_QT3SUPPORT_LIB,QT3_SUPPORT,QT_GUI_LIB,QT_NETWORK_LIB,QT_CORE_LIB,QT_THREAD_SUPPORT"
+				ProgramDataBaseFileName=".\"
+				RuntimeLibrary="3"
+				RuntimeTypeInfo="true"
+				SuppressStartupBanner="true"
+				TreatWChar_tAsBuiltInType="false"
+				WarningLevel="3"/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalDependencies="c:\Qt\4.5.2\lib\qtmaind.lib mkl_intel_c_dll.lib mkl_intel_thread_dll.lib mkl_core_dll.lib qhull/windows/Debug/qhull.lib $(COINDIR)/lib/Coin3d.lib $(COINDIR)/lib/SoQt1d.lib c:\Qt\4.5.2\lib\QtAssistantClientd4.lib c:\Qt\4.5.2\lib\Qt3Supportd4.lib c:\Qt\4.5.2\lib\QtGuid4.lib c:\Qt\4.5.2\lib\QtNetworkd4.lib c:\Qt\4.5.2\lib\QtCored4.lib"
+				AdditionalLibraryDirectories="$(MKLDIR)\ia32\lib,c:\Qt\4.5.2\lib"
+				AdditionalOptions="&quot;/MANIFESTDEPENDENCY:type=&apos;win32&apos; name=&apos;Microsoft.Windows.Common-Controls&apos; version=&apos;6.0.0.0&apos; publicKeyToken=&apos;6595b64144ccf1df&apos; language=&apos;*&apos; processorArchitecture=&apos;*&apos;&quot; &quot;/MANIFESTDEPENDENCY:type=&apos;win32&apos; name=&apos;Microsoft.Windows.Common-Controls&apos; version=&apos;6.0.0.0&apos; publicKeyToken=&apos;6595b64144ccf1df&apos; language=&apos;*&apos; processorArchitecture=&apos;*&apos;&quot;"
+				GenerateDebugInformation="true"
+				IgnoreImportLibrary="true"
+				LinkTimeCodeGeneration="0"
+				OutputFile="bin\graspit.exe"
+				ProgramDatabaseFile=""
+				SubSystem="2"
+				SuppressStartupBanner="true"/>
+			<Tool
+				Name="VCMIDLTool"
+				DefaultCharType="0"
+				EnableErrorChecks="1"
+				WarningLevel="0"/>
+			<Tool
+				Name="VCPostBuildEventTool"/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				PreprocessorDefinitions="_WINDOWS,UNICODE,WIN32,QT_LARGEFILE_SUPPORT,MKL,COIN_DLL,SOQT_DLL,WIN32,_CRT_SECURE_NO_DEPRECATE,GRASPIT_COLLISION,QT_DLL,QT_QT3SUPPORT_LIB,QT3_SUPPORT,QT_GUI_LIB,QT_NETWORK_LIB,QT_CORE_LIB,QT_THREAD_SUPPORT,_DEBUG"/>
+		</Configuration>
+		<Configuration
+			Name="Release|Win32"
+			OutputDirectory="."
+			ATLMinimizesCRunTimeLibraryUsage="false"
+			ConfigurationType="1"
+			IntermediateDirectory="release\"
+			UseOfMfc="0">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalIncludeDirectories="&quot;c:\Qt\4.5.2\include\QtCore&quot;,&quot;c:\Qt\4.5.2\include\QtNetwork&quot;,&quot;c:\Qt\4.5.2\include\QtGui&quot;,&quot;c:\Qt\4.5.2\include\Qt3Support&quot;,&quot;c:\Qt\4.5.2\include&quot;,&quot;c:\Qt\4.5.2\include\QtAssistantClient&quot;,&quot;c:\Qt\4.5.2\include\QtAssistant&quot;,&quot;$(MKLDIR)\include&quot;,&quot;$(QTDIR)\include&quot;,&quot;$(COINDIR)\include&quot;,&quot;qhull&quot;,&quot;src&quot;,&quot;src\Collision&quot;,&quot;include&quot;,&quot;include\math&quot;,&quot;include\Planner&quot;,&quot;include\EGPlanner&quot;,&quot;ui&quot;,&quot;ui\Planner&quot;,&quot;ui\EGPlanner&quot;,&quot;src\Collision\Graspit&quot;,&quot;ui&quot;,&quot;ui\Planner&quot;,&quot;ui\EGPlanner&quot;,&quot;tinyxml&quot;,&quot;c:\Qt\4.5.2\include\ActiveQt&quot;,&quot;release&quot;,&quot;ui&quot;,c:\Qt\4.5.2\mkspecs\win32-msvc2008"
+				AdditionalOptions="-Zm200 -w34100 -w34189 -w34100 -w34189"
+				AssemblerListingLocation="release\"
+				BufferSecurityCheck="false"
+				DebugInformationFormat="0"
+				ExceptionHandling="1"
+				GeneratePreprocessedFile="0"
+				ObjectFile="release\"
+				Optimization ="2"
+				PreprocessorDefinitions="QT_NO_DEBUG,NDEBUG,_WINDOWS,UNICODE,WIN32,QT_LARGEFILE_SUPPORT,MKL,COIN_DLL,SOQT_DLL,WIN32,_CRT_SECURE_NO_DEPRECATE,GRASPIT_COLLISION,QT_DLL,QT_NO_DEBUG,QT_QT3SUPPORT_LIB,QT3_SUPPORT,QT_GUI_LIB,QT_NETWORK_LIB,QT_CORE_LIB,QT_THREAD_SUPPORT,NDEBUG"
+				ProgramDataBaseFileName=".\"
+				RuntimeLibrary="2"
+				RuntimeTypeInfo="true"
+				SuppressStartupBanner="true"
+				TreatWChar_tAsBuiltInType="false"
+				WarningLevel="3"/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalDependencies="c:\Qt\4.5.2\lib\qtmain.lib mkl_intel_c_dll.lib mkl_intel_thread_dll.lib mkl_core_dll.lib qhull/windows/Debug/qhull.lib $(COINDIR)/lib/Coin3d.lib $(COINDIR)/lib/SoQt1d.lib c:\Qt\4.5.2\lib\QtAssistantClient4.lib c:\Qt\4.5.2\lib\Qt3Support4.lib c:\Qt\4.5.2\lib\QtGui4.lib c:\Qt\4.5.2\lib\QtNetwork4.lib c:\Qt\4.5.2\lib\QtCore4.lib"
+				AdditionalLibraryDirectories="$(MKLDIR)\ia32\lib,c:\Qt\4.5.2\lib"
+				AdditionalOptions="&quot;/MANIFESTDEPENDENCY:type=&apos;win32&apos; name=&apos;Microsoft.Windows.Common-Controls&apos; version=&apos;6.0.0.0&apos; publicKeyToken=&apos;6595b64144ccf1df&apos; language=&apos;*&apos; processorArchitecture=&apos;*&apos;&quot; &quot;/MANIFESTDEPENDENCY:type=&apos;win32&apos; name=&apos;Microsoft.Windows.Common-Controls&apos; version=&apos;6.0.0.0&apos; publicKeyToken=&apos;6595b64144ccf1df&apos; language=&apos;*&apos; processorArchitecture=&apos;*&apos;&quot;"
+				GenerateDebugInformation="false"
+				IgnoreImportLibrary="true"
+				LinkIncremental="1"
+				LinkTimeCodeGeneration="0"
+				OutputFile="bin\graspit.exe"
+				ProgramDatabaseFile=""
+				SubSystem="2"
+				SuppressStartupBanner="true"/>
+			<Tool
+				Name="VCMIDLTool"
+				DefaultCharType="0"
+				EnableErrorChecks="1"
+				WarningLevel="0"/>
+			<Tool
+				Name="VCPostBuildEventTool"/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				PreprocessorDefinitions="QT_NO_DEBUG,NDEBUG,_WINDOWS,UNICODE,WIN32,QT_LARGEFILE_SUPPORT,MKL,COIN_DLL,SOQT_DLL,WIN32,_CRT_SECURE_NO_DEPRECATE,GRASPIT_COLLISION,QT_DLL,QT_NO_DEBUG,QT_QT3SUPPORT_LIB,QT3_SUPPORT,QT_GUI_LIB,QT_NETWORK_LIB,QT_CORE_LIB,QT_THREAD_SUPPORT"/>
+		</Configuration>
+	</Configurations>
+	<Files>
+		<Filter
+			Name="Source Files"
+			Filter="cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx"
+			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}">
+			<File
+				RelativePath="ui\PolycrankPanelDlg.cpp"/>
+			<File
+				RelativePath="ui\PolycrankPlayerDlg.cpp"/>
+			<File
+				RelativePath="ui\PolycrankSaverDlg.cpp"/>
+			<File
+				RelativePath="src\SoArrow.cpp"/>
+			<File
+				RelativePath="src\SoComplexShape.cpp"/>
+			<File
+				RelativePath="src\SoTorquePointer.cpp"/>
+			<File
+				RelativePath="src\arch.cpp"/>
+			<File
+				RelativePath="ui\archBuilderDlg.cpp"/>
+			<File
+				RelativePath="src\barrett.cpp"/>
+			<File
+				RelativePath="ui\barrettHandDlg.cpp"/>
+			<File
+				RelativePath="src\bbox.cpp"/>
+			<File
+				RelativePath="src\body.cpp"/>
+			<File
+				RelativePath="ui\bodyPropDlg.cpp"/>
+			<File
+				RelativePath="src\Collision\Graspit\collisionAlgorithms.cpp"/>
+			<File
+				RelativePath="src\Collision\collisionInterface.cpp"/>
+			<File
+				RelativePath="src\Collision\Graspit\collisionModel.cpp"/>
+			<File
+				RelativePath="ui\EGPlanner\compliantPlannerDlg.cpp"/>
+			<File
+				RelativePath="src\contact.cpp"/>
+			<File
+				RelativePath="ui\contactExaminerDlg.cpp"/>
+			<File
+				RelativePath="src\contactSetting.cpp"/>
+			<File
+				RelativePath="src\dof.cpp"/>
+			<File
+				RelativePath="src\dynJoint.cpp"/>
+			<File
+				RelativePath="src\dynamics.cpp"/>
+			<File
+				RelativePath="src\EGPlanner\egPlanner.cpp"/>
+			<File
+				RelativePath="ui\EGPlanner\egPlannerDlg.cpp"/>
+			<File
+				RelativePath="src\eigenGrasp.cpp"/>
+			<File
+				RelativePath="ui\eigenGraspDlg.cpp"/>
+			<File
+				RelativePath="ui\gfoDlg.cpp"/>
+			<File
+				RelativePath="ui\gloveCalibrationDlg.cpp"/>
+			<File
+				RelativePath="src\gloveInterface.cpp"/>
+			<File
+				RelativePath="src\grasp.cpp"/>
+			<File
+				RelativePath="ui\graspCaptureDlg.cpp"/>
+			<File
+				RelativePath="src\graspRecord.cpp"/>
+			<File
+				RelativePath="src\EGPlanner\graspTesterThread.cpp"/>
+			<File
+				RelativePath="src\Planner\grasp_coordinates.cpp"/>
+			<File
+				RelativePath="src\Planner\grasp_directions.cpp"/>
+			<File
+				RelativePath="src\Planner\grasp_grasps.cpp"/>
+			<File
+				RelativePath="src\Planner\grasp_manager.cpp"/>
+			<File
+				RelativePath="src\Planner\grasp_planner.cpp"/>
+			<File
+				RelativePath="src\Planner\grasp_presenter.cpp"/>
+			<File
+				RelativePath="src\Planner\grasp_preshape.cpp"/>
+			<File
+				RelativePath="src\Planner\grasp_tester.cpp"/>
+			<File
+				RelativePath="src\Planner\grasp_visualization.cpp"/>
+			<File
+				RelativePath="src\graspitApp.cpp"/>
+			<File
+				RelativePath="src\Collision\Graspit\graspitCollision.cpp"/>
+			<File
+				RelativePath="src\graspitGUI.cpp"/>
+			<File
+				RelativePath="src\graspitServer.cpp"/>
+			<File
+				RelativePath="src\EGPlanner\guidedPlanner.cpp"/>
+			<File
+				RelativePath="src\gws.cpp"/>
+			<File
+				RelativePath="ui\gwsProjDlg.cpp"/>
+			<File
+				RelativePath="src\gwsprojection.cpp"/>
+			<File
+				RelativePath="src\humanHand.cpp"/>
+			<File
+				RelativePath="src\ivmgr.cpp"/>
+			<File
+				RelativePath="src\jacobian.cpp"/>
+			<File
+				RelativePath="src\joint.cpp"/>
+			<File
+				RelativePath="src\kinematicChain.cpp"/>
+			<File
+				RelativePath="src\EGPlanner\listPlanner.cpp"/>
+			<File
+				RelativePath="src\lmiOptimizer.cpp"/>
+			<File
+				RelativePath="src\EGPlanner\loopPlanner.cpp"/>
+			<File
+				RelativePath="src\m7.cpp"/>
+			<File
+				RelativePath="src\m7tool.cpp"/>
+			<File
+				RelativePath="src\main.cpp"/>
+			<File
+				RelativePath="ui\mainWindow.cpp"/>
+			<File
+				RelativePath="src\material.cpp"/>
+			<File
+				RelativePath="src\math\matrix.cpp"/>
+			<File
+				RelativePath="src\matvec.cpp"/>
+			<File
+				RelativePath="src\matvecIO.cpp"/>
+			<File
+				RelativePath="src\maxdet_src.cpp"/>
+			<File
+				RelativePath="src\mcGrip.cpp"/>
+			<File
+				RelativePath="src\mytools.cpp"/>
+			<File
+				RelativePath="src\EGPlanner\onLineGraspInterface.cpp"/>
+			<File
+				RelativePath="src\EGPlanner\onLinePlanner.cpp"/>
+			<File
+				RelativePath="ui\Planner\plannerdlg.cpp"/>
+			<File
+				RelativePath="src\pr2Gripper.cpp"/>
+			<File
+				RelativePath="src\profiling.cpp"/>
+			<File
+				RelativePath="src\puma560.cpp"/>
+			<File
+				RelativePath="ui\qmDlg.cpp"/>
+			<File
+				RelativePath="src\quality.cpp"/>
+			<File
+				RelativePath="src\robonaut.cpp"/>
+			<File
+				RelativePath="src\robot.cpp"/>
+			<File
+				RelativePath="src\scanSimulator.cpp"/>
+			<File
+				RelativePath="src\EGPlanner\searchEnergy.cpp"/>
+			<File
+				RelativePath="src\EGPlanner\searchState.cpp"/>
+			<File
+				RelativePath="src\EGPlanner\searchStateImpl.cpp"/>
+			<File
+				RelativePath="ui\settingsDlg.cpp"/>
+			<File
+				RelativePath="src\shadow.cpp"/>
+			<File
+				RelativePath="src\EGPlanner\simAnn.cpp"/>
+			<File
+				RelativePath="src\EGPlanner\simAnnPlanner.cpp"/>
+			<File
+				RelativePath="src\EGPlanner\timeTest.cpp"/>
+			<File
+				RelativePath="tinyxml\tinyxmlparser.cpp"/>
+			<File
+				RelativePath="src\triangle.cpp"/>
+			<File
+				RelativePath="src\world.cpp"/>
+			<File
+				RelativePath="src\worldElement.cpp"/>
+		</Filter>
+		<Filter
+			Name="Header Files"
+			Filter="h;hpp;hxx;hm;inl;inc;xsd"
+			UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}">
+			<File
+				RelativePath="include\FitParabola.h"/>
+			<File
+				RelativePath="ui\PolycrankPanelDlg.h">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.5.2\bin\moc.exe;ui\PolycrankPanelDlg.h"
+						CommandLine="C:\Qt\4.5.2\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DMKL -DCOIN_DLL -DSOQT_DLL -DWIN32 -D_CRT_SECURE_NO_DEPRECATE -DGRASPIT_COLLISION -DQT_DLL -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I&quot;c:\Qt\4.5.2\include\QtCore&quot; -I&quot;c:\Qt\4.5.2\include\QtNetwork&quot; -I&quot;c:\Qt\4.5.2\include\QtGui&quot; -I&quot;c:\Qt\4.5.2\include\Qt3Support&quot; -I&quot;c:\Qt\4.5.2\include&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistantClient&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistant&quot; -I&quot;$(MKLDIR)\include&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;$(COINDIR)\include&quot; -I&quot;qhull&quot; -I&quot;src&quot; -I&quot;src\Collision&quot; -I&quot;include&quot; -I&quot;include\math&quot; -I&quot;include\Planner&quot; -I&quot;include\EGPlanner&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;src\Collision\Graspit&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;tinyxml&quot; -I&quot;c:\Qt\4.5.2\include\ActiveQt&quot; -I&quot;debug&quot; -I&quot;ui&quot; -Ic:\Qt\4.5.2\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 ui\PolycrankPanelDlg.h -o debug\moc_PolycrankPanelDlg.cpp"
+						Description="MOC ui\PolycrankPanelDlg.h"
+						Outputs="debug\moc_PolycrankPanelDlg.cpp"
+						Path="c:\Qt\4.5.2\bin"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.5.2\bin\moc.exe;ui\PolycrankPanelDlg.h"
+						CommandLine="C:\Qt\4.5.2\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DMKL -DCOIN_DLL -DSOQT_DLL -DWIN32 -D_CRT_SECURE_NO_DEPRECATE -DGRASPIT_COLLISION -DQT_DLL -DQT_NO_DEBUG -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I&quot;c:\Qt\4.5.2\include\QtCore&quot; -I&quot;c:\Qt\4.5.2\include\QtNetwork&quot; -I&quot;c:\Qt\4.5.2\include\QtGui&quot; -I&quot;c:\Qt\4.5.2\include\Qt3Support&quot; -I&quot;c:\Qt\4.5.2\include&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistantClient&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistant&quot; -I&quot;$(MKLDIR)\include&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;$(COINDIR)\include&quot; -I&quot;qhull&quot; -I&quot;src&quot; -I&quot;src\Collision&quot; -I&quot;include&quot; -I&quot;include\math&quot; -I&quot;include\Planner&quot; -I&quot;include\EGPlanner&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;src\Collision\Graspit&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;tinyxml&quot; -I&quot;c:\Qt\4.5.2\include\ActiveQt&quot; -I&quot;release&quot; -I&quot;ui&quot; -Ic:\Qt\4.5.2\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 ui\PolycrankPanelDlg.h -o release\moc_PolycrankPanelDlg.cpp"
+						Description="MOC ui\PolycrankPanelDlg.h"
+						Outputs="release\moc_PolycrankPanelDlg.cpp"
+						Path="c:\Qt\4.5.2\bin"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="ui\PolycrankPlayerDlg.h">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.5.2\bin\moc.exe;ui\PolycrankPlayerDlg.h"
+						CommandLine="C:\Qt\4.5.2\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DMKL -DCOIN_DLL -DSOQT_DLL -DWIN32 -D_CRT_SECURE_NO_DEPRECATE -DGRASPIT_COLLISION -DQT_DLL -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I&quot;c:\Qt\4.5.2\include\QtCore&quot; -I&quot;c:\Qt\4.5.2\include\QtNetwork&quot; -I&quot;c:\Qt\4.5.2\include\QtGui&quot; -I&quot;c:\Qt\4.5.2\include\Qt3Support&quot; -I&quot;c:\Qt\4.5.2\include&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistantClient&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistant&quot; -I&quot;$(MKLDIR)\include&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;$(COINDIR)\include&quot; -I&quot;qhull&quot; -I&quot;src&quot; -I&quot;src\Collision&quot; -I&quot;include&quot; -I&quot;include\math&quot; -I&quot;include\Planner&quot; -I&quot;include\EGPlanner&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;src\Collision\Graspit&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;tinyxml&quot; -I&quot;c:\Qt\4.5.2\include\ActiveQt&quot; -I&quot;debug&quot; -I&quot;ui&quot; -Ic:\Qt\4.5.2\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 ui\PolycrankPlayerDlg.h -o debug\moc_PolycrankPlayerDlg.cpp"
+						Description="MOC ui\PolycrankPlayerDlg.h"
+						Outputs="debug\moc_PolycrankPlayerDlg.cpp"
+						Path="c:\Qt\4.5.2\bin"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.5.2\bin\moc.exe;ui\PolycrankPlayerDlg.h"
+						CommandLine="C:\Qt\4.5.2\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DMKL -DCOIN_DLL -DSOQT_DLL -DWIN32 -D_CRT_SECURE_NO_DEPRECATE -DGRASPIT_COLLISION -DQT_DLL -DQT_NO_DEBUG -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I&quot;c:\Qt\4.5.2\include\QtCore&quot; -I&quot;c:\Qt\4.5.2\include\QtNetwork&quot; -I&quot;c:\Qt\4.5.2\include\QtGui&quot; -I&quot;c:\Qt\4.5.2\include\Qt3Support&quot; -I&quot;c:\Qt\4.5.2\include&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistantClient&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistant&quot; -I&quot;$(MKLDIR)\include&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;$(COINDIR)\include&quot; -I&quot;qhull&quot; -I&quot;src&quot; -I&quot;src\Collision&quot; -I&quot;include&quot; -I&quot;include\math&quot; -I&quot;include\Planner&quot; -I&quot;include\EGPlanner&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;src\Collision\Graspit&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;tinyxml&quot; -I&quot;c:\Qt\4.5.2\include\ActiveQt&quot; -I&quot;release&quot; -I&quot;ui&quot; -Ic:\Qt\4.5.2\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 ui\PolycrankPlayerDlg.h -o release\moc_PolycrankPlayerDlg.cpp"
+						Description="MOC ui\PolycrankPlayerDlg.h"
+						Outputs="release\moc_PolycrankPlayerDlg.cpp"
+						Path="c:\Qt\4.5.2\bin"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="ui\PolycrankSaverDlg.h">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.5.2\bin\moc.exe;ui\PolycrankSaverDlg.h"
+						CommandLine="C:\Qt\4.5.2\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DMKL -DCOIN_DLL -DSOQT_DLL -DWIN32 -D_CRT_SECURE_NO_DEPRECATE -DGRASPIT_COLLISION -DQT_DLL -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I&quot;c:\Qt\4.5.2\include\QtCore&quot; -I&quot;c:\Qt\4.5.2\include\QtNetwork&quot; -I&quot;c:\Qt\4.5.2\include\QtGui&quot; -I&quot;c:\Qt\4.5.2\include\Qt3Support&quot; -I&quot;c:\Qt\4.5.2\include&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistantClient&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistant&quot; -I&quot;$(MKLDIR)\include&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;$(COINDIR)\include&quot; -I&quot;qhull&quot; -I&quot;src&quot; -I&quot;src\Collision&quot; -I&quot;include&quot; -I&quot;include\math&quot; -I&quot;include\Planner&quot; -I&quot;include\EGPlanner&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;src\Collision\Graspit&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;tinyxml&quot; -I&quot;c:\Qt\4.5.2\include\ActiveQt&quot; -I&quot;debug&quot; -I&quot;ui&quot; -Ic:\Qt\4.5.2\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 ui\PolycrankSaverDlg.h -o debug\moc_PolycrankSaverDlg.cpp"
+						Description="MOC ui\PolycrankSaverDlg.h"
+						Outputs="debug\moc_PolycrankSaverDlg.cpp"
+						Path="c:\Qt\4.5.2\bin"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.5.2\bin\moc.exe;ui\PolycrankSaverDlg.h"
+						CommandLine="C:\Qt\4.5.2\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DMKL -DCOIN_DLL -DSOQT_DLL -DWIN32 -D_CRT_SECURE_NO_DEPRECATE -DGRASPIT_COLLISION -DQT_DLL -DQT_NO_DEBUG -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I&quot;c:\Qt\4.5.2\include\QtCore&quot; -I&quot;c:\Qt\4.5.2\include\QtNetwork&quot; -I&quot;c:\Qt\4.5.2\include\QtGui&quot; -I&quot;c:\Qt\4.5.2\include\Qt3Support&quot; -I&quot;c:\Qt\4.5.2\include&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistantClient&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistant&quot; -I&quot;$(MKLDIR)\include&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;$(COINDIR)\include&quot; -I&quot;qhull&quot; -I&quot;src&quot; -I&quot;src\Collision&quot; -I&quot;include&quot; -I&quot;include\math&quot; -I&quot;include\Planner&quot; -I&quot;include\EGPlanner&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;src\Collision\Graspit&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;tinyxml&quot; -I&quot;c:\Qt\4.5.2\include\ActiveQt&quot; -I&quot;release&quot; -I&quot;ui&quot; -Ic:\Qt\4.5.2\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 ui\PolycrankSaverDlg.h -o release\moc_PolycrankSaverDlg.cpp"
+						Description="MOC ui\PolycrankSaverDlg.h"
+						Outputs="release\moc_PolycrankSaverDlg.cpp"
+						Path="c:\Qt\4.5.2\bin"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="include\SoArrow.h"/>
+			<File
+				RelativePath="include\SoComplexShape.h"/>
+			<File
+				RelativePath="include\SoTorquePointer.h"/>
+			<File
+				RelativePath="include\arch.h"/>
+			<File
+				RelativePath="ui\archBuilderDlg.h"/>
+			<File
+				RelativePath="include\barrett.h">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.5.2\bin\moc.exe;include\barrett.h"
+						CommandLine="C:\Qt\4.5.2\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DMKL -DCOIN_DLL -DSOQT_DLL -DWIN32 -D_CRT_SECURE_NO_DEPRECATE -DGRASPIT_COLLISION -DQT_DLL -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I&quot;c:\Qt\4.5.2\include\QtCore&quot; -I&quot;c:\Qt\4.5.2\include\QtNetwork&quot; -I&quot;c:\Qt\4.5.2\include\QtGui&quot; -I&quot;c:\Qt\4.5.2\include\Qt3Support&quot; -I&quot;c:\Qt\4.5.2\include&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistantClient&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistant&quot; -I&quot;$(MKLDIR)\include&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;$(COINDIR)\include&quot; -I&quot;qhull&quot; -I&quot;src&quot; -I&quot;src\Collision&quot; -I&quot;include&quot; -I&quot;include\math&quot; -I&quot;include\Planner&quot; -I&quot;include\EGPlanner&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;src\Collision\Graspit&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;tinyxml&quot; -I&quot;c:\Qt\4.5.2\include\ActiveQt&quot; -I&quot;debug&quot; -I&quot;ui&quot; -Ic:\Qt\4.5.2\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 include\barrett.h -o debug\moc_barrett.cpp"
+						Description="MOC include\barrett.h"
+						Outputs="debug\moc_barrett.cpp"
+						Path="c:\Qt\4.5.2\bin"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.5.2\bin\moc.exe;include\barrett.h"
+						CommandLine="C:\Qt\4.5.2\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DMKL -DCOIN_DLL -DSOQT_DLL -DWIN32 -D_CRT_SECURE_NO_DEPRECATE -DGRASPIT_COLLISION -DQT_DLL -DQT_NO_DEBUG -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I&quot;c:\Qt\4.5.2\include\QtCore&quot; -I&quot;c:\Qt\4.5.2\include\QtNetwork&quot; -I&quot;c:\Qt\4.5.2\include\QtGui&quot; -I&quot;c:\Qt\4.5.2\include\Qt3Support&quot; -I&quot;c:\Qt\4.5.2\include&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistantClient&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistant&quot; -I&quot;$(MKLDIR)\include&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;$(COINDIR)\include&quot; -I&quot;qhull&quot; -I&quot;src&quot; -I&quot;src\Collision&quot; -I&quot;include&quot; -I&quot;include\math&quot; -I&quot;include\Planner&quot; -I&quot;include\EGPlanner&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;src\Collision\Graspit&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;tinyxml&quot; -I&quot;c:\Qt\4.5.2\include\ActiveQt&quot; -I&quot;release&quot; -I&quot;ui&quot; -Ic:\Qt\4.5.2\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 include\barrett.h -o release\moc_barrett.cpp"
+						Description="MOC include\barrett.h"
+						Outputs="release\moc_barrett.cpp"
+						Path="c:\Qt\4.5.2\bin"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="ui\barrettHandDlg.h">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.5.2\bin\moc.exe;ui\barrettHandDlg.h"
+						CommandLine="C:\Qt\4.5.2\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DMKL -DCOIN_DLL -DSOQT_DLL -DWIN32 -D_CRT_SECURE_NO_DEPRECATE -DGRASPIT_COLLISION -DQT_DLL -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I&quot;c:\Qt\4.5.2\include\QtCore&quot; -I&quot;c:\Qt\4.5.2\include\QtNetwork&quot; -I&quot;c:\Qt\4.5.2\include\QtGui&quot; -I&quot;c:\Qt\4.5.2\include\Qt3Support&quot; -I&quot;c:\Qt\4.5.2\include&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistantClient&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistant&quot; -I&quot;$(MKLDIR)\include&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;$(COINDIR)\include&quot; -I&quot;qhull&quot; -I&quot;src&quot; -I&quot;src\Collision&quot; -I&quot;include&quot; -I&quot;include\math&quot; -I&quot;include\Planner&quot; -I&quot;include\EGPlanner&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;src\Collision\Graspit&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;tinyxml&quot; -I&quot;c:\Qt\4.5.2\include\ActiveQt&quot; -I&quot;debug&quot; -I&quot;ui&quot; -Ic:\Qt\4.5.2\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 ui\barrettHandDlg.h -o debug\moc_barrettHandDlg.cpp"
+						Description="MOC ui\barrettHandDlg.h"
+						Outputs="debug\moc_barrettHandDlg.cpp"
+						Path="c:\Qt\4.5.2\bin"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.5.2\bin\moc.exe;ui\barrettHandDlg.h"
+						CommandLine="C:\Qt\4.5.2\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DMKL -DCOIN_DLL -DSOQT_DLL -DWIN32 -D_CRT_SECURE_NO_DEPRECATE -DGRASPIT_COLLISION -DQT_DLL -DQT_NO_DEBUG -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I&quot;c:\Qt\4.5.2\include\QtCore&quot; -I&quot;c:\Qt\4.5.2\include\QtNetwork&quot; -I&quot;c:\Qt\4.5.2\include\QtGui&quot; -I&quot;c:\Qt\4.5.2\include\Qt3Support&quot; -I&quot;c:\Qt\4.5.2\include&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistantClient&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistant&quot; -I&quot;$(MKLDIR)\include&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;$(COINDIR)\include&quot; -I&quot;qhull&quot; -I&quot;src&quot; -I&quot;src\Collision&quot; -I&quot;include&quot; -I&quot;include\math&quot; -I&quot;include\Planner&quot; -I&quot;include\EGPlanner&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;src\Collision\Graspit&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;tinyxml&quot; -I&quot;c:\Qt\4.5.2\include\ActiveQt&quot; -I&quot;release&quot; -I&quot;ui&quot; -Ic:\Qt\4.5.2\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 ui\barrettHandDlg.h -o release\moc_barrettHandDlg.cpp"
+						Description="MOC ui\barrettHandDlg.h"
+						Outputs="release\moc_barrettHandDlg.cpp"
+						Path="c:\Qt\4.5.2\bin"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="include\bbox.h"/>
+			<File
+				RelativePath="include\bbox_inl.h"/>
+			<File
+				RelativePath="include\body.h">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.5.2\bin\moc.exe;include\body.h"
+						CommandLine="C:\Qt\4.5.2\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DMKL -DCOIN_DLL -DSOQT_DLL -DWIN32 -D_CRT_SECURE_NO_DEPRECATE -DGRASPIT_COLLISION -DQT_DLL -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I&quot;c:\Qt\4.5.2\include\QtCore&quot; -I&quot;c:\Qt\4.5.2\include\QtNetwork&quot; -I&quot;c:\Qt\4.5.2\include\QtGui&quot; -I&quot;c:\Qt\4.5.2\include\Qt3Support&quot; -I&quot;c:\Qt\4.5.2\include&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistantClient&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistant&quot; -I&quot;$(MKLDIR)\include&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;$(COINDIR)\include&quot; -I&quot;qhull&quot; -I&quot;src&quot; -I&quot;src\Collision&quot; -I&quot;include&quot; -I&quot;include\math&quot; -I&quot;include\Planner&quot; -I&quot;include\EGPlanner&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;src\Collision\Graspit&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;tinyxml&quot; -I&quot;c:\Qt\4.5.2\include\ActiveQt&quot; -I&quot;debug&quot; -I&quot;ui&quot; -Ic:\Qt\4.5.2\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 include\body.h -o debug\moc_body.cpp"
+						Description="MOC include\body.h"
+						Outputs="debug\moc_body.cpp"
+						Path="c:\Qt\4.5.2\bin"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.5.2\bin\moc.exe;include\body.h"
+						CommandLine="C:\Qt\4.5.2\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DMKL -DCOIN_DLL -DSOQT_DLL -DWIN32 -D_CRT_SECURE_NO_DEPRECATE -DGRASPIT_COLLISION -DQT_DLL -DQT_NO_DEBUG -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I&quot;c:\Qt\4.5.2\include\QtCore&quot; -I&quot;c:\Qt\4.5.2\include\QtNetwork&quot; -I&quot;c:\Qt\4.5.2\include\QtGui&quot; -I&quot;c:\Qt\4.5.2\include\Qt3Support&quot; -I&quot;c:\Qt\4.5.2\include&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistantClient&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistant&quot; -I&quot;$(MKLDIR)\include&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;$(COINDIR)\include&quot; -I&quot;qhull&quot; -I&quot;src&quot; -I&quot;src\Collision&quot; -I&quot;include&quot; -I&quot;include\math&quot; -I&quot;include\Planner&quot; -I&quot;include\EGPlanner&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;src\Collision\Graspit&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;tinyxml&quot; -I&quot;c:\Qt\4.5.2\include\ActiveQt&quot; -I&quot;release&quot; -I&quot;ui&quot; -Ic:\Qt\4.5.2\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 include\body.h -o release\moc_body.cpp"
+						Description="MOC include\body.h"
+						Outputs="release\moc_body.cpp"
+						Path="c:\Qt\4.5.2\bin"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="ui\bodyPropDlg.h">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.5.2\bin\moc.exe;ui\bodyPropDlg.h"
+						CommandLine="C:\Qt\4.5.2\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DMKL -DCOIN_DLL -DSOQT_DLL -DWIN32 -D_CRT_SECURE_NO_DEPRECATE -DGRASPIT_COLLISION -DQT_DLL -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I&quot;c:\Qt\4.5.2\include\QtCore&quot; -I&quot;c:\Qt\4.5.2\include\QtNetwork&quot; -I&quot;c:\Qt\4.5.2\include\QtGui&quot; -I&quot;c:\Qt\4.5.2\include\Qt3Support&quot; -I&quot;c:\Qt\4.5.2\include&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistantClient&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistant&quot; -I&quot;$(MKLDIR)\include&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;$(COINDIR)\include&quot; -I&quot;qhull&quot; -I&quot;src&quot; -I&quot;src\Collision&quot; -I&quot;include&quot; -I&quot;include\math&quot; -I&quot;include\Planner&quot; -I&quot;include\EGPlanner&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;src\Collision\Graspit&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;tinyxml&quot; -I&quot;c:\Qt\4.5.2\include\ActiveQt&quot; -I&quot;debug&quot; -I&quot;ui&quot; -Ic:\Qt\4.5.2\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 ui\bodyPropDlg.h -o debug\moc_bodyPropDlg.cpp"
+						Description="MOC ui\bodyPropDlg.h"
+						Outputs="debug\moc_bodyPropDlg.cpp"
+						Path="c:\Qt\4.5.2\bin"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.5.2\bin\moc.exe;ui\bodyPropDlg.h"
+						CommandLine="C:\Qt\4.5.2\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DMKL -DCOIN_DLL -DSOQT_DLL -DWIN32 -D_CRT_SECURE_NO_DEPRECATE -DGRASPIT_COLLISION -DQT_DLL -DQT_NO_DEBUG -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I&quot;c:\Qt\4.5.2\include\QtCore&quot; -I&quot;c:\Qt\4.5.2\include\QtNetwork&quot; -I&quot;c:\Qt\4.5.2\include\QtGui&quot; -I&quot;c:\Qt\4.5.2\include\Qt3Support&quot; -I&quot;c:\Qt\4.5.2\include&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistantClient&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistant&quot; -I&quot;$(MKLDIR)\include&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;$(COINDIR)\include&quot; -I&quot;qhull&quot; -I&quot;src&quot; -I&quot;src\Collision&quot; -I&quot;include&quot; -I&quot;include\math&quot; -I&quot;include\Planner&quot; -I&quot;include\EGPlanner&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;src\Collision\Graspit&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;tinyxml&quot; -I&quot;c:\Qt\4.5.2\include\ActiveQt&quot; -I&quot;release&quot; -I&quot;ui&quot; -Ic:\Qt\4.5.2\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 ui\bodyPropDlg.h -o release\moc_bodyPropDlg.cpp"
+						Description="MOC ui\bodyPropDlg.h"
+						Outputs="release\moc_bodyPropDlg.cpp"
+						Path="c:\Qt\4.5.2\bin"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="src\Collision\Graspit\collisionAlgorithms.h"/>
+			<File
+				RelativePath="src\Collision\Graspit\collisionAlgorithms_inl.h"/>
+			<File
+				RelativePath="src\Collision\collisionInterface.h"/>
+			<File
+				RelativePath="src\Collision\Graspit\collisionModel.h"/>
+			<File
+				RelativePath="src\Collision\collisionStructures.h"/>
+			<File
+				RelativePath="ui\EGPlanner\compliantPlannerDlg.h">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.5.2\bin\moc.exe;ui\EGPlanner\compliantPlannerDlg.h"
+						CommandLine="C:\Qt\4.5.2\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DMKL -DCOIN_DLL -DSOQT_DLL -DWIN32 -D_CRT_SECURE_NO_DEPRECATE -DGRASPIT_COLLISION -DQT_DLL -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I&quot;c:\Qt\4.5.2\include\QtCore&quot; -I&quot;c:\Qt\4.5.2\include\QtNetwork&quot; -I&quot;c:\Qt\4.5.2\include\QtGui&quot; -I&quot;c:\Qt\4.5.2\include\Qt3Support&quot; -I&quot;c:\Qt\4.5.2\include&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistantClient&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistant&quot; -I&quot;$(MKLDIR)\include&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;$(COINDIR)\include&quot; -I&quot;qhull&quot; -I&quot;src&quot; -I&quot;src\Collision&quot; -I&quot;include&quot; -I&quot;include\math&quot; -I&quot;include\Planner&quot; -I&quot;include\EGPlanner&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;src\Collision\Graspit&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;tinyxml&quot; -I&quot;c:\Qt\4.5.2\include\ActiveQt&quot; -I&quot;debug&quot; -I&quot;ui&quot; -Ic:\Qt\4.5.2\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 ui\EGPlanner\compliantPlannerDlg.h -o debug\moc_compliantPlannerDlg.cpp"
+						Description="MOC ui\EGPlanner\compliantPlannerDlg.h"
+						Outputs="debug\moc_compliantPlannerDlg.cpp"
+						Path="c:\Qt\4.5.2\bin"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.5.2\bin\moc.exe;ui\EGPlanner\compliantPlannerDlg.h"
+						CommandLine="C:\Qt\4.5.2\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DMKL -DCOIN_DLL -DSOQT_DLL -DWIN32 -D_CRT_SECURE_NO_DEPRECATE -DGRASPIT_COLLISION -DQT_DLL -DQT_NO_DEBUG -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I&quot;c:\Qt\4.5.2\include\QtCore&quot; -I&quot;c:\Qt\4.5.2\include\QtNetwork&quot; -I&quot;c:\Qt\4.5.2\include\QtGui&quot; -I&quot;c:\Qt\4.5.2\include\Qt3Support&quot; -I&quot;c:\Qt\4.5.2\include&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistantClient&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistant&quot; -I&quot;$(MKLDIR)\include&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;$(COINDIR)\include&quot; -I&quot;qhull&quot; -I&quot;src&quot; -I&quot;src\Collision&quot; -I&quot;include&quot; -I&quot;include\math&quot; -I&quot;include\Planner&quot; -I&quot;include\EGPlanner&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;src\Collision\Graspit&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;tinyxml&quot; -I&quot;c:\Qt\4.5.2\include\ActiveQt&quot; -I&quot;release&quot; -I&quot;ui&quot; -Ic:\Qt\4.5.2\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 ui\EGPlanner\compliantPlannerDlg.h -o release\moc_compliantPlannerDlg.cpp"
+						Description="MOC ui\EGPlanner\compliantPlannerDlg.h"
+						Outputs="release\moc_compliantPlannerDlg.cpp"
+						Path="c:\Qt\4.5.2\bin"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="include\contact.h"/>
+			<File
+				RelativePath="ui\contactExaminerDlg.h">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.5.2\bin\moc.exe;ui\contactExaminerDlg.h"
+						CommandLine="C:\Qt\4.5.2\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DMKL -DCOIN_DLL -DSOQT_DLL -DWIN32 -D_CRT_SECURE_NO_DEPRECATE -DGRASPIT_COLLISION -DQT_DLL -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I&quot;c:\Qt\4.5.2\include\QtCore&quot; -I&quot;c:\Qt\4.5.2\include\QtNetwork&quot; -I&quot;c:\Qt\4.5.2\include\QtGui&quot; -I&quot;c:\Qt\4.5.2\include\Qt3Support&quot; -I&quot;c:\Qt\4.5.2\include&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistantClient&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistant&quot; -I&quot;$(MKLDIR)\include&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;$(COINDIR)\include&quot; -I&quot;qhull&quot; -I&quot;src&quot; -I&quot;src\Collision&quot; -I&quot;include&quot; -I&quot;include\math&quot; -I&quot;include\Planner&quot; -I&quot;include\EGPlanner&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;src\Collision\Graspit&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;tinyxml&quot; -I&quot;c:\Qt\4.5.2\include\ActiveQt&quot; -I&quot;debug&quot; -I&quot;ui&quot; -Ic:\Qt\4.5.2\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 ui\contactExaminerDlg.h -o debug\moc_contactExaminerDlg.cpp"
+						Description="MOC ui\contactExaminerDlg.h"
+						Outputs="debug\moc_contactExaminerDlg.cpp"
+						Path="c:\Qt\4.5.2\bin"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.5.2\bin\moc.exe;ui\contactExaminerDlg.h"
+						CommandLine="C:\Qt\4.5.2\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DMKL -DCOIN_DLL -DSOQT_DLL -DWIN32 -D_CRT_SECURE_NO_DEPRECATE -DGRASPIT_COLLISION -DQT_DLL -DQT_NO_DEBUG -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I&quot;c:\Qt\4.5.2\include\QtCore&quot; -I&quot;c:\Qt\4.5.2\include\QtNetwork&quot; -I&quot;c:\Qt\4.5.2\include\QtGui&quot; -I&quot;c:\Qt\4.5.2\include\Qt3Support&quot; -I&quot;c:\Qt\4.5.2\include&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistantClient&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistant&quot; -I&quot;$(MKLDIR)\include&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;$(COINDIR)\include&quot; -I&quot;qhull&quot; -I&quot;src&quot; -I&quot;src\Collision&quot; -I&quot;include&quot; -I&quot;include\math&quot; -I&quot;include\Planner&quot; -I&quot;include\EGPlanner&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;src\Collision\Graspit&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;tinyxml&quot; -I&quot;c:\Qt\4.5.2\include\ActiveQt&quot; -I&quot;release&quot; -I&quot;ui&quot; -Ic:\Qt\4.5.2\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 ui\contactExaminerDlg.h -o release\moc_contactExaminerDlg.cpp"
+						Description="MOC ui\contactExaminerDlg.h"
+						Outputs="release\moc_contactExaminerDlg.cpp"
+						Path="c:\Qt\4.5.2\bin"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="include\contactSetting.h"/>
+			<File
+				RelativePath="include\debug.h"/>
+			<File
+				RelativePath="include\dof.h"/>
+			<File
+				RelativePath="include\dynJoint.h"/>
+			<File
+				RelativePath="include\dynamics.h"/>
+			<File
+				RelativePath="include\EGPlanner\egPlanner.h">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.5.2\bin\moc.exe;include\EGPlanner\egPlanner.h"
+						CommandLine="C:\Qt\4.5.2\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DMKL -DCOIN_DLL -DSOQT_DLL -DWIN32 -D_CRT_SECURE_NO_DEPRECATE -DGRASPIT_COLLISION -DQT_DLL -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I&quot;c:\Qt\4.5.2\include\QtCore&quot; -I&quot;c:\Qt\4.5.2\include\QtNetwork&quot; -I&quot;c:\Qt\4.5.2\include\QtGui&quot; -I&quot;c:\Qt\4.5.2\include\Qt3Support&quot; -I&quot;c:\Qt\4.5.2\include&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistantClient&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistant&quot; -I&quot;$(MKLDIR)\include&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;$(COINDIR)\include&quot; -I&quot;qhull&quot; -I&quot;src&quot; -I&quot;src\Collision&quot; -I&quot;include&quot; -I&quot;include\math&quot; -I&quot;include\Planner&quot; -I&quot;include\EGPlanner&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;src\Collision\Graspit&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;tinyxml&quot; -I&quot;c:\Qt\4.5.2\include\ActiveQt&quot; -I&quot;debug&quot; -I&quot;ui&quot; -Ic:\Qt\4.5.2\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 include\EGPlanner\egPlanner.h -o debug\moc_egPlanner.cpp"
+						Description="MOC include\EGPlanner\egPlanner.h"
+						Outputs="debug\moc_egPlanner.cpp"
+						Path="c:\Qt\4.5.2\bin"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.5.2\bin\moc.exe;include\EGPlanner\egPlanner.h"
+						CommandLine="C:\Qt\4.5.2\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DMKL -DCOIN_DLL -DSOQT_DLL -DWIN32 -D_CRT_SECURE_NO_DEPRECATE -DGRASPIT_COLLISION -DQT_DLL -DQT_NO_DEBUG -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I&quot;c:\Qt\4.5.2\include\QtCore&quot; -I&quot;c:\Qt\4.5.2\include\QtNetwork&quot; -I&quot;c:\Qt\4.5.2\include\QtGui&quot; -I&quot;c:\Qt\4.5.2\include\Qt3Support&quot; -I&quot;c:\Qt\4.5.2\include&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistantClient&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistant&quot; -I&quot;$(MKLDIR)\include&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;$(COINDIR)\include&quot; -I&quot;qhull&quot; -I&quot;src&quot; -I&quot;src\Collision&quot; -I&quot;include&quot; -I&quot;include\math&quot; -I&quot;include\Planner&quot; -I&quot;include\EGPlanner&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;src\Collision\Graspit&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;tinyxml&quot; -I&quot;c:\Qt\4.5.2\include\ActiveQt&quot; -I&quot;release&quot; -I&quot;ui&quot; -Ic:\Qt\4.5.2\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 include\EGPlanner\egPlanner.h -o release\moc_egPlanner.cpp"
+						Description="MOC include\EGPlanner\egPlanner.h"
+						Outputs="release\moc_egPlanner.cpp"
+						Path="c:\Qt\4.5.2\bin"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="ui\EGPlanner\egPlannerDlg.h">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.5.2\bin\moc.exe;ui\EGPlanner\egPlannerDlg.h"
+						CommandLine="C:\Qt\4.5.2\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DMKL -DCOIN_DLL -DSOQT_DLL -DWIN32 -D_CRT_SECURE_NO_DEPRECATE -DGRASPIT_COLLISION -DQT_DLL -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I&quot;c:\Qt\4.5.2\include\QtCore&quot; -I&quot;c:\Qt\4.5.2\include\QtNetwork&quot; -I&quot;c:\Qt\4.5.2\include\QtGui&quot; -I&quot;c:\Qt\4.5.2\include\Qt3Support&quot; -I&quot;c:\Qt\4.5.2\include&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistantClient&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistant&quot; -I&quot;$(MKLDIR)\include&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;$(COINDIR)\include&quot; -I&quot;qhull&quot; -I&quot;src&quot; -I&quot;src\Collision&quot; -I&quot;include&quot; -I&quot;include\math&quot; -I&quot;include\Planner&quot; -I&quot;include\EGPlanner&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;src\Collision\Graspit&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;tinyxml&quot; -I&quot;c:\Qt\4.5.2\include\ActiveQt&quot; -I&quot;debug&quot; -I&quot;ui&quot; -Ic:\Qt\4.5.2\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 ui\EGPlanner\egPlannerDlg.h -o debug\moc_egPlannerDlg.cpp"
+						Description="MOC ui\EGPlanner\egPlannerDlg.h"
+						Outputs="debug\moc_egPlannerDlg.cpp"
+						Path="c:\Qt\4.5.2\bin"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.5.2\bin\moc.exe;ui\EGPlanner\egPlannerDlg.h"
+						CommandLine="C:\Qt\4.5.2\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DMKL -DCOIN_DLL -DSOQT_DLL -DWIN32 -D_CRT_SECURE_NO_DEPRECATE -DGRASPIT_COLLISION -DQT_DLL -DQT_NO_DEBUG -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I&quot;c:\Qt\4.5.2\include\QtCore&quot; -I&quot;c:\Qt\4.5.2\include\QtNetwork&quot; -I&quot;c:\Qt\4.5.2\include\QtGui&quot; -I&quot;c:\Qt\4.5.2\include\Qt3Support&quot; -I&quot;c:\Qt\4.5.2\include&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistantClient&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistant&quot; -I&quot;$(MKLDIR)\include&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;$(COINDIR)\include&quot; -I&quot;qhull&quot; -I&quot;src&quot; -I&quot;src\Collision&quot; -I&quot;include&quot; -I&quot;include\math&quot; -I&quot;include\Planner&quot; -I&quot;include\EGPlanner&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;src\Collision\Graspit&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;tinyxml&quot; -I&quot;c:\Qt\4.5.2\include\ActiveQt&quot; -I&quot;release&quot; -I&quot;ui&quot; -Ic:\Qt\4.5.2\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 ui\EGPlanner\egPlannerDlg.h -o release\moc_egPlannerDlg.cpp"
+						Description="MOC ui\EGPlanner\egPlannerDlg.h"
+						Outputs="release\moc_egPlannerDlg.cpp"
+						Path="c:\Qt\4.5.2\bin"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="include\eigenGrasp.h"/>
+			<File
+				RelativePath="ui\eigenGraspDlg.h">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.5.2\bin\moc.exe;ui\eigenGraspDlg.h"
+						CommandLine="C:\Qt\4.5.2\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DMKL -DCOIN_DLL -DSOQT_DLL -DWIN32 -D_CRT_SECURE_NO_DEPRECATE -DGRASPIT_COLLISION -DQT_DLL -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I&quot;c:\Qt\4.5.2\include\QtCore&quot; -I&quot;c:\Qt\4.5.2\include\QtNetwork&quot; -I&quot;c:\Qt\4.5.2\include\QtGui&quot; -I&quot;c:\Qt\4.5.2\include\Qt3Support&quot; -I&quot;c:\Qt\4.5.2\include&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistantClient&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistant&quot; -I&quot;$(MKLDIR)\include&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;$(COINDIR)\include&quot; -I&quot;qhull&quot; -I&quot;src&quot; -I&quot;src\Collision&quot; -I&quot;include&quot; -I&quot;include\math&quot; -I&quot;include\Planner&quot; -I&quot;include\EGPlanner&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;src\Collision\Graspit&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;tinyxml&quot; -I&quot;c:\Qt\4.5.2\include\ActiveQt&quot; -I&quot;debug&quot; -I&quot;ui&quot; -Ic:\Qt\4.5.2\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 ui\eigenGraspDlg.h -o debug\moc_eigenGraspDlg.cpp"
+						Description="MOC ui\eigenGraspDlg.h"
+						Outputs="debug\moc_eigenGraspDlg.cpp"
+						Path="c:\Qt\4.5.2\bin"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.5.2\bin\moc.exe;ui\eigenGraspDlg.h"
+						CommandLine="C:\Qt\4.5.2\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DMKL -DCOIN_DLL -DSOQT_DLL -DWIN32 -D_CRT_SECURE_NO_DEPRECATE -DGRASPIT_COLLISION -DQT_DLL -DQT_NO_DEBUG -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I&quot;c:\Qt\4.5.2\include\QtCore&quot; -I&quot;c:\Qt\4.5.2\include\QtNetwork&quot; -I&quot;c:\Qt\4.5.2\include\QtGui&quot; -I&quot;c:\Qt\4.5.2\include\Qt3Support&quot; -I&quot;c:\Qt\4.5.2\include&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistantClient&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistant&quot; -I&quot;$(MKLDIR)\include&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;$(COINDIR)\include&quot; -I&quot;qhull&quot; -I&quot;src&quot; -I&quot;src\Collision&quot; -I&quot;include&quot; -I&quot;include\math&quot; -I&quot;include\Planner&quot; -I&quot;include\EGPlanner&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;src\Collision\Graspit&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;tinyxml&quot; -I&quot;c:\Qt\4.5.2\include\ActiveQt&quot; -I&quot;release&quot; -I&quot;ui&quot; -Ic:\Qt\4.5.2\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 ui\eigenGraspDlg.h -o release\moc_eigenGraspDlg.cpp"
+						Description="MOC ui\eigenGraspDlg.h"
+						Outputs="release\moc_eigenGraspDlg.cpp"
+						Path="c:\Qt\4.5.2\bin"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="ui\gfoDlg.h">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.5.2\bin\moc.exe;ui\gfoDlg.h"
+						CommandLine="C:\Qt\4.5.2\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DMKL -DCOIN_DLL -DSOQT_DLL -DWIN32 -D_CRT_SECURE_NO_DEPRECATE -DGRASPIT_COLLISION -DQT_DLL -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I&quot;c:\Qt\4.5.2\include\QtCore&quot; -I&quot;c:\Qt\4.5.2\include\QtNetwork&quot; -I&quot;c:\Qt\4.5.2\include\QtGui&quot; -I&quot;c:\Qt\4.5.2\include\Qt3Support&quot; -I&quot;c:\Qt\4.5.2\include&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistantClient&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistant&quot; -I&quot;$(MKLDIR)\include&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;$(COINDIR)\include&quot; -I&quot;qhull&quot; -I&quot;src&quot; -I&quot;src\Collision&quot; -I&quot;include&quot; -I&quot;include\math&quot; -I&quot;include\Planner&quot; -I&quot;include\EGPlanner&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;src\Collision\Graspit&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;tinyxml&quot; -I&quot;c:\Qt\4.5.2\include\ActiveQt&quot; -I&quot;debug&quot; -I&quot;ui&quot; -Ic:\Qt\4.5.2\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 ui\gfoDlg.h -o debug\moc_gfoDlg.cpp"
+						Description="MOC ui\gfoDlg.h"
+						Outputs="debug\moc_gfoDlg.cpp"
+						Path="c:\Qt\4.5.2\bin"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.5.2\bin\moc.exe;ui\gfoDlg.h"
+						CommandLine="C:\Qt\4.5.2\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DMKL -DCOIN_DLL -DSOQT_DLL -DWIN32 -D_CRT_SECURE_NO_DEPRECATE -DGRASPIT_COLLISION -DQT_DLL -DQT_NO_DEBUG -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I&quot;c:\Qt\4.5.2\include\QtCore&quot; -I&quot;c:\Qt\4.5.2\include\QtNetwork&quot; -I&quot;c:\Qt\4.5.2\include\QtGui&quot; -I&quot;c:\Qt\4.5.2\include\Qt3Support&quot; -I&quot;c:\Qt\4.5.2\include&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistantClient&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistant&quot; -I&quot;$(MKLDIR)\include&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;$(COINDIR)\include&quot; -I&quot;qhull&quot; -I&quot;src&quot; -I&quot;src\Collision&quot; -I&quot;include&quot; -I&quot;include\math&quot; -I&quot;include\Planner&quot; -I&quot;include\EGPlanner&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;src\Collision\Graspit&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;tinyxml&quot; -I&quot;c:\Qt\4.5.2\include\ActiveQt&quot; -I&quot;release&quot; -I&quot;ui&quot; -Ic:\Qt\4.5.2\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 ui\gfoDlg.h -o release\moc_gfoDlg.cpp"
+						Description="MOC ui\gfoDlg.h"
+						Outputs="release\moc_gfoDlg.cpp"
+						Path="c:\Qt\4.5.2\bin"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="ui\gloveCalibrationDlg.h">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.5.2\bin\moc.exe;ui\gloveCalibrationDlg.h"
+						CommandLine="C:\Qt\4.5.2\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DMKL -DCOIN_DLL -DSOQT_DLL -DWIN32 -D_CRT_SECURE_NO_DEPRECATE -DGRASPIT_COLLISION -DQT_DLL -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I&quot;c:\Qt\4.5.2\include\QtCore&quot; -I&quot;c:\Qt\4.5.2\include\QtNetwork&quot; -I&quot;c:\Qt\4.5.2\include\QtGui&quot; -I&quot;c:\Qt\4.5.2\include\Qt3Support&quot; -I&quot;c:\Qt\4.5.2\include&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistantClient&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistant&quot; -I&quot;$(MKLDIR)\include&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;$(COINDIR)\include&quot; -I&quot;qhull&quot; -I&quot;src&quot; -I&quot;src\Collision&quot; -I&quot;include&quot; -I&quot;include\math&quot; -I&quot;include\Planner&quot; -I&quot;include\EGPlanner&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;src\Collision\Graspit&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;tinyxml&quot; -I&quot;c:\Qt\4.5.2\include\ActiveQt&quot; -I&quot;debug&quot; -I&quot;ui&quot; -Ic:\Qt\4.5.2\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 ui\gloveCalibrationDlg.h -o debug\moc_gloveCalibrationDlg.cpp"
+						Description="MOC ui\gloveCalibrationDlg.h"
+						Outputs="debug\moc_gloveCalibrationDlg.cpp"
+						Path="c:\Qt\4.5.2\bin"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.5.2\bin\moc.exe;ui\gloveCalibrationDlg.h"
+						CommandLine="C:\Qt\4.5.2\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DMKL -DCOIN_DLL -DSOQT_DLL -DWIN32 -D_CRT_SECURE_NO_DEPRECATE -DGRASPIT_COLLISION -DQT_DLL -DQT_NO_DEBUG -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I&quot;c:\Qt\4.5.2\include\QtCore&quot; -I&quot;c:\Qt\4.5.2\include\QtNetwork&quot; -I&quot;c:\Qt\4.5.2\include\QtGui&quot; -I&quot;c:\Qt\4.5.2\include\Qt3Support&quot; -I&quot;c:\Qt\4.5.2\include&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistantClient&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistant&quot; -I&quot;$(MKLDIR)\include&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;$(COINDIR)\include&quot; -I&quot;qhull&quot; -I&quot;src&quot; -I&quot;src\Collision&quot; -I&quot;include&quot; -I&quot;include\math&quot; -I&quot;include\Planner&quot; -I&quot;include\EGPlanner&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;src\Collision\Graspit&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;tinyxml&quot; -I&quot;c:\Qt\4.5.2\include\ActiveQt&quot; -I&quot;release&quot; -I&quot;ui&quot; -Ic:\Qt\4.5.2\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 ui\gloveCalibrationDlg.h -o release\moc_gloveCalibrationDlg.cpp"
+						Description="MOC ui\gloveCalibrationDlg.h"
+						Outputs="release\moc_gloveCalibrationDlg.cpp"
+						Path="c:\Qt\4.5.2\bin"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="include\gloveInterface.h"/>
+			<File
+				RelativePath="include\grasp.h">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.5.2\bin\moc.exe;include\grasp.h"
+						CommandLine="C:\Qt\4.5.2\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DMKL -DCOIN_DLL -DSOQT_DLL -DWIN32 -D_CRT_SECURE_NO_DEPRECATE -DGRASPIT_COLLISION -DQT_DLL -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I&quot;c:\Qt\4.5.2\include\QtCore&quot; -I&quot;c:\Qt\4.5.2\include\QtNetwork&quot; -I&quot;c:\Qt\4.5.2\include\QtGui&quot; -I&quot;c:\Qt\4.5.2\include\Qt3Support&quot; -I&quot;c:\Qt\4.5.2\include&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistantClient&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistant&quot; -I&quot;$(MKLDIR)\include&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;$(COINDIR)\include&quot; -I&quot;qhull&quot; -I&quot;src&quot; -I&quot;src\Collision&quot; -I&quot;include&quot; -I&quot;include\math&quot; -I&quot;include\Planner&quot; -I&quot;include\EGPlanner&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;src\Collision\Graspit&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;tinyxml&quot; -I&quot;c:\Qt\4.5.2\include\ActiveQt&quot; -I&quot;debug&quot; -I&quot;ui&quot; -Ic:\Qt\4.5.2\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 include\grasp.h -o debug\moc_grasp.cpp"
+						Description="MOC include\grasp.h"
+						Outputs="debug\moc_grasp.cpp"
+						Path="c:\Qt\4.5.2\bin"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.5.2\bin\moc.exe;include\grasp.h"
+						CommandLine="C:\Qt\4.5.2\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DMKL -DCOIN_DLL -DSOQT_DLL -DWIN32 -D_CRT_SECURE_NO_DEPRECATE -DGRASPIT_COLLISION -DQT_DLL -DQT_NO_DEBUG -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I&quot;c:\Qt\4.5.2\include\QtCore&quot; -I&quot;c:\Qt\4.5.2\include\QtNetwork&quot; -I&quot;c:\Qt\4.5.2\include\QtGui&quot; -I&quot;c:\Qt\4.5.2\include\Qt3Support&quot; -I&quot;c:\Qt\4.5.2\include&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistantClient&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistant&quot; -I&quot;$(MKLDIR)\include&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;$(COINDIR)\include&quot; -I&quot;qhull&quot; -I&quot;src&quot; -I&quot;src\Collision&quot; -I&quot;include&quot; -I&quot;include\math&quot; -I&quot;include\Planner&quot; -I&quot;include\EGPlanner&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;src\Collision\Graspit&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;tinyxml&quot; -I&quot;c:\Qt\4.5.2\include\ActiveQt&quot; -I&quot;release&quot; -I&quot;ui&quot; -Ic:\Qt\4.5.2\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 include\grasp.h -o release\moc_grasp.cpp"
+						Description="MOC include\grasp.h"
+						Outputs="release\moc_grasp.cpp"
+						Path="c:\Qt\4.5.2\bin"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="ui\graspCaptureDlg.h">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.5.2\bin\moc.exe;ui\graspCaptureDlg.h"
+						CommandLine="C:\Qt\4.5.2\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DMKL -DCOIN_DLL -DSOQT_DLL -DWIN32 -D_CRT_SECURE_NO_DEPRECATE -DGRASPIT_COLLISION -DQT_DLL -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I&quot;c:\Qt\4.5.2\include\QtCore&quot; -I&quot;c:\Qt\4.5.2\include\QtNetwork&quot; -I&quot;c:\Qt\4.5.2\include\QtGui&quot; -I&quot;c:\Qt\4.5.2\include\Qt3Support&quot; -I&quot;c:\Qt\4.5.2\include&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistantClient&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistant&quot; -I&quot;$(MKLDIR)\include&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;$(COINDIR)\include&quot; -I&quot;qhull&quot; -I&quot;src&quot; -I&quot;src\Collision&quot; -I&quot;include&quot; -I&quot;include\math&quot; -I&quot;include\Planner&quot; -I&quot;include\EGPlanner&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;src\Collision\Graspit&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;tinyxml&quot; -I&quot;c:\Qt\4.5.2\include\ActiveQt&quot; -I&quot;debug&quot; -I&quot;ui&quot; -Ic:\Qt\4.5.2\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 ui\graspCaptureDlg.h -o debug\moc_graspCaptureDlg.cpp"
+						Description="MOC ui\graspCaptureDlg.h"
+						Outputs="debug\moc_graspCaptureDlg.cpp"
+						Path="c:\Qt\4.5.2\bin"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.5.2\bin\moc.exe;ui\graspCaptureDlg.h"
+						CommandLine="C:\Qt\4.5.2\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DMKL -DCOIN_DLL -DSOQT_DLL -DWIN32 -D_CRT_SECURE_NO_DEPRECATE -DGRASPIT_COLLISION -DQT_DLL -DQT_NO_DEBUG -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I&quot;c:\Qt\4.5.2\include\QtCore&quot; -I&quot;c:\Qt\4.5.2\include\QtNetwork&quot; -I&quot;c:\Qt\4.5.2\include\QtGui&quot; -I&quot;c:\Qt\4.5.2\include\Qt3Support&quot; -I&quot;c:\Qt\4.5.2\include&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistantClient&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistant&quot; -I&quot;$(MKLDIR)\include&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;$(COINDIR)\include&quot; -I&quot;qhull&quot; -I&quot;src&quot; -I&quot;src\Collision&quot; -I&quot;include&quot; -I&quot;include\math&quot; -I&quot;include\Planner&quot; -I&quot;include\EGPlanner&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;src\Collision\Graspit&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;tinyxml&quot; -I&quot;c:\Qt\4.5.2\include\ActiveQt&quot; -I&quot;release&quot; -I&quot;ui&quot; -Ic:\Qt\4.5.2\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 ui\graspCaptureDlg.h -o release\moc_graspCaptureDlg.cpp"
+						Description="MOC ui\graspCaptureDlg.h"
+						Outputs="release\moc_graspCaptureDlg.cpp"
+						Path="c:\Qt\4.5.2\bin"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="include\graspRecord.h"/>
+			<File
+				RelativePath="include\EGPlanner\graspTesterThread.h"/>
+			<File
+				RelativePath="include\Planner\grasp_coordinates.h"/>
+			<File
+				RelativePath="include\Planner\grasp_directions.h"/>
+			<File
+				RelativePath="include\Planner\grasp_grasps.h"/>
+			<File
+				RelativePath="include\Planner\grasp_manager.h"/>
+			<File
+				RelativePath="include\Planner\grasp_planner.h"/>
+			<File
+				RelativePath="include\Planner\grasp_presenter.h"/>
+			<File
+				RelativePath="include\Planner\grasp_preshape.h"/>
+			<File
+				RelativePath="include\Planner\grasp_tester.h">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.5.2\bin\moc.exe;include\Planner\grasp_tester.h"
+						CommandLine="C:\Qt\4.5.2\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DMKL -DCOIN_DLL -DSOQT_DLL -DWIN32 -D_CRT_SECURE_NO_DEPRECATE -DGRASPIT_COLLISION -DQT_DLL -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I&quot;c:\Qt\4.5.2\include\QtCore&quot; -I&quot;c:\Qt\4.5.2\include\QtNetwork&quot; -I&quot;c:\Qt\4.5.2\include\QtGui&quot; -I&quot;c:\Qt\4.5.2\include\Qt3Support&quot; -I&quot;c:\Qt\4.5.2\include&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistantClient&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistant&quot; -I&quot;$(MKLDIR)\include&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;$(COINDIR)\include&quot; -I&quot;qhull&quot; -I&quot;src&quot; -I&quot;src\Collision&quot; -I&quot;include&quot; -I&quot;include\math&quot; -I&quot;include\Planner&quot; -I&quot;include\EGPlanner&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;src\Collision\Graspit&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;tinyxml&quot; -I&quot;c:\Qt\4.5.2\include\ActiveQt&quot; -I&quot;debug&quot; -I&quot;ui&quot; -Ic:\Qt\4.5.2\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 include\Planner\grasp_tester.h -o debug\moc_grasp_tester.cpp"
+						Description="MOC include\Planner\grasp_tester.h"
+						Outputs="debug\moc_grasp_tester.cpp"
+						Path="c:\Qt\4.5.2\bin"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.5.2\bin\moc.exe;include\Planner\grasp_tester.h"
+						CommandLine="C:\Qt\4.5.2\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DMKL -DCOIN_DLL -DSOQT_DLL -DWIN32 -D_CRT_SECURE_NO_DEPRECATE -DGRASPIT_COLLISION -DQT_DLL -DQT_NO_DEBUG -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I&quot;c:\Qt\4.5.2\include\QtCore&quot; -I&quot;c:\Qt\4.5.2\include\QtNetwork&quot; -I&quot;c:\Qt\4.5.2\include\QtGui&quot; -I&quot;c:\Qt\4.5.2\include\Qt3Support&quot; -I&quot;c:\Qt\4.5.2\include&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistantClient&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistant&quot; -I&quot;$(MKLDIR)\include&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;$(COINDIR)\include&quot; -I&quot;qhull&quot; -I&quot;src&quot; -I&quot;src\Collision&quot; -I&quot;include&quot; -I&quot;include\math&quot; -I&quot;include\Planner&quot; -I&quot;include\EGPlanner&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;src\Collision\Graspit&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;tinyxml&quot; -I&quot;c:\Qt\4.5.2\include\ActiveQt&quot; -I&quot;release&quot; -I&quot;ui&quot; -Ic:\Qt\4.5.2\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 include\Planner\grasp_tester.h -o release\moc_grasp_tester.cpp"
+						Description="MOC include\Planner\grasp_tester.h"
+						Outputs="release\moc_grasp_tester.cpp"
+						Path="c:\Qt\4.5.2\bin"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="include\Planner\grasp_visualization.h"/>
+			<File
+				RelativePath="include\graspitApp.h"/>
+			<File
+				RelativePath="src\Collision\Graspit\graspitCollision.h"/>
+			<File
+				RelativePath="include\graspitGUI.h"/>
+			<File
+				RelativePath="include\graspitServer.h">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.5.2\bin\moc.exe;include\graspitServer.h"
+						CommandLine="C:\Qt\4.5.2\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DMKL -DCOIN_DLL -DSOQT_DLL -DWIN32 -D_CRT_SECURE_NO_DEPRECATE -DGRASPIT_COLLISION -DQT_DLL -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I&quot;c:\Qt\4.5.2\include\QtCore&quot; -I&quot;c:\Qt\4.5.2\include\QtNetwork&quot; -I&quot;c:\Qt\4.5.2\include\QtGui&quot; -I&quot;c:\Qt\4.5.2\include\Qt3Support&quot; -I&quot;c:\Qt\4.5.2\include&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistantClient&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistant&quot; -I&quot;$(MKLDIR)\include&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;$(COINDIR)\include&quot; -I&quot;qhull&quot; -I&quot;src&quot; -I&quot;src\Collision&quot; -I&quot;include&quot; -I&quot;include\math&quot; -I&quot;include\Planner&quot; -I&quot;include\EGPlanner&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;src\Collision\Graspit&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;tinyxml&quot; -I&quot;c:\Qt\4.5.2\include\ActiveQt&quot; -I&quot;debug&quot; -I&quot;ui&quot; -Ic:\Qt\4.5.2\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 include\graspitServer.h -o debug\moc_graspitServer.cpp"
+						Description="MOC include\graspitServer.h"
+						Outputs="debug\moc_graspitServer.cpp"
+						Path="c:\Qt\4.5.2\bin"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.5.2\bin\moc.exe;include\graspitServer.h"
+						CommandLine="C:\Qt\4.5.2\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DMKL -DCOIN_DLL -DSOQT_DLL -DWIN32 -D_CRT_SECURE_NO_DEPRECATE -DGRASPIT_COLLISION -DQT_DLL -DQT_NO_DEBUG -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I&quot;c:\Qt\4.5.2\include\QtCore&quot; -I&quot;c:\Qt\4.5.2\include\QtNetwork&quot; -I&quot;c:\Qt\4.5.2\include\QtGui&quot; -I&quot;c:\Qt\4.5.2\include\Qt3Support&quot; -I&quot;c:\Qt\4.5.2\include&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistantClient&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistant&quot; -I&quot;$(MKLDIR)\include&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;$(COINDIR)\include&quot; -I&quot;qhull&quot; -I&quot;src&quot; -I&quot;src\Collision&quot; -I&quot;include&quot; -I&quot;include\math&quot; -I&quot;include\Planner&quot; -I&quot;include\EGPlanner&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;src\Collision\Graspit&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;tinyxml&quot; -I&quot;c:\Qt\4.5.2\include\ActiveQt&quot; -I&quot;release&quot; -I&quot;ui&quot; -Ic:\Qt\4.5.2\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 include\graspitServer.h -o release\moc_graspitServer.cpp"
+						Description="MOC include\graspitServer.h"
+						Outputs="release\moc_graspitServer.cpp"
+						Path="c:\Qt\4.5.2\bin"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="include\EGPlanner\guidedPlanner.h">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.5.2\bin\moc.exe;include\EGPlanner\guidedPlanner.h"
+						CommandLine="C:\Qt\4.5.2\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DMKL -DCOIN_DLL -DSOQT_DLL -DWIN32 -D_CRT_SECURE_NO_DEPRECATE -DGRASPIT_COLLISION -DQT_DLL -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I&quot;c:\Qt\4.5.2\include\QtCore&quot; -I&quot;c:\Qt\4.5.2\include\QtNetwork&quot; -I&quot;c:\Qt\4.5.2\include\QtGui&quot; -I&quot;c:\Qt\4.5.2\include\Qt3Support&quot; -I&quot;c:\Qt\4.5.2\include&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistantClient&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistant&quot; -I&quot;$(MKLDIR)\include&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;$(COINDIR)\include&quot; -I&quot;qhull&quot; -I&quot;src&quot; -I&quot;src\Collision&quot; -I&quot;include&quot; -I&quot;include\math&quot; -I&quot;include\Planner&quot; -I&quot;include\EGPlanner&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;src\Collision\Graspit&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;tinyxml&quot; -I&quot;c:\Qt\4.5.2\include\ActiveQt&quot; -I&quot;debug&quot; -I&quot;ui&quot; -Ic:\Qt\4.5.2\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 include\EGPlanner\guidedPlanner.h -o debug\moc_guidedPlanner.cpp"
+						Description="MOC include\EGPlanner\guidedPlanner.h"
+						Outputs="debug\moc_guidedPlanner.cpp"
+						Path="c:\Qt\4.5.2\bin"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.5.2\bin\moc.exe;include\EGPlanner\guidedPlanner.h"
+						CommandLine="C:\Qt\4.5.2\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DMKL -DCOIN_DLL -DSOQT_DLL -DWIN32 -D_CRT_SECURE_NO_DEPRECATE -DGRASPIT_COLLISION -DQT_DLL -DQT_NO_DEBUG -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I&quot;c:\Qt\4.5.2\include\QtCore&quot; -I&quot;c:\Qt\4.5.2\include\QtNetwork&quot; -I&quot;c:\Qt\4.5.2\include\QtGui&quot; -I&quot;c:\Qt\4.5.2\include\Qt3Support&quot; -I&quot;c:\Qt\4.5.2\include&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistantClient&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistant&quot; -I&quot;$(MKLDIR)\include&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;$(COINDIR)\include&quot; -I&quot;qhull&quot; -I&quot;src&quot; -I&quot;src\Collision&quot; -I&quot;include&quot; -I&quot;include\math&quot; -I&quot;include\Planner&quot; -I&quot;include\EGPlanner&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;src\Collision\Graspit&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;tinyxml&quot; -I&quot;c:\Qt\4.5.2\include\ActiveQt&quot; -I&quot;release&quot; -I&quot;ui&quot; -Ic:\Qt\4.5.2\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 include\EGPlanner\guidedPlanner.h -o release\moc_guidedPlanner.cpp"
+						Description="MOC include\EGPlanner\guidedPlanner.h"
+						Outputs="release\moc_guidedPlanner.cpp"
+						Path="c:\Qt\4.5.2\bin"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="include\gws.h"/>
+			<File
+				RelativePath="ui\gwsProjDlg.h">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.5.2\bin\moc.exe;ui\gwsProjDlg.h"
+						CommandLine="C:\Qt\4.5.2\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DMKL -DCOIN_DLL -DSOQT_DLL -DWIN32 -D_CRT_SECURE_NO_DEPRECATE -DGRASPIT_COLLISION -DQT_DLL -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I&quot;c:\Qt\4.5.2\include\QtCore&quot; -I&quot;c:\Qt\4.5.2\include\QtNetwork&quot; -I&quot;c:\Qt\4.5.2\include\QtGui&quot; -I&quot;c:\Qt\4.5.2\include\Qt3Support&quot; -I&quot;c:\Qt\4.5.2\include&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistantClient&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistant&quot; -I&quot;$(MKLDIR)\include&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;$(COINDIR)\include&quot; -I&quot;qhull&quot; -I&quot;src&quot; -I&quot;src\Collision&quot; -I&quot;include&quot; -I&quot;include\math&quot; -I&quot;include\Planner&quot; -I&quot;include\EGPlanner&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;src\Collision\Graspit&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;tinyxml&quot; -I&quot;c:\Qt\4.5.2\include\ActiveQt&quot; -I&quot;debug&quot; -I&quot;ui&quot; -Ic:\Qt\4.5.2\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 ui\gwsProjDlg.h -o debug\moc_gwsProjDlg.cpp"
+						Description="MOC ui\gwsProjDlg.h"
+						Outputs="debug\moc_gwsProjDlg.cpp"
+						Path="c:\Qt\4.5.2\bin"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.5.2\bin\moc.exe;ui\gwsProjDlg.h"
+						CommandLine="C:\Qt\4.5.2\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DMKL -DCOIN_DLL -DSOQT_DLL -DWIN32 -D_CRT_SECURE_NO_DEPRECATE -DGRASPIT_COLLISION -DQT_DLL -DQT_NO_DEBUG -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I&quot;c:\Qt\4.5.2\include\QtCore&quot; -I&quot;c:\Qt\4.5.2\include\QtNetwork&quot; -I&quot;c:\Qt\4.5.2\include\QtGui&quot; -I&quot;c:\Qt\4.5.2\include\Qt3Support&quot; -I&quot;c:\Qt\4.5.2\include&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistantClient&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistant&quot; -I&quot;$(MKLDIR)\include&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;$(COINDIR)\include&quot; -I&quot;qhull&quot; -I&quot;src&quot; -I&quot;src\Collision&quot; -I&quot;include&quot; -I&quot;include\math&quot; -I&quot;include\Planner&quot; -I&quot;include\EGPlanner&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;src\Collision\Graspit&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;tinyxml&quot; -I&quot;c:\Qt\4.5.2\include\ActiveQt&quot; -I&quot;release&quot; -I&quot;ui&quot; -Ic:\Qt\4.5.2\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 ui\gwsProjDlg.h -o release\moc_gwsProjDlg.cpp"
+						Description="MOC ui\gwsProjDlg.h"
+						Outputs="release\moc_gwsProjDlg.cpp"
+						Path="c:\Qt\4.5.2\bin"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="include\gwsprojection.h"/>
+			<File
+				RelativePath="include\humanHand.h">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.5.2\bin\moc.exe;include\humanHand.h"
+						CommandLine="C:\Qt\4.5.2\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DMKL -DCOIN_DLL -DSOQT_DLL -DWIN32 -D_CRT_SECURE_NO_DEPRECATE -DGRASPIT_COLLISION -DQT_DLL -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I&quot;c:\Qt\4.5.2\include\QtCore&quot; -I&quot;c:\Qt\4.5.2\include\QtNetwork&quot; -I&quot;c:\Qt\4.5.2\include\QtGui&quot; -I&quot;c:\Qt\4.5.2\include\Qt3Support&quot; -I&quot;c:\Qt\4.5.2\include&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistantClient&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistant&quot; -I&quot;$(MKLDIR)\include&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;$(COINDIR)\include&quot; -I&quot;qhull&quot; -I&quot;src&quot; -I&quot;src\Collision&quot; -I&quot;include&quot; -I&quot;include\math&quot; -I&quot;include\Planner&quot; -I&quot;include\EGPlanner&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;src\Collision\Graspit&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;tinyxml&quot; -I&quot;c:\Qt\4.5.2\include\ActiveQt&quot; -I&quot;debug&quot; -I&quot;ui&quot; -Ic:\Qt\4.5.2\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 include\humanHand.h -o debug\moc_humanHand.cpp"
+						Description="MOC include\humanHand.h"
+						Outputs="debug\moc_humanHand.cpp"
+						Path="c:\Qt\4.5.2\bin"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.5.2\bin\moc.exe;include\humanHand.h"
+						CommandLine="C:\Qt\4.5.2\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DMKL -DCOIN_DLL -DSOQT_DLL -DWIN32 -D_CRT_SECURE_NO_DEPRECATE -DGRASPIT_COLLISION -DQT_DLL -DQT_NO_DEBUG -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I&quot;c:\Qt\4.5.2\include\QtCore&quot; -I&quot;c:\Qt\4.5.2\include\QtNetwork&quot; -I&quot;c:\Qt\4.5.2\include\QtGui&quot; -I&quot;c:\Qt\4.5.2\include\Qt3Support&quot; -I&quot;c:\Qt\4.5.2\include&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistantClient&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistant&quot; -I&quot;$(MKLDIR)\include&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;$(COINDIR)\include&quot; -I&quot;qhull&quot; -I&quot;src&quot; -I&quot;src\Collision&quot; -I&quot;include&quot; -I&quot;include\math&quot; -I&quot;include\Planner&quot; -I&quot;include\EGPlanner&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;src\Collision\Graspit&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;tinyxml&quot; -I&quot;c:\Qt\4.5.2\include\ActiveQt&quot; -I&quot;release&quot; -I&quot;ui&quot; -Ic:\Qt\4.5.2\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 include\humanHand.h -o release\moc_humanHand.cpp"
+						Description="MOC include\humanHand.h"
+						Outputs="release\moc_humanHand.cpp"
+						Path="c:\Qt\4.5.2\bin"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="include\ivmgr.h">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.5.2\bin\moc.exe;include\ivmgr.h"
+						CommandLine="C:\Qt\4.5.2\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DMKL -DCOIN_DLL -DSOQT_DLL -DWIN32 -D_CRT_SECURE_NO_DEPRECATE -DGRASPIT_COLLISION -DQT_DLL -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I&quot;c:\Qt\4.5.2\include\QtCore&quot; -I&quot;c:\Qt\4.5.2\include\QtNetwork&quot; -I&quot;c:\Qt\4.5.2\include\QtGui&quot; -I&quot;c:\Qt\4.5.2\include\Qt3Support&quot; -I&quot;c:\Qt\4.5.2\include&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistantClient&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistant&quot; -I&quot;$(MKLDIR)\include&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;$(COINDIR)\include&quot; -I&quot;qhull&quot; -I&quot;src&quot; -I&quot;src\Collision&quot; -I&quot;include&quot; -I&quot;include\math&quot; -I&quot;include\Planner&quot; -I&quot;include\EGPlanner&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;src\Collision\Graspit&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;tinyxml&quot; -I&quot;c:\Qt\4.5.2\include\ActiveQt&quot; -I&quot;debug&quot; -I&quot;ui&quot; -Ic:\Qt\4.5.2\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 include\ivmgr.h -o debug\moc_ivmgr.cpp"
+						Description="MOC include\ivmgr.h"
+						Outputs="debug\moc_ivmgr.cpp"
+						Path="c:\Qt\4.5.2\bin"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.5.2\bin\moc.exe;include\ivmgr.h"
+						CommandLine="C:\Qt\4.5.2\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DMKL -DCOIN_DLL -DSOQT_DLL -DWIN32 -D_CRT_SECURE_NO_DEPRECATE -DGRASPIT_COLLISION -DQT_DLL -DQT_NO_DEBUG -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I&quot;c:\Qt\4.5.2\include\QtCore&quot; -I&quot;c:\Qt\4.5.2\include\QtNetwork&quot; -I&quot;c:\Qt\4.5.2\include\QtGui&quot; -I&quot;c:\Qt\4.5.2\include\Qt3Support&quot; -I&quot;c:\Qt\4.5.2\include&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistantClient&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistant&quot; -I&quot;$(MKLDIR)\include&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;$(COINDIR)\include&quot; -I&quot;qhull&quot; -I&quot;src&quot; -I&quot;src\Collision&quot; -I&quot;include&quot; -I&quot;include\math&quot; -I&quot;include\Planner&quot; -I&quot;include\EGPlanner&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;src\Collision\Graspit&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;tinyxml&quot; -I&quot;c:\Qt\4.5.2\include\ActiveQt&quot; -I&quot;release&quot; -I&quot;ui&quot; -Ic:\Qt\4.5.2\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 include\ivmgr.h -o release\moc_ivmgr.cpp"
+						Description="MOC include\ivmgr.h"
+						Outputs="release\moc_ivmgr.cpp"
+						Path="c:\Qt\4.5.2\bin"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="include\jacobian.h"/>
+			<File
+				RelativePath="include\joint.h"/>
+			<File
+				RelativePath="include\kinematicChain.h"/>
+			<File
+				RelativePath="include\EGPlanner\listPlanner.h"/>
+			<File
+				RelativePath="include\lmiOptimizer.h"/>
+			<File
+				RelativePath="include\EGPlanner\loopPlanner.h">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.5.2\bin\moc.exe;include\EGPlanner\loopPlanner.h"
+						CommandLine="C:\Qt\4.5.2\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DMKL -DCOIN_DLL -DSOQT_DLL -DWIN32 -D_CRT_SECURE_NO_DEPRECATE -DGRASPIT_COLLISION -DQT_DLL -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I&quot;c:\Qt\4.5.2\include\QtCore&quot; -I&quot;c:\Qt\4.5.2\include\QtNetwork&quot; -I&quot;c:\Qt\4.5.2\include\QtGui&quot; -I&quot;c:\Qt\4.5.2\include\Qt3Support&quot; -I&quot;c:\Qt\4.5.2\include&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistantClient&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistant&quot; -I&quot;$(MKLDIR)\include&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;$(COINDIR)\include&quot; -I&quot;qhull&quot; -I&quot;src&quot; -I&quot;src\Collision&quot; -I&quot;include&quot; -I&quot;include\math&quot; -I&quot;include\Planner&quot; -I&quot;include\EGPlanner&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;src\Collision\Graspit&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;tinyxml&quot; -I&quot;c:\Qt\4.5.2\include\ActiveQt&quot; -I&quot;debug&quot; -I&quot;ui&quot; -Ic:\Qt\4.5.2\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 include\EGPlanner\loopPlanner.h -o debug\moc_loopPlanner.cpp"
+						Description="MOC include\EGPlanner\loopPlanner.h"
+						Outputs="debug\moc_loopPlanner.cpp"
+						Path="c:\Qt\4.5.2\bin"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.5.2\bin\moc.exe;include\EGPlanner\loopPlanner.h"
+						CommandLine="C:\Qt\4.5.2\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DMKL -DCOIN_DLL -DSOQT_DLL -DWIN32 -D_CRT_SECURE_NO_DEPRECATE -DGRASPIT_COLLISION -DQT_DLL -DQT_NO_DEBUG -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I&quot;c:\Qt\4.5.2\include\QtCore&quot; -I&quot;c:\Qt\4.5.2\include\QtNetwork&quot; -I&quot;c:\Qt\4.5.2\include\QtGui&quot; -I&quot;c:\Qt\4.5.2\include\Qt3Support&quot; -I&quot;c:\Qt\4.5.2\include&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistantClient&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistant&quot; -I&quot;$(MKLDIR)\include&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;$(COINDIR)\include&quot; -I&quot;qhull&quot; -I&quot;src&quot; -I&quot;src\Collision&quot; -I&quot;include&quot; -I&quot;include\math&quot; -I&quot;include\Planner&quot; -I&quot;include\EGPlanner&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;src\Collision\Graspit&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;tinyxml&quot; -I&quot;c:\Qt\4.5.2\include\ActiveQt&quot; -I&quot;release&quot; -I&quot;ui&quot; -Ic:\Qt\4.5.2\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 include\EGPlanner\loopPlanner.h -o release\moc_loopPlanner.cpp"
+						Description="MOC include\EGPlanner\loopPlanner.h"
+						Outputs="release\moc_loopPlanner.cpp"
+						Path="c:\Qt\4.5.2\bin"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="include\m7.h">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.5.2\bin\moc.exe;include\m7.h"
+						CommandLine="C:\Qt\4.5.2\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DMKL -DCOIN_DLL -DSOQT_DLL -DWIN32 -D_CRT_SECURE_NO_DEPRECATE -DGRASPIT_COLLISION -DQT_DLL -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I&quot;c:\Qt\4.5.2\include\QtCore&quot; -I&quot;c:\Qt\4.5.2\include\QtNetwork&quot; -I&quot;c:\Qt\4.5.2\include\QtGui&quot; -I&quot;c:\Qt\4.5.2\include\Qt3Support&quot; -I&quot;c:\Qt\4.5.2\include&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistantClient&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistant&quot; -I&quot;$(MKLDIR)\include&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;$(COINDIR)\include&quot; -I&quot;qhull&quot; -I&quot;src&quot; -I&quot;src\Collision&quot; -I&quot;include&quot; -I&quot;include\math&quot; -I&quot;include\Planner&quot; -I&quot;include\EGPlanner&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;src\Collision\Graspit&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;tinyxml&quot; -I&quot;c:\Qt\4.5.2\include\ActiveQt&quot; -I&quot;debug&quot; -I&quot;ui&quot; -Ic:\Qt\4.5.2\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 include\m7.h -o debug\moc_m7.cpp"
+						Description="MOC include\m7.h"
+						Outputs="debug\moc_m7.cpp"
+						Path="c:\Qt\4.5.2\bin"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.5.2\bin\moc.exe;include\m7.h"
+						CommandLine="C:\Qt\4.5.2\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DMKL -DCOIN_DLL -DSOQT_DLL -DWIN32 -D_CRT_SECURE_NO_DEPRECATE -DGRASPIT_COLLISION -DQT_DLL -DQT_NO_DEBUG -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I&quot;c:\Qt\4.5.2\include\QtCore&quot; -I&quot;c:\Qt\4.5.2\include\QtNetwork&quot; -I&quot;c:\Qt\4.5.2\include\QtGui&quot; -I&quot;c:\Qt\4.5.2\include\Qt3Support&quot; -I&quot;c:\Qt\4.5.2\include&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistantClient&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistant&quot; -I&quot;$(MKLDIR)\include&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;$(COINDIR)\include&quot; -I&quot;qhull&quot; -I&quot;src&quot; -I&quot;src\Collision&quot; -I&quot;include&quot; -I&quot;include\math&quot; -I&quot;include\Planner&quot; -I&quot;include\EGPlanner&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;src\Collision\Graspit&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;tinyxml&quot; -I&quot;c:\Qt\4.5.2\include\ActiveQt&quot; -I&quot;release&quot; -I&quot;ui&quot; -Ic:\Qt\4.5.2\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 include\m7.h -o release\moc_m7.cpp"
+						Description="MOC include\m7.h"
+						Outputs="release\moc_m7.cpp"
+						Path="c:\Qt\4.5.2\bin"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="include\m7tool.h">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.5.2\bin\moc.exe;include\m7tool.h"
+						CommandLine="C:\Qt\4.5.2\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DMKL -DCOIN_DLL -DSOQT_DLL -DWIN32 -D_CRT_SECURE_NO_DEPRECATE -DGRASPIT_COLLISION -DQT_DLL -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I&quot;c:\Qt\4.5.2\include\QtCore&quot; -I&quot;c:\Qt\4.5.2\include\QtNetwork&quot; -I&quot;c:\Qt\4.5.2\include\QtGui&quot; -I&quot;c:\Qt\4.5.2\include\Qt3Support&quot; -I&quot;c:\Qt\4.5.2\include&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistantClient&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistant&quot; -I&quot;$(MKLDIR)\include&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;$(COINDIR)\include&quot; -I&quot;qhull&quot; -I&quot;src&quot; -I&quot;src\Collision&quot; -I&quot;include&quot; -I&quot;include\math&quot; -I&quot;include\Planner&quot; -I&quot;include\EGPlanner&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;src\Collision\Graspit&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;tinyxml&quot; -I&quot;c:\Qt\4.5.2\include\ActiveQt&quot; -I&quot;debug&quot; -I&quot;ui&quot; -Ic:\Qt\4.5.2\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 include\m7tool.h -o debug\moc_m7tool.cpp"
+						Description="MOC include\m7tool.h"
+						Outputs="debug\moc_m7tool.cpp"
+						Path="c:\Qt\4.5.2\bin"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.5.2\bin\moc.exe;include\m7tool.h"
+						CommandLine="C:\Qt\4.5.2\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DMKL -DCOIN_DLL -DSOQT_DLL -DWIN32 -D_CRT_SECURE_NO_DEPRECATE -DGRASPIT_COLLISION -DQT_DLL -DQT_NO_DEBUG -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I&quot;c:\Qt\4.5.2\include\QtCore&quot; -I&quot;c:\Qt\4.5.2\include\QtNetwork&quot; -I&quot;c:\Qt\4.5.2\include\QtGui&quot; -I&quot;c:\Qt\4.5.2\include\Qt3Support&quot; -I&quot;c:\Qt\4.5.2\include&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistantClient&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistant&quot; -I&quot;$(MKLDIR)\include&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;$(COINDIR)\include&quot; -I&quot;qhull&quot; -I&quot;src&quot; -I&quot;src\Collision&quot; -I&quot;include&quot; -I&quot;include\math&quot; -I&quot;include\Planner&quot; -I&quot;include\EGPlanner&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;src\Collision\Graspit&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;tinyxml&quot; -I&quot;c:\Qt\4.5.2\include\ActiveQt&quot; -I&quot;release&quot; -I&quot;ui&quot; -Ic:\Qt\4.5.2\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 include\m7tool.h -o release\moc_m7tool.cpp"
+						Description="MOC include\m7tool.h"
+						Outputs="release\moc_m7tool.cpp"
+						Path="c:\Qt\4.5.2\bin"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="ui\mainWindow.h">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.5.2\bin\moc.exe;ui\mainWindow.h"
+						CommandLine="C:\Qt\4.5.2\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DMKL -DCOIN_DLL -DSOQT_DLL -DWIN32 -D_CRT_SECURE_NO_DEPRECATE -DGRASPIT_COLLISION -DQT_DLL -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I&quot;c:\Qt\4.5.2\include\QtCore&quot; -I&quot;c:\Qt\4.5.2\include\QtNetwork&quot; -I&quot;c:\Qt\4.5.2\include\QtGui&quot; -I&quot;c:\Qt\4.5.2\include\Qt3Support&quot; -I&quot;c:\Qt\4.5.2\include&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistantClient&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistant&quot; -I&quot;$(MKLDIR)\include&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;$(COINDIR)\include&quot; -I&quot;qhull&quot; -I&quot;src&quot; -I&quot;src\Collision&quot; -I&quot;include&quot; -I&quot;include\math&quot; -I&quot;include\Planner&quot; -I&quot;include\EGPlanner&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;src\Collision\Graspit&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;tinyxml&quot; -I&quot;c:\Qt\4.5.2\include\ActiveQt&quot; -I&quot;debug&quot; -I&quot;ui&quot; -Ic:\Qt\4.5.2\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 ui\mainWindow.h -o debug\moc_mainWindow.cpp"
+						Description="MOC ui\mainWindow.h"
+						Outputs="debug\moc_mainWindow.cpp"
+						Path="c:\Qt\4.5.2\bin"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.5.2\bin\moc.exe;ui\mainWindow.h"
+						CommandLine="C:\Qt\4.5.2\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DMKL -DCOIN_DLL -DSOQT_DLL -DWIN32 -D_CRT_SECURE_NO_DEPRECATE -DGRASPIT_COLLISION -DQT_DLL -DQT_NO_DEBUG -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I&quot;c:\Qt\4.5.2\include\QtCore&quot; -I&quot;c:\Qt\4.5.2\include\QtNetwork&quot; -I&quot;c:\Qt\4.5.2\include\QtGui&quot; -I&quot;c:\Qt\4.5.2\include\Qt3Support&quot; -I&quot;c:\Qt\4.5.2\include&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistantClient&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistant&quot; -I&quot;$(MKLDIR)\include&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;$(COINDIR)\include&quot; -I&quot;qhull&quot; -I&quot;src&quot; -I&quot;src\Collision&quot; -I&quot;include&quot; -I&quot;include\math&quot; -I&quot;include\Planner&quot; -I&quot;include\EGPlanner&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;src\Collision\Graspit&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;tinyxml&quot; -I&quot;c:\Qt\4.5.2\include\ActiveQt&quot; -I&quot;release&quot; -I&quot;ui&quot; -Ic:\Qt\4.5.2\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 ui\mainWindow.h -o release\moc_mainWindow.cpp"
+						Description="MOC ui\mainWindow.h"
+						Outputs="release\moc_mainWindow.cpp"
+						Path="c:\Qt\4.5.2\bin"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="include\material.h"/>
+			<File
+				RelativePath="include\math\matrix.h"/>
+			<File
+				RelativePath="include\matvec3D.h"/>
+			<File
+				RelativePath="include\matvecIO.h"/>
+			<File
+				RelativePath="include\maxdet.h"/>
+			<File
+				RelativePath="include\mcGrip.h">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.5.2\bin\moc.exe;include\mcGrip.h"
+						CommandLine="C:\Qt\4.5.2\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DMKL -DCOIN_DLL -DSOQT_DLL -DWIN32 -D_CRT_SECURE_NO_DEPRECATE -DGRASPIT_COLLISION -DQT_DLL -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I&quot;c:\Qt\4.5.2\include\QtCore&quot; -I&quot;c:\Qt\4.5.2\include\QtNetwork&quot; -I&quot;c:\Qt\4.5.2\include\QtGui&quot; -I&quot;c:\Qt\4.5.2\include\Qt3Support&quot; -I&quot;c:\Qt\4.5.2\include&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistantClient&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistant&quot; -I&quot;$(MKLDIR)\include&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;$(COINDIR)\include&quot; -I&quot;qhull&quot; -I&quot;src&quot; -I&quot;src\Collision&quot; -I&quot;include&quot; -I&quot;include\math&quot; -I&quot;include\Planner&quot; -I&quot;include\EGPlanner&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;src\Collision\Graspit&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;tinyxml&quot; -I&quot;c:\Qt\4.5.2\include\ActiveQt&quot; -I&quot;debug&quot; -I&quot;ui&quot; -Ic:\Qt\4.5.2\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 include\mcGrip.h -o debug\moc_mcGrip.cpp"
+						Description="MOC include\mcGrip.h"
+						Outputs="debug\moc_mcGrip.cpp"
+						Path="c:\Qt\4.5.2\bin"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.5.2\bin\moc.exe;include\mcGrip.h"
+						CommandLine="C:\Qt\4.5.2\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DMKL -DCOIN_DLL -DSOQT_DLL -DWIN32 -D_CRT_SECURE_NO_DEPRECATE -DGRASPIT_COLLISION -DQT_DLL -DQT_NO_DEBUG -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I&quot;c:\Qt\4.5.2\include\QtCore&quot; -I&quot;c:\Qt\4.5.2\include\QtNetwork&quot; -I&quot;c:\Qt\4.5.2\include\QtGui&quot; -I&quot;c:\Qt\4.5.2\include\Qt3Support&quot; -I&quot;c:\Qt\4.5.2\include&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistantClient&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistant&quot; -I&quot;$(MKLDIR)\include&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;$(COINDIR)\include&quot; -I&quot;qhull&quot; -I&quot;src&quot; -I&quot;src\Collision&quot; -I&quot;include&quot; -I&quot;include\math&quot; -I&quot;include\Planner&quot; -I&quot;include\EGPlanner&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;src\Collision\Graspit&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;tinyxml&quot; -I&quot;c:\Qt\4.5.2\include\ActiveQt&quot; -I&quot;release&quot; -I&quot;ui&quot; -Ic:\Qt\4.5.2\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 include\mcGrip.h -o release\moc_mcGrip.cpp"
+						Description="MOC include\mcGrip.h"
+						Outputs="release\moc_mcGrip.cpp"
+						Path="c:\Qt\4.5.2\bin"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="include\mkl_wrappers.h"/>
+			<File
+				RelativePath="include\mytools.h"/>
+			<File
+				RelativePath="include\EGPlanner\onLineGraspInterface.h"/>
+			<File
+				RelativePath="include\EGPlanner\onLinePlanner.h"/>
+			<File
+				RelativePath="ui\Planner\plannerdlg.h">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.5.2\bin\moc.exe;ui\Planner\plannerdlg.h"
+						CommandLine="C:\Qt\4.5.2\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DMKL -DCOIN_DLL -DSOQT_DLL -DWIN32 -D_CRT_SECURE_NO_DEPRECATE -DGRASPIT_COLLISION -DQT_DLL -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I&quot;c:\Qt\4.5.2\include\QtCore&quot; -I&quot;c:\Qt\4.5.2\include\QtNetwork&quot; -I&quot;c:\Qt\4.5.2\include\QtGui&quot; -I&quot;c:\Qt\4.5.2\include\Qt3Support&quot; -I&quot;c:\Qt\4.5.2\include&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistantClient&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistant&quot; -I&quot;$(MKLDIR)\include&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;$(COINDIR)\include&quot; -I&quot;qhull&quot; -I&quot;src&quot; -I&quot;src\Collision&quot; -I&quot;include&quot; -I&quot;include\math&quot; -I&quot;include\Planner&quot; -I&quot;include\EGPlanner&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;src\Collision\Graspit&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;tinyxml&quot; -I&quot;c:\Qt\4.5.2\include\ActiveQt&quot; -I&quot;debug&quot; -I&quot;ui&quot; -Ic:\Qt\4.5.2\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 ui\Planner\plannerdlg.h -o debug\moc_plannerdlg.cpp"
+						Description="MOC ui\Planner\plannerdlg.h"
+						Outputs="debug\moc_plannerdlg.cpp"
+						Path="c:\Qt\4.5.2\bin"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.5.2\bin\moc.exe;ui\Planner\plannerdlg.h"
+						CommandLine="C:\Qt\4.5.2\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DMKL -DCOIN_DLL -DSOQT_DLL -DWIN32 -D_CRT_SECURE_NO_DEPRECATE -DGRASPIT_COLLISION -DQT_DLL -DQT_NO_DEBUG -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I&quot;c:\Qt\4.5.2\include\QtCore&quot; -I&quot;c:\Qt\4.5.2\include\QtNetwork&quot; -I&quot;c:\Qt\4.5.2\include\QtGui&quot; -I&quot;c:\Qt\4.5.2\include\Qt3Support&quot; -I&quot;c:\Qt\4.5.2\include&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistantClient&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistant&quot; -I&quot;$(MKLDIR)\include&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;$(COINDIR)\include&quot; -I&quot;qhull&quot; -I&quot;src&quot; -I&quot;src\Collision&quot; -I&quot;include&quot; -I&quot;include\math&quot; -I&quot;include\Planner&quot; -I&quot;include\EGPlanner&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;src\Collision\Graspit&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;tinyxml&quot; -I&quot;c:\Qt\4.5.2\include\ActiveQt&quot; -I&quot;release&quot; -I&quot;ui&quot; -Ic:\Qt\4.5.2\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 ui\Planner\plannerdlg.h -o release\moc_plannerdlg.cpp"
+						Description="MOC ui\Planner\plannerdlg.h"
+						Outputs="release\moc_plannerdlg.cpp"
+						Path="c:\Qt\4.5.2\bin"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="include\pr2Gripper.h">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.5.2\bin\moc.exe;include\pr2Gripper.h"
+						CommandLine="C:\Qt\4.5.2\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DMKL -DCOIN_DLL -DSOQT_DLL -DWIN32 -D_CRT_SECURE_NO_DEPRECATE -DGRASPIT_COLLISION -DQT_DLL -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I&quot;c:\Qt\4.5.2\include\QtCore&quot; -I&quot;c:\Qt\4.5.2\include\QtNetwork&quot; -I&quot;c:\Qt\4.5.2\include\QtGui&quot; -I&quot;c:\Qt\4.5.2\include\Qt3Support&quot; -I&quot;c:\Qt\4.5.2\include&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistantClient&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistant&quot; -I&quot;$(MKLDIR)\include&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;$(COINDIR)\include&quot; -I&quot;qhull&quot; -I&quot;src&quot; -I&quot;src\Collision&quot; -I&quot;include&quot; -I&quot;include\math&quot; -I&quot;include\Planner&quot; -I&quot;include\EGPlanner&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;src\Collision\Graspit&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;tinyxml&quot; -I&quot;c:\Qt\4.5.2\include\ActiveQt&quot; -I&quot;debug&quot; -I&quot;ui&quot; -Ic:\Qt\4.5.2\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 include\pr2Gripper.h -o debug\moc_pr2Gripper.cpp"
+						Description="MOC include\pr2Gripper.h"
+						Outputs="debug\moc_pr2Gripper.cpp"
+						Path="c:\Qt\4.5.2\bin"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.5.2\bin\moc.exe;include\pr2Gripper.h"
+						CommandLine="C:\Qt\4.5.2\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DMKL -DCOIN_DLL -DSOQT_DLL -DWIN32 -D_CRT_SECURE_NO_DEPRECATE -DGRASPIT_COLLISION -DQT_DLL -DQT_NO_DEBUG -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I&quot;c:\Qt\4.5.2\include\QtCore&quot; -I&quot;c:\Qt\4.5.2\include\QtNetwork&quot; -I&quot;c:\Qt\4.5.2\include\QtGui&quot; -I&quot;c:\Qt\4.5.2\include\Qt3Support&quot; -I&quot;c:\Qt\4.5.2\include&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistantClient&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistant&quot; -I&quot;$(MKLDIR)\include&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;$(COINDIR)\include&quot; -I&quot;qhull&quot; -I&quot;src&quot; -I&quot;src\Collision&quot; -I&quot;include&quot; -I&quot;include\math&quot; -I&quot;include\Planner&quot; -I&quot;include\EGPlanner&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;src\Collision\Graspit&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;tinyxml&quot; -I&quot;c:\Qt\4.5.2\include\ActiveQt&quot; -I&quot;release&quot; -I&quot;ui&quot; -Ic:\Qt\4.5.2\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 include\pr2Gripper.h -o release\moc_pr2Gripper.cpp"
+						Description="MOC include\pr2Gripper.h"
+						Outputs="release\moc_pr2Gripper.cpp"
+						Path="c:\Qt\4.5.2\bin"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="include\profiling.h"/>
+			<File
+				RelativePath="include\puma560.h"/>
+			<File
+				RelativePath="include\qhull_mutex.h"/>
+			<File
+				RelativePath="ui\qmDlg.h">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.5.2\bin\moc.exe;ui\qmDlg.h"
+						CommandLine="C:\Qt\4.5.2\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DMKL -DCOIN_DLL -DSOQT_DLL -DWIN32 -D_CRT_SECURE_NO_DEPRECATE -DGRASPIT_COLLISION -DQT_DLL -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I&quot;c:\Qt\4.5.2\include\QtCore&quot; -I&quot;c:\Qt\4.5.2\include\QtNetwork&quot; -I&quot;c:\Qt\4.5.2\include\QtGui&quot; -I&quot;c:\Qt\4.5.2\include\Qt3Support&quot; -I&quot;c:\Qt\4.5.2\include&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistantClient&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistant&quot; -I&quot;$(MKLDIR)\include&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;$(COINDIR)\include&quot; -I&quot;qhull&quot; -I&quot;src&quot; -I&quot;src\Collision&quot; -I&quot;include&quot; -I&quot;include\math&quot; -I&quot;include\Planner&quot; -I&quot;include\EGPlanner&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;src\Collision\Graspit&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;tinyxml&quot; -I&quot;c:\Qt\4.5.2\include\ActiveQt&quot; -I&quot;debug&quot; -I&quot;ui&quot; -Ic:\Qt\4.5.2\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 ui\qmDlg.h -o debug\moc_qmDlg.cpp"
+						Description="MOC ui\qmDlg.h"
+						Outputs="debug\moc_qmDlg.cpp"
+						Path="c:\Qt\4.5.2\bin"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.5.2\bin\moc.exe;ui\qmDlg.h"
+						CommandLine="C:\Qt\4.5.2\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DMKL -DCOIN_DLL -DSOQT_DLL -DWIN32 -D_CRT_SECURE_NO_DEPRECATE -DGRASPIT_COLLISION -DQT_DLL -DQT_NO_DEBUG -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I&quot;c:\Qt\4.5.2\include\QtCore&quot; -I&quot;c:\Qt\4.5.2\include\QtNetwork&quot; -I&quot;c:\Qt\4.5.2\include\QtGui&quot; -I&quot;c:\Qt\4.5.2\include\Qt3Support&quot; -I&quot;c:\Qt\4.5.2\include&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistantClient&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistant&quot; -I&quot;$(MKLDIR)\include&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;$(COINDIR)\include&quot; -I&quot;qhull&quot; -I&quot;src&quot; -I&quot;src\Collision&quot; -I&quot;include&quot; -I&quot;include\math&quot; -I&quot;include\Planner&quot; -I&quot;include\EGPlanner&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;src\Collision\Graspit&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;tinyxml&quot; -I&quot;c:\Qt\4.5.2\include\ActiveQt&quot; -I&quot;release&quot; -I&quot;ui&quot; -Ic:\Qt\4.5.2\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 ui\qmDlg.h -o release\moc_qmDlg.cpp"
+						Description="MOC ui\qmDlg.h"
+						Outputs="release\moc_qmDlg.cpp"
+						Path="c:\Qt\4.5.2\bin"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="include\quality.h"/>
+			<File
+				RelativePath="include\robonaut.h">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.5.2\bin\moc.exe;include\robonaut.h"
+						CommandLine="C:\Qt\4.5.2\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DMKL -DCOIN_DLL -DSOQT_DLL -DWIN32 -D_CRT_SECURE_NO_DEPRECATE -DGRASPIT_COLLISION -DQT_DLL -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I&quot;c:\Qt\4.5.2\include\QtCore&quot; -I&quot;c:\Qt\4.5.2\include\QtNetwork&quot; -I&quot;c:\Qt\4.5.2\include\QtGui&quot; -I&quot;c:\Qt\4.5.2\include\Qt3Support&quot; -I&quot;c:\Qt\4.5.2\include&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistantClient&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistant&quot; -I&quot;$(MKLDIR)\include&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;$(COINDIR)\include&quot; -I&quot;qhull&quot; -I&quot;src&quot; -I&quot;src\Collision&quot; -I&quot;include&quot; -I&quot;include\math&quot; -I&quot;include\Planner&quot; -I&quot;include\EGPlanner&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;src\Collision\Graspit&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;tinyxml&quot; -I&quot;c:\Qt\4.5.2\include\ActiveQt&quot; -I&quot;debug&quot; -I&quot;ui&quot; -Ic:\Qt\4.5.2\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 include\robonaut.h -o debug\moc_robonaut.cpp"
+						Description="MOC include\robonaut.h"
+						Outputs="debug\moc_robonaut.cpp"
+						Path="c:\Qt\4.5.2\bin"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.5.2\bin\moc.exe;include\robonaut.h"
+						CommandLine="C:\Qt\4.5.2\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DMKL -DCOIN_DLL -DSOQT_DLL -DWIN32 -D_CRT_SECURE_NO_DEPRECATE -DGRASPIT_COLLISION -DQT_DLL -DQT_NO_DEBUG -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I&quot;c:\Qt\4.5.2\include\QtCore&quot; -I&quot;c:\Qt\4.5.2\include\QtNetwork&quot; -I&quot;c:\Qt\4.5.2\include\QtGui&quot; -I&quot;c:\Qt\4.5.2\include\Qt3Support&quot; -I&quot;c:\Qt\4.5.2\include&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistantClient&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistant&quot; -I&quot;$(MKLDIR)\include&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;$(COINDIR)\include&quot; -I&quot;qhull&quot; -I&quot;src&quot; -I&quot;src\Collision&quot; -I&quot;include&quot; -I&quot;include\math&quot; -I&quot;include\Planner&quot; -I&quot;include\EGPlanner&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;src\Collision\Graspit&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;tinyxml&quot; -I&quot;c:\Qt\4.5.2\include\ActiveQt&quot; -I&quot;release&quot; -I&quot;ui&quot; -Ic:\Qt\4.5.2\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 include\robonaut.h -o release\moc_robonaut.cpp"
+						Description="MOC include\robonaut.h"
+						Outputs="release\moc_robonaut.cpp"
+						Path="c:\Qt\4.5.2\bin"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="include\robot.h">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.5.2\bin\moc.exe;include\robot.h"
+						CommandLine="C:\Qt\4.5.2\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DMKL -DCOIN_DLL -DSOQT_DLL -DWIN32 -D_CRT_SECURE_NO_DEPRECATE -DGRASPIT_COLLISION -DQT_DLL -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I&quot;c:\Qt\4.5.2\include\QtCore&quot; -I&quot;c:\Qt\4.5.2\include\QtNetwork&quot; -I&quot;c:\Qt\4.5.2\include\QtGui&quot; -I&quot;c:\Qt\4.5.2\include\Qt3Support&quot; -I&quot;c:\Qt\4.5.2\include&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistantClient&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistant&quot; -I&quot;$(MKLDIR)\include&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;$(COINDIR)\include&quot; -I&quot;qhull&quot; -I&quot;src&quot; -I&quot;src\Collision&quot; -I&quot;include&quot; -I&quot;include\math&quot; -I&quot;include\Planner&quot; -I&quot;include\EGPlanner&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;src\Collision\Graspit&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;tinyxml&quot; -I&quot;c:\Qt\4.5.2\include\ActiveQt&quot; -I&quot;debug&quot; -I&quot;ui&quot; -Ic:\Qt\4.5.2\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 include\robot.h -o debug\moc_robot.cpp"
+						Description="MOC include\robot.h"
+						Outputs="debug\moc_robot.cpp"
+						Path="c:\Qt\4.5.2\bin"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.5.2\bin\moc.exe;include\robot.h"
+						CommandLine="C:\Qt\4.5.2\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DMKL -DCOIN_DLL -DSOQT_DLL -DWIN32 -D_CRT_SECURE_NO_DEPRECATE -DGRASPIT_COLLISION -DQT_DLL -DQT_NO_DEBUG -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I&quot;c:\Qt\4.5.2\include\QtCore&quot; -I&quot;c:\Qt\4.5.2\include\QtNetwork&quot; -I&quot;c:\Qt\4.5.2\include\QtGui&quot; -I&quot;c:\Qt\4.5.2\include\Qt3Support&quot; -I&quot;c:\Qt\4.5.2\include&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistantClient&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistant&quot; -I&quot;$(MKLDIR)\include&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;$(COINDIR)\include&quot; -I&quot;qhull&quot; -I&quot;src&quot; -I&quot;src\Collision&quot; -I&quot;include&quot; -I&quot;include\math&quot; -I&quot;include\Planner&quot; -I&quot;include\EGPlanner&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;src\Collision\Graspit&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;tinyxml&quot; -I&quot;c:\Qt\4.5.2\include\ActiveQt&quot; -I&quot;release&quot; -I&quot;ui&quot; -Ic:\Qt\4.5.2\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 include\robot.h -o release\moc_robot.cpp"
+						Description="MOC include\robot.h"
+						Outputs="release\moc_robot.cpp"
+						Path="c:\Qt\4.5.2\bin"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="include\scanSimulator.h"/>
+			<File
+				RelativePath="include\EGPlanner\search.h"/>
+			<File
+				RelativePath="include\EGPlanner\searchEnergy.h">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.5.2\bin\moc.exe;include\EGPlanner\searchEnergy.h"
+						CommandLine="C:\Qt\4.5.2\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DMKL -DCOIN_DLL -DSOQT_DLL -DWIN32 -D_CRT_SECURE_NO_DEPRECATE -DGRASPIT_COLLISION -DQT_DLL -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I&quot;c:\Qt\4.5.2\include\QtCore&quot; -I&quot;c:\Qt\4.5.2\include\QtNetwork&quot; -I&quot;c:\Qt\4.5.2\include\QtGui&quot; -I&quot;c:\Qt\4.5.2\include\Qt3Support&quot; -I&quot;c:\Qt\4.5.2\include&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistantClient&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistant&quot; -I&quot;$(MKLDIR)\include&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;$(COINDIR)\include&quot; -I&quot;qhull&quot; -I&quot;src&quot; -I&quot;src\Collision&quot; -I&quot;include&quot; -I&quot;include\math&quot; -I&quot;include\Planner&quot; -I&quot;include\EGPlanner&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;src\Collision\Graspit&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;tinyxml&quot; -I&quot;c:\Qt\4.5.2\include\ActiveQt&quot; -I&quot;debug&quot; -I&quot;ui&quot; -Ic:\Qt\4.5.2\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 include\EGPlanner\searchEnergy.h -o debug\moc_searchEnergy.cpp"
+						Description="MOC include\EGPlanner\searchEnergy.h"
+						Outputs="debug\moc_searchEnergy.cpp"
+						Path="c:\Qt\4.5.2\bin"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.5.2\bin\moc.exe;include\EGPlanner\searchEnergy.h"
+						CommandLine="C:\Qt\4.5.2\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DMKL -DCOIN_DLL -DSOQT_DLL -DWIN32 -D_CRT_SECURE_NO_DEPRECATE -DGRASPIT_COLLISION -DQT_DLL -DQT_NO_DEBUG -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I&quot;c:\Qt\4.5.2\include\QtCore&quot; -I&quot;c:\Qt\4.5.2\include\QtNetwork&quot; -I&quot;c:\Qt\4.5.2\include\QtGui&quot; -I&quot;c:\Qt\4.5.2\include\Qt3Support&quot; -I&quot;c:\Qt\4.5.2\include&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistantClient&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistant&quot; -I&quot;$(MKLDIR)\include&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;$(COINDIR)\include&quot; -I&quot;qhull&quot; -I&quot;src&quot; -I&quot;src\Collision&quot; -I&quot;include&quot; -I&quot;include\math&quot; -I&quot;include\Planner&quot; -I&quot;include\EGPlanner&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;src\Collision\Graspit&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;tinyxml&quot; -I&quot;c:\Qt\4.5.2\include\ActiveQt&quot; -I&quot;release&quot; -I&quot;ui&quot; -Ic:\Qt\4.5.2\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 include\EGPlanner\searchEnergy.h -o release\moc_searchEnergy.cpp"
+						Description="MOC include\EGPlanner\searchEnergy.h"
+						Outputs="release\moc_searchEnergy.cpp"
+						Path="c:\Qt\4.5.2\bin"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="include\EGPlanner\searchState.h"/>
+			<File
+				RelativePath="include\EGPlanner\searchStateImpl.h"/>
+			<File
+				RelativePath="ui\settingsDlg.h">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.5.2\bin\moc.exe;ui\settingsDlg.h"
+						CommandLine="C:\Qt\4.5.2\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DMKL -DCOIN_DLL -DSOQT_DLL -DWIN32 -D_CRT_SECURE_NO_DEPRECATE -DGRASPIT_COLLISION -DQT_DLL -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I&quot;c:\Qt\4.5.2\include\QtCore&quot; -I&quot;c:\Qt\4.5.2\include\QtNetwork&quot; -I&quot;c:\Qt\4.5.2\include\QtGui&quot; -I&quot;c:\Qt\4.5.2\include\Qt3Support&quot; -I&quot;c:\Qt\4.5.2\include&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistantClient&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistant&quot; -I&quot;$(MKLDIR)\include&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;$(COINDIR)\include&quot; -I&quot;qhull&quot; -I&quot;src&quot; -I&quot;src\Collision&quot; -I&quot;include&quot; -I&quot;include\math&quot; -I&quot;include\Planner&quot; -I&quot;include\EGPlanner&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;src\Collision\Graspit&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;tinyxml&quot; -I&quot;c:\Qt\4.5.2\include\ActiveQt&quot; -I&quot;debug&quot; -I&quot;ui&quot; -Ic:\Qt\4.5.2\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 ui\settingsDlg.h -o debug\moc_settingsDlg.cpp"
+						Description="MOC ui\settingsDlg.h"
+						Outputs="debug\moc_settingsDlg.cpp"
+						Path="c:\Qt\4.5.2\bin"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.5.2\bin\moc.exe;ui\settingsDlg.h"
+						CommandLine="C:\Qt\4.5.2\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DMKL -DCOIN_DLL -DSOQT_DLL -DWIN32 -D_CRT_SECURE_NO_DEPRECATE -DGRASPIT_COLLISION -DQT_DLL -DQT_NO_DEBUG -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I&quot;c:\Qt\4.5.2\include\QtCore&quot; -I&quot;c:\Qt\4.5.2\include\QtNetwork&quot; -I&quot;c:\Qt\4.5.2\include\QtGui&quot; -I&quot;c:\Qt\4.5.2\include\Qt3Support&quot; -I&quot;c:\Qt\4.5.2\include&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistantClient&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistant&quot; -I&quot;$(MKLDIR)\include&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;$(COINDIR)\include&quot; -I&quot;qhull&quot; -I&quot;src&quot; -I&quot;src\Collision&quot; -I&quot;include&quot; -I&quot;include\math&quot; -I&quot;include\Planner&quot; -I&quot;include\EGPlanner&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;src\Collision\Graspit&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;tinyxml&quot; -I&quot;c:\Qt\4.5.2\include\ActiveQt&quot; -I&quot;release&quot; -I&quot;ui&quot; -Ic:\Qt\4.5.2\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 ui\settingsDlg.h -o release\moc_settingsDlg.cpp"
+						Description="MOC ui\settingsDlg.h"
+						Outputs="release\moc_settingsDlg.cpp"
+						Path="c:\Qt\4.5.2\bin"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="include\shadow.h"/>
+			<File
+				RelativePath="include\EGPlanner\simAnn.h">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.5.2\bin\moc.exe;include\EGPlanner\simAnn.h"
+						CommandLine="C:\Qt\4.5.2\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DMKL -DCOIN_DLL -DSOQT_DLL -DWIN32 -D_CRT_SECURE_NO_DEPRECATE -DGRASPIT_COLLISION -DQT_DLL -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I&quot;c:\Qt\4.5.2\include\QtCore&quot; -I&quot;c:\Qt\4.5.2\include\QtNetwork&quot; -I&quot;c:\Qt\4.5.2\include\QtGui&quot; -I&quot;c:\Qt\4.5.2\include\Qt3Support&quot; -I&quot;c:\Qt\4.5.2\include&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistantClient&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistant&quot; -I&quot;$(MKLDIR)\include&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;$(COINDIR)\include&quot; -I&quot;qhull&quot; -I&quot;src&quot; -I&quot;src\Collision&quot; -I&quot;include&quot; -I&quot;include\math&quot; -I&quot;include\Planner&quot; -I&quot;include\EGPlanner&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;src\Collision\Graspit&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;tinyxml&quot; -I&quot;c:\Qt\4.5.2\include\ActiveQt&quot; -I&quot;debug&quot; -I&quot;ui&quot; -Ic:\Qt\4.5.2\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 include\EGPlanner\simAnn.h -o debug\moc_simAnn.cpp"
+						Description="MOC include\EGPlanner\simAnn.h"
+						Outputs="debug\moc_simAnn.cpp"
+						Path="c:\Qt\4.5.2\bin"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.5.2\bin\moc.exe;include\EGPlanner\simAnn.h"
+						CommandLine="C:\Qt\4.5.2\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DMKL -DCOIN_DLL -DSOQT_DLL -DWIN32 -D_CRT_SECURE_NO_DEPRECATE -DGRASPIT_COLLISION -DQT_DLL -DQT_NO_DEBUG -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I&quot;c:\Qt\4.5.2\include\QtCore&quot; -I&quot;c:\Qt\4.5.2\include\QtNetwork&quot; -I&quot;c:\Qt\4.5.2\include\QtGui&quot; -I&quot;c:\Qt\4.5.2\include\Qt3Support&quot; -I&quot;c:\Qt\4.5.2\include&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistantClient&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistant&quot; -I&quot;$(MKLDIR)\include&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;$(COINDIR)\include&quot; -I&quot;qhull&quot; -I&quot;src&quot; -I&quot;src\Collision&quot; -I&quot;include&quot; -I&quot;include\math&quot; -I&quot;include\Planner&quot; -I&quot;include\EGPlanner&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;src\Collision\Graspit&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;tinyxml&quot; -I&quot;c:\Qt\4.5.2\include\ActiveQt&quot; -I&quot;release&quot; -I&quot;ui&quot; -Ic:\Qt\4.5.2\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 include\EGPlanner\simAnn.h -o release\moc_simAnn.cpp"
+						Description="MOC include\EGPlanner\simAnn.h"
+						Outputs="release\moc_simAnn.cpp"
+						Path="c:\Qt\4.5.2\bin"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="include\EGPlanner\simAnnPlanner.h"/>
+			<File
+				RelativePath="include\EGPlanner\timeTest.h"/>
+			<File
+				RelativePath="tinyxml\tinystr.h"/>
+			<File
+				RelativePath="tinyxml\tinyxml.h"/>
+			<File
+				RelativePath="include\triangle.h"/>
+			<File
+				RelativePath="include\triangle_inl.h"/>
+			<File
+				RelativePath="include\world.h">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.5.2\bin\moc.exe;include\world.h"
+						CommandLine="C:\Qt\4.5.2\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DMKL -DCOIN_DLL -DSOQT_DLL -DWIN32 -D_CRT_SECURE_NO_DEPRECATE -DGRASPIT_COLLISION -DQT_DLL -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I&quot;c:\Qt\4.5.2\include\QtCore&quot; -I&quot;c:\Qt\4.5.2\include\QtNetwork&quot; -I&quot;c:\Qt\4.5.2\include\QtGui&quot; -I&quot;c:\Qt\4.5.2\include\Qt3Support&quot; -I&quot;c:\Qt\4.5.2\include&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistantClient&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistant&quot; -I&quot;$(MKLDIR)\include&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;$(COINDIR)\include&quot; -I&quot;qhull&quot; -I&quot;src&quot; -I&quot;src\Collision&quot; -I&quot;include&quot; -I&quot;include\math&quot; -I&quot;include\Planner&quot; -I&quot;include\EGPlanner&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;src\Collision\Graspit&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;tinyxml&quot; -I&quot;c:\Qt\4.5.2\include\ActiveQt&quot; -I&quot;debug&quot; -I&quot;ui&quot; -Ic:\Qt\4.5.2\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 include\world.h -o debug\moc_world.cpp"
+						Description="MOC include\world.h"
+						Outputs="debug\moc_world.cpp"
+						Path="c:\Qt\4.5.2\bin"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.5.2\bin\moc.exe;include\world.h"
+						CommandLine="C:\Qt\4.5.2\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DMKL -DCOIN_DLL -DSOQT_DLL -DWIN32 -D_CRT_SECURE_NO_DEPRECATE -DGRASPIT_COLLISION -DQT_DLL -DQT_NO_DEBUG -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I&quot;c:\Qt\4.5.2\include\QtCore&quot; -I&quot;c:\Qt\4.5.2\include\QtNetwork&quot; -I&quot;c:\Qt\4.5.2\include\QtGui&quot; -I&quot;c:\Qt\4.5.2\include\Qt3Support&quot; -I&quot;c:\Qt\4.5.2\include&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistantClient&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistant&quot; -I&quot;$(MKLDIR)\include&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;$(COINDIR)\include&quot; -I&quot;qhull&quot; -I&quot;src&quot; -I&quot;src\Collision&quot; -I&quot;include&quot; -I&quot;include\math&quot; -I&quot;include\Planner&quot; -I&quot;include\EGPlanner&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;src\Collision\Graspit&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;tinyxml&quot; -I&quot;c:\Qt\4.5.2\include\ActiveQt&quot; -I&quot;release&quot; -I&quot;ui&quot; -Ic:\Qt\4.5.2\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 include\world.h -o release\moc_world.cpp"
+						Description="MOC include\world.h"
+						Outputs="release\moc_world.cpp"
+						Path="c:\Qt\4.5.2\bin"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="include\worldElement.h">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.5.2\bin\moc.exe;include\worldElement.h"
+						CommandLine="C:\Qt\4.5.2\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DMKL -DCOIN_DLL -DSOQT_DLL -DWIN32 -D_CRT_SECURE_NO_DEPRECATE -DGRASPIT_COLLISION -DQT_DLL -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I&quot;c:\Qt\4.5.2\include\QtCore&quot; -I&quot;c:\Qt\4.5.2\include\QtNetwork&quot; -I&quot;c:\Qt\4.5.2\include\QtGui&quot; -I&quot;c:\Qt\4.5.2\include\Qt3Support&quot; -I&quot;c:\Qt\4.5.2\include&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistantClient&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistant&quot; -I&quot;$(MKLDIR)\include&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;$(COINDIR)\include&quot; -I&quot;qhull&quot; -I&quot;src&quot; -I&quot;src\Collision&quot; -I&quot;include&quot; -I&quot;include\math&quot; -I&quot;include\Planner&quot; -I&quot;include\EGPlanner&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;src\Collision\Graspit&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;tinyxml&quot; -I&quot;c:\Qt\4.5.2\include\ActiveQt&quot; -I&quot;debug&quot; -I&quot;ui&quot; -Ic:\Qt\4.5.2\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 include\worldElement.h -o debug\moc_worldElement.cpp"
+						Description="MOC include\worldElement.h"
+						Outputs="debug\moc_worldElement.cpp"
+						Path="c:\Qt\4.5.2\bin"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.5.2\bin\moc.exe;include\worldElement.h"
+						CommandLine="C:\Qt\4.5.2\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DMKL -DCOIN_DLL -DSOQT_DLL -DWIN32 -D_CRT_SECURE_NO_DEPRECATE -DGRASPIT_COLLISION -DQT_DLL -DQT_NO_DEBUG -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I&quot;c:\Qt\4.5.2\include\QtCore&quot; -I&quot;c:\Qt\4.5.2\include\QtNetwork&quot; -I&quot;c:\Qt\4.5.2\include\QtGui&quot; -I&quot;c:\Qt\4.5.2\include\Qt3Support&quot; -I&quot;c:\Qt\4.5.2\include&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistantClient&quot; -I&quot;c:\Qt\4.5.2\include\QtAssistant&quot; -I&quot;$(MKLDIR)\include&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;$(COINDIR)\include&quot; -I&quot;qhull&quot; -I&quot;src&quot; -I&quot;src\Collision&quot; -I&quot;include&quot; -I&quot;include\math&quot; -I&quot;include\Planner&quot; -I&quot;include\EGPlanner&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;src\Collision\Graspit&quot; -I&quot;ui&quot; -I&quot;ui\Planner&quot; -I&quot;ui\EGPlanner&quot; -I&quot;tinyxml&quot; -I&quot;c:\Qt\4.5.2\include\ActiveQt&quot; -I&quot;release&quot; -I&quot;ui&quot; -Ic:\Qt\4.5.2\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 include\worldElement.h -o release\moc_worldElement.cpp"
+						Description="MOC include\worldElement.h"
+						Outputs="release\moc_worldElement.cpp"
+						Path="c:\Qt\4.5.2\bin"/>
+				</FileConfiguration>
+			</File>
+		</Filter>
+		<Filter
+			Name="Generated Files"
+			Filter="cpp;c;cxx;moc;h;def;odl;idl;res;"
+			UniqueIdentifier="{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}">
+			<File
+				RelativePath="debug\moc_PolycrankPanelDlg.cpp">
+				<FileConfiguration
+					Name="Release|Win32"
+					ExcludedFromBuild="true"/>
+			</File>
+			<File
+				RelativePath="release\moc_PolycrankPanelDlg.cpp">
+				<FileConfiguration
+					Name="Debug|Win32"
+					ExcludedFromBuild="true"/>
+			</File>
+			<File
+				RelativePath="debug\moc_PolycrankPlayerDlg.cpp">
+				<FileConfiguration
+					Name="Release|Win32"
+					ExcludedFromBuild="true"/>
+			</File>
+			<File
+				RelativePath="release\moc_PolycrankPlayerDlg.cpp">
+				<FileConfiguration
+					Name="Debug|Win32"
+					ExcludedFromBuild="true"/>
+			</File>
+			<File
+				RelativePath="debug\moc_PolycrankSaverDlg.cpp">
+				<FileConfiguration
+					Name="Release|Win32"
+					ExcludedFromBuild="true"/>
+			</File>
+			<File
+				RelativePath="release\moc_PolycrankSaverDlg.cpp">
+				<FileConfiguration
+					Name="Debug|Win32"
+					ExcludedFromBuild="true"/>
+			</File>
+			<File
+				RelativePath="debug\moc_barrett.cpp">
+				<FileConfiguration
+					Name="Release|Win32"
+					ExcludedFromBuild="true"/>
+			</File>
+			<File
+				RelativePath="release\moc_barrett.cpp">
+				<FileConfiguration
+					Name="Debug|Win32"
+					ExcludedFromBuild="true"/>
+			</File>
+			<File
+				RelativePath="debug\moc_barrettHandDlg.cpp">
+				<FileConfiguration
+					Name="Release|Win32"
+					ExcludedFromBuild="true"/>
+			</File>
+			<File
+				RelativePath="release\moc_barrettHandDlg.cpp">
+				<FileConfiguration
+					Name="Debug|Win32"
+					ExcludedFromBuild="true"/>
+			</File>
+			<File
+				RelativePath="debug\moc_body.cpp">
+				<FileConfiguration
+					Name="Release|Win32"
+					ExcludedFromBuild="true"/>
+			</File>
+			<File
+				RelativePath="release\moc_body.cpp">
+				<FileConfiguration
+					Name="Debug|Win32"
+					ExcludedFromBuild="true"/>
+			</File>
+			<File
+				RelativePath="debug\moc_bodyPropDlg.cpp">
+				<FileConfiguration
+					Name="Release|Win32"
+					ExcludedFromBuild="true"/>
+			</File>
+			<File
+				RelativePath="release\moc_bodyPropDlg.cpp">
+				<FileConfiguration
+					Name="Debug|Win32"
+					ExcludedFromBuild="true"/>
+			</File>
+			<File
+				RelativePath="debug\moc_compliantPlannerDlg.cpp">
+				<FileConfiguration
+					Name="Release|Win32"
+					ExcludedFromBuild="true"/>
+			</File>
+			<File
+				RelativePath="release\moc_compliantPlannerDlg.cpp">
+				<FileConfiguration
+					Name="Debug|Win32"
+					ExcludedFromBuild="true"/>
+			</File>
+			<File
+				RelativePath="debug\moc_contactExaminerDlg.cpp">
+				<FileConfiguration
+					Name="Release|Win32"
+					ExcludedFromBuild="true"/>
+			</File>
+			<File
+				RelativePath="release\moc_contactExaminerDlg.cpp">
+				<FileConfiguration
+					Name="Debug|Win32"
+					ExcludedFromBuild="true"/>
+			</File>
+			<File
+				RelativePath="debug\moc_egPlanner.cpp">
+				<FileConfiguration
+					Name="Release|Win32"
+					ExcludedFromBuild="true"/>
+			</File>
+			<File
+				RelativePath="release\moc_egPlanner.cpp">
+				<FileConfiguration
+					Name="Debug|Win32"
+					ExcludedFromBuild="true"/>
+			</File>
+			<File
+				RelativePath="debug\moc_egPlannerDlg.cpp">
+				<FileConfiguration
+					Name="Release|Win32"
+					ExcludedFromBuild="true"/>
+			</File>
+			<File
+				RelativePath="release\moc_egPlannerDlg.cpp">
+				<FileConfiguration
+					Name="Debug|Win32"
+					ExcludedFromBuild="true"/>
+			</File>
+			<File
+				RelativePath="debug\moc_eigenGraspDlg.cpp">
+				<FileConfiguration
+					Name="Release|Win32"
+					ExcludedFromBuild="true"/>
+			</File>
+			<File
+				RelativePath="release\moc_eigenGraspDlg.cpp">
+				<FileConfiguration
+					Name="Debug|Win32"
+					ExcludedFromBuild="true"/>
+			</File>
+			<File
+				RelativePath="debug\moc_gfoDlg.cpp">
+				<FileConfiguration
+					Name="Release|Win32"
+					ExcludedFromBuild="true"/>
+			</File>
+			<File
+				RelativePath="release\moc_gfoDlg.cpp">
+				<FileConfiguration
+					Name="Debug|Win32"
+					ExcludedFromBuild="true"/>
+			</File>
+			<File
+				RelativePath="debug\moc_gloveCalibrationDlg.cpp">
+				<FileConfiguration
+					Name="Release|Win32"
+					ExcludedFromBuild="true"/>
+			</File>
+			<File
+				RelativePath="release\moc_gloveCalibrationDlg.cpp">
+				<FileConfiguration
+					Name="Debug|Win32"
+					ExcludedFromBuild="true"/>
+			</File>
+			<File
+				RelativePath="debug\moc_grasp.cpp">
+				<FileConfiguration
+					Name="Release|Win32"
+					ExcludedFromBuild="true"/>
+			</File>
+			<File
+				RelativePath="release\moc_grasp.cpp">
+				<FileConfiguration
+					Name="Debug|Win32"
+					ExcludedFromBuild="true"/>
+			</File>
+			<File
+				RelativePath="debug\moc_graspCaptureDlg.cpp">
+				<FileConfiguration
+					Name="Release|Win32"
+					ExcludedFromBuild="true"/>
+			</File>
+			<File
+				RelativePath="release\moc_graspCaptureDlg.cpp">
+				<FileConfiguration
+					Name="Debug|Win32"
+					ExcludedFromBuild="true"/>
+			</File>
+			<File
+				RelativePath="debug\moc_grasp_tester.cpp">
+				<FileConfiguration
+					Name="Release|Win32"
+					ExcludedFromBuild="true"/>
+			</File>
+			<File
+				RelativePath="release\moc_grasp_tester.cpp">
+				<FileConfiguration
+					Name="Debug|Win32"
+					ExcludedFromBuild="true"/>
+			</File>
+			<File
+				RelativePath="debug\moc_graspitServer.cpp">
+				<FileConfiguration
+					Name="Release|Win32"
+					ExcludedFromBuild="true"/>
+			</File>
+			<File
+				RelativePath="release\moc_graspitServer.cpp">
+				<FileConfiguration
+					Name="Debug|Win32"
+					ExcludedFromBuild="true"/>
+			</File>
+			<File
+				RelativePath="debug\moc_guidedPlanner.cpp">
+				<FileConfiguration
+					Name="Release|Win32"
+					ExcludedFromBuild="true"/>
+			</File>
+			<File
+				RelativePath="release\moc_guidedPlanner.cpp">
+				<FileConfiguration
+					Name="Debug|Win32"
+					ExcludedFromBuild="true"/>
+			</File>
+			<File
+				RelativePath="debug\moc_gwsProjDlg.cpp">
+				<FileConfiguration
+					Name="Release|Win32"
+					ExcludedFromBuild="true"/>
+			</File>
+			<File
+				RelativePath="release\moc_gwsProjDlg.cpp">
+				<FileConfiguration
+					Name="Debug|Win32"
+					ExcludedFromBuild="true"/>
+			</File>
+			<File
+				RelativePath="debug\moc_humanHand.cpp">
+				<FileConfiguration
+					Name="Release|Win32"
+					ExcludedFromBuild="true"/>
+			</File>
+			<File
+				RelativePath="release\moc_humanHand.cpp">
+				<FileConfiguration
+					Name="Debug|Win32"
+					ExcludedFromBuild="true"/>
+			</File>
+			<File
+				RelativePath="debug\moc_ivmgr.cpp">
+				<FileConfiguration
+					Name="Release|Win32"
+					ExcludedFromBuild="true"/>
+			</File>
+			<File
+				RelativePath="release\moc_ivmgr.cpp">
+				<FileConfiguration
+					Name="Debug|Win32"
+					ExcludedFromBuild="true"/>
+			</File>
+			<File
+				RelativePath="debug\moc_loopPlanner.cpp">
+				<FileConfiguration
+					Name="Release|Win32"
+					ExcludedFromBuild="true"/>
+			</File>
+			<File
+				RelativePath="release\moc_loopPlanner.cpp">
+				<FileConfiguration
+					Name="Debug|Win32"
+					ExcludedFromBuild="true"/>
+			</File>
+			<File
+				RelativePath="debug\moc_m7.cpp">
+				<FileConfiguration
+					Name="Release|Win32"
+					ExcludedFromBuild="true"/>
+			</File>
+			<File
+				RelativePath="release\moc_m7.cpp">
+				<FileConfiguration
+					Name="Debug|Win32"
+					ExcludedFromBuild="true"/>
+			</File>
+			<File
+				RelativePath="debug\moc_m7tool.cpp">
+				<FileConfiguration
+					Name="Release|Win32"
+					ExcludedFromBuild="true"/>
+			</File>
+			<File
+				RelativePath="release\moc_m7tool.cpp">
+				<FileConfiguration
+					Name="Debug|Win32"
+					ExcludedFromBuild="true"/>
+			</File>
+			<File
+				RelativePath="debug\moc_mainWindow.cpp">
+				<FileConfiguration
+					Name="Release|Win32"
+					ExcludedFromBuild="true"/>
+			</File>
+			<File
+				RelativePath="release\moc_mainWindow.cpp">
+				<FileConfiguration
+					Name="Debug|Win32"
+					ExcludedFromBuild="true"/>
+			</File>
+			<File
+				RelativePath="debug\moc_mcGrip.cpp">
+				<FileConfiguration
+					Name="Release|Win32"
+					ExcludedFromBuild="true"/>
+			</File>
+			<File
+				RelativePath="release\moc_mcGrip.cpp">
+				<FileConfiguration
+					Name="Debug|Win32"
+					ExcludedFromBuild="true"/>
+			</File>
+			<File
+				RelativePath="debug\moc_plannerdlg.cpp">
+				<FileConfiguration
+					Name="Release|Win32"
+					ExcludedFromBuild="true"/>
+			</File>
+			<File
+				RelativePath="release\moc_plannerdlg.cpp">
+				<FileConfiguration
+					Name="Debug|Win32"
+					ExcludedFromBuild="true"/>
+			</File>
+			<File
+				RelativePath="debug\moc_pr2Gripper.cpp">
+				<FileConfiguration
+					Name="Release|Win32"
+					ExcludedFromBuild="true"/>
+			</File>
+			<File
+				RelativePath="release\moc_pr2Gripper.cpp">
+				<FileConfiguration
+					Name="Debug|Win32"
+					ExcludedFromBuild="true"/>
+			</File>
+			<File
+				RelativePath="debug\moc_qmDlg.cpp">
+				<FileConfiguration
+					Name="Release|Win32"
+					ExcludedFromBuild="true"/>
+			</File>
+			<File
+				RelativePath="release\moc_qmDlg.cpp">
+				<FileConfiguration
+					Name="Debug|Win32"
+					ExcludedFromBuild="true"/>
+			</File>
+			<File
+				RelativePath="debug\moc_robonaut.cpp">
+				<FileConfiguration
+					Name="Release|Win32"
+					ExcludedFromBuild="true"/>
+			</File>
+			<File
+				RelativePath="release\moc_robonaut.cpp">
+				<FileConfiguration
+					Name="Debug|Win32"
+					ExcludedFromBuild="true"/>
+			</File>
+			<File
+				RelativePath="debug\moc_robot.cpp">
+				<FileConfiguration
+					Name="Release|Win32"
+					ExcludedFromBuild="true"/>
+			</File>
+			<File
+				RelativePath="release\moc_robot.cpp">
+				<FileConfiguration
+					Name="Debug|Win32"
+					ExcludedFromBuild="true"/>
+			</File>
+			<File
+				RelativePath="debug\moc_searchEnergy.cpp">
+				<FileConfiguration
+					Name="Release|Win32"
+					ExcludedFromBuild="true"/>
+			</File>
+			<File
+				RelativePath="release\moc_searchEnergy.cpp">
+				<FileConfiguration
+					Name="Debug|Win32"
+					ExcludedFromBuild="true"/>
+			</File>
+			<File
+				RelativePath="debug\moc_settingsDlg.cpp">
+				<FileConfiguration
+					Name="Release|Win32"
+					ExcludedFromBuild="true"/>
+			</File>
+			<File
+				RelativePath="release\moc_settingsDlg.cpp">
+				<FileConfiguration
+					Name="Debug|Win32"
+					ExcludedFromBuild="true"/>
+			</File>
+			<File
+				RelativePath="debug\moc_simAnn.cpp">
+				<FileConfiguration
+					Name="Release|Win32"
+					ExcludedFromBuild="true"/>
+			</File>
+			<File
+				RelativePath="release\moc_simAnn.cpp">
+				<FileConfiguration
+					Name="Debug|Win32"
+					ExcludedFromBuild="true"/>
+			</File>
+			<File
+				RelativePath="debug\moc_world.cpp">
+				<FileConfiguration
+					Name="Release|Win32"
+					ExcludedFromBuild="true"/>
+			</File>
+			<File
+				RelativePath="release\moc_world.cpp">
+				<FileConfiguration
+					Name="Debug|Win32"
+					ExcludedFromBuild="true"/>
+			</File>
+			<File
+				RelativePath="debug\moc_worldElement.cpp">
+				<FileConfiguration
+					Name="Release|Win32"
+					ExcludedFromBuild="true"/>
+			</File>
+			<File
+				RelativePath="release\moc_worldElement.cpp">
+				<FileConfiguration
+					Name="Debug|Win32"
+					ExcludedFromBuild="true"/>
+			</File>
+			<File
+				RelativePath="qmake_image_collection.cpp"/>
+			<File
+				RelativePath="ui\ui_about.h"/>
+			<File
+				RelativePath="ui\ui_archBuilderDlg.h"/>
+			<File
+				RelativePath="ui\ui_barrettHandDlg.h"/>
+			<File
+				RelativePath="ui\ui_bodyPropDlg.h"/>
+			<File
+				RelativePath="ui\ui_compliantPlannerDlg.h"/>
+			<File
+				RelativePath="ui\ui_contactExaminerDlg.h"/>
+			<File
+				RelativePath="ui\ui_egPlannerDlg.h"/>
+			<File
+				RelativePath="ui\ui_eigenGraspDlg.h"/>
+			<File
+				RelativePath="ui\ui_gfoDlg.h"/>
+			<File
+				RelativePath="ui\ui_gloveCalibrationDlg.h"/>
+			<File
+				RelativePath="ui\ui_graspCaptureDlg.h"/>
+			<File
+				RelativePath="ui\ui_gwsProjDlgBase.h"/>
+			<File
+				RelativePath="ui\ui_mainWindow.h"/>
+			<File
+				RelativePath="ui\ui_plannerdlg.h"/>
+			<File
+				RelativePath="ui\ui_qmDlg.h"/>
+			<File
+				RelativePath="ui\ui_qualityIndicator.h"/>
+			<File
+				RelativePath="ui\ui_settingsDlg.h"/>
+		</Filter>
+		<Filter
+			Name="Form Files"
+			Filter="ui"
+			UniqueIdentifier="{99349809-55BA-4b9d-BF79-8FDBB0286EB3}"
+			ParseFiles="false">
+			<File
+				RelativePath="ui\about.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.5.2\bin\uic.exe;ui\about.ui"
+						CommandLine="C:\Qt\4.5.2\bin\uic.exe ui\about.ui -o ui\ui_about.h"
+						Description="UIC ui\about.ui"
+						Outputs="ui\ui_about.h"
+						Path="c:\Qt\4.5.2\bin"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.5.2\bin\uic.exe;ui\about.ui"
+						CommandLine="C:\Qt\4.5.2\bin\uic.exe ui\about.ui -o ui\ui_about.h"
+						Description="UIC ui\about.ui"
+						Outputs="ui\ui_about.h"
+						Path="c:\Qt\4.5.2\bin"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="ui\archBuilderDlg.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.5.2\bin\uic.exe;ui\archBuilderDlg.ui"
+						CommandLine="C:\Qt\4.5.2\bin\uic.exe ui\archBuilderDlg.ui -o ui\ui_archBuilderDlg.h"
+						Description="UIC ui\archBuilderDlg.ui"
+						Outputs="ui\ui_archBuilderDlg.h"
+						Path="c:\Qt\4.5.2\bin"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.5.2\bin\uic.exe;ui\archBuilderDlg.ui"
+						CommandLine="C:\Qt\4.5.2\bin\uic.exe ui\archBuilderDlg.ui -o ui\ui_archBuilderDlg.h"
+						Description="UIC ui\archBuilderDlg.ui"
+						Outputs="ui\ui_archBuilderDlg.h"
+						Path="c:\Qt\4.5.2\bin"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="ui\barrettHandDlg.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.5.2\bin\uic.exe;ui\barrettHandDlg.ui"
+						CommandLine="C:\Qt\4.5.2\bin\uic.exe ui\barrettHandDlg.ui -o ui\ui_barrettHandDlg.h"
+						Description="UIC ui\barrettHandDlg.ui"
+						Outputs="ui\ui_barrettHandDlg.h"
+						Path="c:\Qt\4.5.2\bin"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.5.2\bin\uic.exe;ui\barrettHandDlg.ui"
+						CommandLine="C:\Qt\4.5.2\bin\uic.exe ui\barrettHandDlg.ui -o ui\ui_barrettHandDlg.h"
+						Description="UIC ui\barrettHandDlg.ui"
+						Outputs="ui\ui_barrettHandDlg.h"
+						Path="c:\Qt\4.5.2\bin"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="ui\bodyPropDlg.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.5.2\bin\uic.exe;ui\bodyPropDlg.ui;vector"
+						CommandLine="C:\Qt\4.5.2\bin\uic.exe ui\bodyPropDlg.ui -o ui\ui_bodyPropDlg.h"
+						Description="UIC ui\bodyPropDlg.ui"
+						Outputs="ui\ui_bodyPropDlg.h"
+						Path="c:\Qt\4.5.2\bin"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.5.2\bin\uic.exe;ui\bodyPropDlg.ui;vector"
+						CommandLine="C:\Qt\4.5.2\bin\uic.exe ui\bodyPropDlg.ui -o ui\ui_bodyPropDlg.h"
+						Description="UIC ui\bodyPropDlg.ui"
+						Outputs="ui\ui_bodyPropDlg.h"
+						Path="c:\Qt\4.5.2\bin"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="ui\EGPlanner\compliantPlannerDlg.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.5.2\bin\uic.exe;ui\EGPlanner\compliantPlannerDlg.ui"
+						CommandLine="C:\Qt\4.5.2\bin\uic.exe ui\EGPlanner\compliantPlannerDlg.ui -o ui\ui_compliantPlannerDlg.h"
+						Description="UIC ui\EGPlanner\compliantPlannerDlg.ui"
+						Outputs="ui\ui_compliantPlannerDlg.h"
+						Path="c:\Qt\4.5.2\bin"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.5.2\bin\uic.exe;ui\EGPlanner\compliantPlannerDlg.ui"
+						CommandLine="C:\Qt\4.5.2\bin\uic.exe ui\EGPlanner\compliantPlannerDlg.ui -o ui\ui_compliantPlannerDlg.h"
+						Description="UIC ui\EGPlanner\compliantPlannerDlg.ui"
+						Outputs="ui\ui_compliantPlannerDlg.h"
+						Path="c:\Qt\4.5.2\bin"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="ui\contactExaminerDlg.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.5.2\bin\uic.exe;Qt3Support\Q3GroupBox;ui\contactExaminerDlg.ui;vector"
+						CommandLine="C:\Qt\4.5.2\bin\uic.exe ui\contactExaminerDlg.ui -o ui\ui_contactExaminerDlg.h"
+						Description="UIC ui\contactExaminerDlg.ui"
+						Outputs="ui\ui_contactExaminerDlg.h"
+						Path="c:\Qt\4.5.2\bin"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.5.2\bin\uic.exe;Qt3Support\Q3GroupBox;ui\contactExaminerDlg.ui;vector"
+						CommandLine="C:\Qt\4.5.2\bin\uic.exe ui\contactExaminerDlg.ui -o ui\ui_contactExaminerDlg.h"
+						Description="UIC ui\contactExaminerDlg.ui"
+						Outputs="ui\ui_contactExaminerDlg.h"
+						Path="c:\Qt\4.5.2\bin"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="ui\EGPlanner\egPlannerDlg.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.5.2\bin\uic.exe;Qt3Support\Q3GroupBox;ui\EGPlanner\egPlannerDlg.ui;vector"
+						CommandLine="C:\Qt\4.5.2\bin\uic.exe ui\EGPlanner\egPlannerDlg.ui -o ui\ui_egPlannerDlg.h"
+						Description="UIC ui\EGPlanner\egPlannerDlg.ui"
+						Outputs="ui\ui_egPlannerDlg.h"
+						Path="c:\Qt\4.5.2\bin"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.5.2\bin\uic.exe;Qt3Support\Q3GroupBox;ui\EGPlanner\egPlannerDlg.ui;vector"
+						CommandLine="C:\Qt\4.5.2\bin\uic.exe ui\EGPlanner\egPlannerDlg.ui -o ui\ui_egPlannerDlg.h"
+						Description="UIC ui\EGPlanner\egPlannerDlg.ui"
+						Outputs="ui\ui_egPlannerDlg.h"
+						Path="c:\Qt\4.5.2\bin"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="ui\eigenGraspDlg.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.5.2\bin\uic.exe;Qt3Support\Q3GroupBox;ui\eigenGraspDlg.ui;vector"
+						CommandLine="C:\Qt\4.5.2\bin\uic.exe ui\eigenGraspDlg.ui -o ui\ui_eigenGraspDlg.h"
+						Description="UIC ui\eigenGraspDlg.ui"
+						Outputs="ui\ui_eigenGraspDlg.h"
+						Path="c:\Qt\4.5.2\bin"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.5.2\bin\uic.exe;Qt3Support\Q3GroupBox;ui\eigenGraspDlg.ui;vector"
+						CommandLine="C:\Qt\4.5.2\bin\uic.exe ui\eigenGraspDlg.ui -o ui\ui_eigenGraspDlg.h"
+						Description="UIC ui\eigenGraspDlg.ui"
+						Outputs="ui\ui_eigenGraspDlg.h"
+						Path="c:\Qt\4.5.2\bin"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="ui\gfoDlg.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.5.2\bin\uic.exe;ui\gfoDlg.ui"
+						CommandLine="C:\Qt\4.5.2\bin\uic.exe ui\gfoDlg.ui -o ui\ui_gfoDlg.h"
+						Description="UIC ui\gfoDlg.ui"
+						Outputs="ui\ui_gfoDlg.h"
+						Path="c:\Qt\4.5.2\bin"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.5.2\bin\uic.exe;ui\gfoDlg.ui"
+						CommandLine="C:\Qt\4.5.2\bin\uic.exe ui\gfoDlg.ui -o ui\ui_gfoDlg.h"
+						Description="UIC ui\gfoDlg.ui"
+						Outputs="ui\ui_gfoDlg.h"
+						Path="c:\Qt\4.5.2\bin"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="ui\gloveCalibrationDlg.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.5.2\bin\uic.exe;ui\gloveCalibrationDlg.ui"
+						CommandLine="C:\Qt\4.5.2\bin\uic.exe ui\gloveCalibrationDlg.ui -o ui\ui_gloveCalibrationDlg.h"
+						Description="UIC ui\gloveCalibrationDlg.ui"
+						Outputs="ui\ui_gloveCalibrationDlg.h"
+						Path="c:\Qt\4.5.2\bin"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.5.2\bin\uic.exe;ui\gloveCalibrationDlg.ui"
+						CommandLine="C:\Qt\4.5.2\bin\uic.exe ui\gloveCalibrationDlg.ui -o ui\ui_gloveCalibrationDlg.h"
+						Description="UIC ui\gloveCalibrationDlg.ui"
+						Outputs="ui\ui_gloveCalibrationDlg.h"
+						Path="c:\Qt\4.5.2\bin"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="ui\graspCaptureDlg.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.5.2\bin\uic.exe;ui\graspCaptureDlg.ui"
+						CommandLine="C:\Qt\4.5.2\bin\uic.exe ui\graspCaptureDlg.ui -o ui\ui_graspCaptureDlg.h"
+						Description="UIC ui\graspCaptureDlg.ui"
+						Outputs="ui\ui_graspCaptureDlg.h"
+						Path="c:\Qt\4.5.2\bin"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.5.2\bin\uic.exe;ui\graspCaptureDlg.ui"
+						CommandLine="C:\Qt\4.5.2\bin\uic.exe ui\graspCaptureDlg.ui -o ui\ui_graspCaptureDlg.h"
+						Description="UIC ui\graspCaptureDlg.ui"
+						Outputs="ui\ui_graspCaptureDlg.h"
+						Path="c:\Qt\4.5.2\bin"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="ui\gwsProjDlgBase.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.5.2\bin\uic.exe;ui\gwsProjDlgBase.ui"
+						CommandLine="C:\Qt\4.5.2\bin\uic.exe ui\gwsProjDlgBase.ui -o ui\ui_gwsProjDlgBase.h"
+						Description="UIC ui\gwsProjDlgBase.ui"
+						Outputs="ui\ui_gwsProjDlgBase.h"
+						Path="c:\Qt\4.5.2\bin"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.5.2\bin\uic.exe;ui\gwsProjDlgBase.ui"
+						CommandLine="C:\Qt\4.5.2\bin\uic.exe ui\gwsProjDlgBase.ui -o ui\ui_gwsProjDlgBase.h"
+						Description="UIC ui\gwsProjDlgBase.ui"
+						Outputs="ui\ui_gwsProjDlgBase.h"
+						Path="c:\Qt\4.5.2\bin"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="ui\mainWindow.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.5.2\bin\uic.exe;ui\mainWindow.ui"
+						CommandLine="C:\Qt\4.5.2\bin\uic.exe ui\mainWindow.ui -o ui\ui_mainWindow.h"
+						Description="UIC ui\mainWindow.ui"
+						Outputs="ui\ui_mainWindow.h"
+						Path="c:\Qt\4.5.2\bin"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.5.2\bin\uic.exe;ui\mainWindow.ui"
+						CommandLine="C:\Qt\4.5.2\bin\uic.exe ui\mainWindow.ui -o ui\ui_mainWindow.h"
+						Description="UIC ui\mainWindow.ui"
+						Outputs="ui\ui_mainWindow.h"
+						Path="c:\Qt\4.5.2\bin"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="ui\Planner\plannerdlg.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.5.2\bin\uic.exe;Qt3Support\Q3GroupBox;q3textstream.h;qfile.h;ui\Planner\plannerdlg.ui"
+						CommandLine="C:\Qt\4.5.2\bin\uic.exe ui\Planner\plannerdlg.ui -o ui\ui_plannerdlg.h"
+						Description="UIC ui\Planner\plannerdlg.ui"
+						Outputs="ui\ui_plannerdlg.h"
+						Path="c:\Qt\4.5.2\bin"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.5.2\bin\uic.exe;Qt3Support\Q3GroupBox;q3textstream.h;qfile.h;ui\Planner\plannerdlg.ui"
+						CommandLine="C:\Qt\4.5.2\bin\uic.exe ui\Planner\plannerdlg.ui -o ui\ui_plannerdlg.h"
+						Description="UIC ui\Planner\plannerdlg.ui"
+						Outputs="ui\ui_plannerdlg.h"
+						Path="c:\Qt\4.5.2\bin"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="ui\qmDlg.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.5.2\bin\uic.exe;Qt3Support\Q3GroupBox;graspitGUI.h;ivmgr.h;q3listbox.h;quality.h;ui\qmDlg.ui"
+						CommandLine="C:\Qt\4.5.2\bin\uic.exe ui\qmDlg.ui -o ui\ui_qmDlg.h"
+						Description="UIC ui\qmDlg.ui"
+						Outputs="ui\ui_qmDlg.h"
+						Path="c:\Qt\4.5.2\bin"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.5.2\bin\uic.exe;Qt3Support\Q3GroupBox;graspitGUI.h;ivmgr.h;q3listbox.h;quality.h;ui\qmDlg.ui"
+						CommandLine="C:\Qt\4.5.2\bin\uic.exe ui\qmDlg.ui -o ui\ui_qmDlg.h"
+						Description="UIC ui\qmDlg.ui"
+						Outputs="ui\ui_qmDlg.h"
+						Path="c:\Qt\4.5.2\bin"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="ui\qualityIndicator.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.5.2\bin\uic.exe;ui\qualityIndicator.ui"
+						CommandLine="C:\Qt\4.5.2\bin\uic.exe ui\qualityIndicator.ui -o ui\ui_qualityIndicator.h"
+						Description="UIC ui\qualityIndicator.ui"
+						Outputs="ui\ui_qualityIndicator.h"
+						Path="c:\Qt\4.5.2\bin"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.5.2\bin\uic.exe;ui\qualityIndicator.ui"
+						CommandLine="C:\Qt\4.5.2\bin\uic.exe ui\qualityIndicator.ui -o ui\ui_qualityIndicator.h"
+						Description="UIC ui\qualityIndicator.ui"
+						Outputs="ui\ui_qualityIndicator.h"
+						Path="c:\Qt\4.5.2\bin"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="ui\settingsDlg.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.5.2\bin\uic.exe;q3table.h;ui\settingsDlg.ui"
+						CommandLine="C:\Qt\4.5.2\bin\uic.exe ui\settingsDlg.ui -o ui\ui_settingsDlg.h"
+						Description="UIC ui\settingsDlg.ui"
+						Outputs="ui\ui_settingsDlg.h"
+						Path="c:\Qt\4.5.2\bin"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.5.2\bin\uic.exe;q3table.h;ui\settingsDlg.ui"
+						CommandLine="C:\Qt\4.5.2\bin\uic.exe ui\settingsDlg.ui -o ui\ui_settingsDlg.h"
+						Description="UIC ui\settingsDlg.ui"
+						Outputs="ui\ui_settingsDlg.h"
+						Path="c:\Qt\4.5.2\bin"/>
+				</FileConfiguration>
+			</File>
+		</Filter>
+		<Filter
+			Name="Resource Files"
+			Filter="qrc;*"
+			UniqueIdentifier="{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}"
+			ParseFiles="false">
+			<File
+				RelativePath="src\images\collide.xpm"/>
+			<File
+				RelativePath="src\images\editcopy"/>
+			<File
+				RelativePath="src\images\editcut"/>
+			<File
+				RelativePath="src\images\editpaste"/>
+			<File
+				RelativePath="src\images\filenew.xpm"/>
+			<File
+				RelativePath="src\images\filenew"/>
+			<File
+				RelativePath="src\images\fileopen.xpm"/>
+			<File
+				RelativePath="src\images\fileopen"/>
+			<File
+				RelativePath="src\images\filesave.xpm"/>
+			<File
+				RelativePath="src\images\filesave"/>
+			<File
+				RelativePath="src\images\logo.png"/>
+			<File
+				RelativePath="src\images\mark.xpm"/>
+			<File
+				RelativePath="src\images\nocollide.xpm"/>
+			<File
+				RelativePath="src\images\pause.xpm"/>
+			<File
+				RelativePath="src\images\play.xpm">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="echo;src\images\collide.xpm;src\images\editcopy;src\images\editcut;src\images\editpaste;src\images\filenew;src\images\filenew.xpm;src\images\fileopen;src\images\fileopen.xpm;src\images\filesave;src\images\filesave.xpm;src\images\logo.png;src\images\mark.xpm;src\images\nocollide.xpm;src\images\pause.xpm;src\images\play.xpm;src\images\polycrank.png;src\images\prevMark.xpm;src\images\print;src\images\redo;src\images\rotateTool.xpm;src\images\searchfind;src\images\selectTool.xpm;src\images\splash.jpg;src\images\translateTool.xpm;src\images\undo"
+						CommandLine="echo src\images\play.xpm src\images\pause.xpm src\images\splash.jpg src\images\logo.png src\images\polycrank.png > images.tmp  &amp;&amp; &#x09; echo src\images\nocollide.xpm src\images\collide.xpm src\images\translateTool.xpm src\images\selectTool.xpm src\images\rotateTool.xpm >> images.tmp  &amp;&amp; &#x09; echo src\images\mark.xpm src\images\prevMark.xpm src\images\filenew.xpm src\images\fileopen.xpm src\images\filesave.xpm >> images.tmp  &amp;&amp; &#x09; echo src\images\filenew src\images\fileopen src\images\filesave src\images\print src\images\undo >> images.tmp  &amp;&amp; &#x09; echo src\images\redo src\images\editcut src\images\editcopy src\images\editpaste src\images\searchfind >> images.tmp  &amp;&amp; &#x09; C:\Qt\4.5.2\bin\uic3.exe -embed graspit -f images.tmp -o qmake_image_collection.cpp"
+						Description="UIC3 Image collection in qmake_image_collection.cpp"
+						Outputs="qmake_image_collection.cpp"
+						Path="."/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="echo;src\images\collide.xpm;src\images\editcopy;src\images\editcut;src\images\editpaste;src\images\filenew;src\images\filenew.xpm;src\images\fileopen;src\images\fileopen.xpm;src\images\filesave;src\images\filesave.xpm;src\images\logo.png;src\images\mark.xpm;src\images\nocollide.xpm;src\images\pause.xpm;src\images\play.xpm;src\images\polycrank.png;src\images\prevMark.xpm;src\images\print;src\images\redo;src\images\rotateTool.xpm;src\images\searchfind;src\images\selectTool.xpm;src\images\splash.jpg;src\images\translateTool.xpm;src\images\undo"
+						CommandLine="echo src\images\play.xpm src\images\pause.xpm src\images\splash.jpg src\images\logo.png src\images\polycrank.png > images.tmp  &amp;&amp; &#x09; echo src\images\nocollide.xpm src\images\collide.xpm src\images\translateTool.xpm src\images\selectTool.xpm src\images\rotateTool.xpm >> images.tmp  &amp;&amp; &#x09; echo src\images\mark.xpm src\images\prevMark.xpm src\images\filenew.xpm src\images\fileopen.xpm src\images\filesave.xpm >> images.tmp  &amp;&amp; &#x09; echo src\images\filenew src\images\fileopen src\images\filesave src\images\print src\images\undo >> images.tmp  &amp;&amp; &#x09; echo src\images\redo src\images\editcut src\images\editcopy src\images\editpaste src\images\searchfind >> images.tmp  &amp;&amp; &#x09; C:\Qt\4.5.2\bin\uic3.exe -embed graspit -f images.tmp -o qmake_image_collection.cpp"
+						Description="UIC3 Image collection in qmake_image_collection.cpp"
+						Outputs="qmake_image_collection.cpp"
+						Path="."/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="src\images\polycrank.png"/>
+			<File
+				RelativePath="src\images\prevMark.xpm"/>
+			<File
+				RelativePath="src\images\print"/>
+			<File
+				RelativePath="src\images\redo"/>
+			<File
+				RelativePath="src\images\rotateTool.xpm"/>
+			<File
+				RelativePath="src\images\searchfind"/>
+			<File
+				RelativePath="src\images\selectTool.xpm"/>
+			<File
+				RelativePath="src\images\splash.jpg"/>
+			<File
+				RelativePath="src\images\translateTool.xpm"/>
+			<File
+				RelativePath="src\images\undo"/>
+		</Filter>
+	</Files>
+	<Globals>
+	</Globals>
+</VisualStudioProject>
