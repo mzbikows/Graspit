@@ -1,3 +1,7 @@
+Polycrank windows was added by Mariusz Żbikowski. After you download graspit go 
+to manual and instalation chapter. Instalation strongly depends on platfomrs.
+
+ 
                                  GraspIt!
                               Version 2.1.0 
 
