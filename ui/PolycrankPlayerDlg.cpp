@@ -1,3 +1,5 @@
+//Author  : Mariusz Żbikowski
+//Project : Simulation Polycrank 
 #include <QtGui>
 #include "PolycrankPlayerDlg.h"
 #include <iostream>

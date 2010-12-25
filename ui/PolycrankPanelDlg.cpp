@@ -1,3 +1,5 @@
+//Author  : Mariusz Żbikowski
+//Project : Simulation Polycrank 
 #include <QUdpSocket>
 #include <QtGui>
 #include <QtNetwork>
