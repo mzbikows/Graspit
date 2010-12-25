@@ -167,8 +167,8 @@ SOURCES	+= src/arch.cpp \
 	src/EGPlanner/loopPlanner.cpp \
 	src/EGPlanner/timeTest.cpp \
 	src/EGPlanner/graspTesterThread.cpp \
-	src/EGPlanner/onLineGraspInterface.cpp \\
-	src/EGPlanner/listPlanner.cpp\
+	src/EGPlanner/onLineGraspInterface.cpp \
+	src/EGPlanner/listPlanner.cpp
 
 #--------------------------------------- Implementations of the collision interface ---------------------------------
 
