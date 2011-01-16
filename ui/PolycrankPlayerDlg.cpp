@@ -1,18 +1,16 @@
-//Author  : Mariusz Żbikowski
-//Project : Simulation Polycrank 
 #include <QtGui>
 #include "PolycrankPlayerDlg.h"
 #include <iostream>
 
 PolycrankPlayerDlg::PolycrankPlayerDlg(QWidget *parent, World *world) : QDialog(parent)
 {  
-    Q0Label = new QLabel(tr("Q0"));
-    Q1Label = new QLabel(tr("Q1"));
-    Q2Label = new QLabel(tr("Q2"));
-    Q3Label = new QLabel(tr("Q3"));
-    Q4Label = new QLabel(tr("Q4"));
-    Q5Label = new QLabel(tr("Q5"));
-    Q6Label = new QLabel(tr("Q6"));
+    Q0Label = new QLabel(tr("Q1"));
+    Q1Label = new QLabel(tr("Q2"));
+    Q2Label = new QLabel(tr("Q3"));
+    Q3Label = new QLabel(tr("Q4"));
+    Q4Label = new QLabel(tr("Q5"));
+    Q5Label = new QLabel(tr("Q6"));
+    Q6Label = new QLabel(tr("Q7"));
 	
 	dofLabel = new QLabel(tr("Q  "));
 

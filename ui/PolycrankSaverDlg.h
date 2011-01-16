@@ -32,6 +32,8 @@ private:
 	QCheckBox *saverPositionsCheckBox;
 	QCheckBox *chooseFileCheckBox;
 
+	int counter;//counter interpolation poses in file
+
 	QLabel *dofLabel;
     QLabel *Q0Label;
     QLabel *Q1Label;

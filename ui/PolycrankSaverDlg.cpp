@@ -1,17 +1,16 @@
-//Author  : Mariusz Żbikowski
-//Project : Simulation Polycrank 
 #include <QtGui>
 #include "PolycrankSaverDlg.h"
+#include <iostream>
 
 PolycrankSaverDlg::PolycrankSaverDlg(QWidget *parent, World *world) : QDialog(parent)
 {  
-    Q0Label = new QLabel(tr("Q0"));
-    Q1Label = new QLabel(tr("Q1"));
-    Q2Label = new QLabel(tr("Q2"));
-    Q3Label = new QLabel(tr("Q3"));
-    Q4Label = new QLabel(tr("Q4"));
-    Q5Label = new QLabel(tr("Q5"));
-    Q6Label = new QLabel(tr("Q6"));
+    Q0Label = new QLabel(tr("Q1"));
+    Q1Label = new QLabel(tr("Q2"));
+    Q2Label = new QLabel(tr("Q3"));
+    Q3Label = new QLabel(tr("Q4"));
+    Q4Label = new QLabel(tr("Q5"));
+    Q5Label = new QLabel(tr("Q6"));
+    Q6Label = new QLabel(tr("Q7"));
 	
 	dofLabel = new QLabel(tr("Q  "));
 
@@ -168,6 +167,32 @@ void PolycrankSaverDlg::saverPositionsClicked()
 	}
 	else
 	{   //show interpolation positions
+		
+		Trajectorystream.seek(0);
+		Trajectorystream << "JOINT" << endl;
+		Trajectorystream.seek(6);
+		
+		counter++;
+		Trajectorystream << counter << endl;
+		
+		Trajectorystream << "ABSOLUTE" << endl;
+		while( !Trajectorystream.atEnd() )
+		{
+			QString text;
+			text = Trajectorystream.readLine();
+		}
+
+		Trajectorystream << endl;
+		for (int i = 0; i < 7; i++)
+		{
+			Trajectorystream << 0.1 << " ";
+		}
+		Trajectorystream << endl;
+		for (int i = 0; i < 7; i++)
+		{
+			Trajectorystream << 0.3 << " ";
+		}
+		Trajectorystream << endl;
 
 		for (int i = 0; i < 7; i++)
 		{
@@ -227,12 +252,13 @@ else
 	else
 	{
 		file.setFileName(filename);
-		if (file.open(QIODevice::WriteOnly|QIODevice::Text)) 
+		if (file.open(QIODevice::ReadWrite|QIODevice::Text)) //necessary ReadWrite mode, not WriteOnly !!!
 		{
 			Trajectorystream.setDevice(&file);
 			QMessageBox::information( this, "File to save interpolation positions was choosen", "File to save interpolation positions was choosen" );
 		}
 		saverPositionsCheckBox->setEnabled(true);
+		counter = 0;
 	}
 }
 }
