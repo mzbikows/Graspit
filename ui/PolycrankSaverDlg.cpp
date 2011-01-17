@@ -190,7 +190,7 @@ void PolycrankSaverDlg::saverPositionsClicked()
 		Trajectorystream << endl;
 		for (int i = 0; i < 7; i++)
 		{
-			Trajectorystream << 0.3 << " ";
+			Trajectorystream << 0.07 << " ";
 		}
 		Trajectorystream << endl;
 
@@ -238,12 +238,12 @@ if (!chooseFileCheckBox->isChecked())
 else
 {	//user saves polycrank trajectory
 
-	QString filename = QFileDialog::getSaveFileName( this, tr("Save Interpolation Positions"), QDir::currentPath(), tr("Interpolation Positions (*.txt)"), 0, QFileDialog::DontUseNativeDialog  );
+	QString filename = QFileDialog::getSaveFileName( this, tr("Save Interpolation Positions"), QDir::currentPath(), tr("Interpolation Positions (*.trj)"), 0, QFileDialog::DontUseNativeDialog  );
 	
-	filename.append(".txt"); 
-	filename.replace(QRegExp(".txt.txt"), ".txt");
+	filename.append(".trj"); 
+	filename.replace(QRegExp(".trj.trj"), ".trj");
 
-	if (filename ==".txt")
+	if (filename ==".trj")
 	{//not choose any file to save trajectory file
 		
 		chooseFileCheckBox->toggle();
