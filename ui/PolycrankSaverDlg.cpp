@@ -185,7 +185,7 @@ void PolycrankSaverDlg::saverPositionsClicked()
 		Trajectorystream << endl;
 		for (int i = 0; i < 7; i++)
 		{
-			Trajectorystream << 0.1 << " ";
+			Trajectorystream << 0.4 << " "; //0.4 - experimental find value, when 0.1 move is rather slowly
 		}
 		Trajectorystream << endl;
 		for (int i = 0; i < 7; i++)

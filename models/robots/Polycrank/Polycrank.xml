@@ -51,12 +51,12 @@
         <draggerScale>45.0</draggerScale>
 	</dof>
     <chain>
-	<transform>
-		<rotation>-90 z</rotation>
-            	<rotation>-90 y</rotation>
-		<translation>0 0 925</translation>
+		<transform>
+		    <rotation>-90 z</rotation>
+            <rotation>-90 y</rotation>
+			<translation>0 0 925</translation>
         </transform>
-	<joint type="Revolute">
+		<joint type="Revolute">
             <theta>d0</theta>
             <d>220</d>
             <a>-299</a>
@@ -88,7 +88,7 @@
             <minValue>-3600</minValue>
             <maxValue>3600</maxValue>
         </joint>
-	    	<joint type="Revolute">
+		<joint type="Revolute">
             <theta>d4</theta>
             <d>116</d>
             <a>151</a>
@@ -98,7 +98,7 @@
         </joint>
 		<joint type="Revolute">
             <theta>d5</theta>
-            <d>62</d>
+            <d>60</d>
             <a>0</a>
             <alpha>90</alpha>
             <minValue>-3600</minValue>
@@ -113,7 +113,7 @@
             <maxValue>3600</maxValue>
         </joint>
 		<link dynamicJointType="Revolute">link1.xml</link>
-        	<link dynamicJointType="Revolute">link2.xml</link>
+        <link dynamicJointType="Revolute">link2.xml</link>
 		<link dynamicJointType="Revolute">link3.xml</link>
 		<link dynamicJointType="Revolute">link4.xml</link>
 		<link dynamicJointType="Revolute">link5.xml</link>

@@ -1,0 +1,48 @@
+<?xml version="1.0" ?>
+<world>
+	<obstacle>
+		<filename>models/obstacles/simpleFloor.xml</filename>
+		<transform>
+			<fullTransform>(+1 +0 +0 +0)[+0 +0 +0]</fullTransform>
+		</transform>
+	</obstacle>
+	<obstacle>
+		<filename>models/obstacles/filar.xml</filename>
+		<transform>
+			<fullTransform>(+1 +0 +0 +0)[-773.427 +142.613 -550.304]</fullTransform>
+		</transform>
+	</obstacle>
+	<obstacle>
+		<filename>models/obstacles/filar.xml</filename>
+		<transform>
+			<fullTransform>(+1 +0 +0 +0)[-769.332 -1075.05 -554.004]</fullTransform>
+		</transform>
+	</obstacle>
+	<robot>
+		<filename>models/robots/Polycrank/Polycrank.xml</filename>
+		<dofValues>-0.759739 +3.14159 -2.40729 +3.07564 +0.0934916 +3.11266 -0.081583 </dofValues>
+		<transform>
+			<fullTransform>(+0.703496 +0.710494 -0.0167135 -0.00334789)[-820.044 -500.34 -1297.22]</fullTransform>
+		</transform>
+	</robot>
+	<robot>
+		<filename>models/robots/BarrettMyTest2/BarrettMyTest2.xml</filename>
+		<dofValues>+0 +0 +0 +0 +0 +0 +0 +0 +0 </dofValues>
+		<transform>
+			<fullTransform>(+0.00963321 -0.0138904 +0.999843 +0.00537615)[-790.202 +139.213 +304.664]</fullTransform>
+		</transform>
+	</robot>
+	<connection>
+		<parentRobot>+0</parentRobot>
+		<parentChain>+0</parentChain>
+		<childRobot>+1</childRobot>
+		<transform>
+			<fullTransform>(+0.707107 +0 +0 +0.707107)[+0 +0 +0]</fullTransform>
+		</transform>
+	</connection>
+	<camera>
+		<position>-2362.57 -797.854 +349.525</position>
+		<orientation>+0.591538 -0.329745 -0.375445 +0.632766</orientation>
+		<focalDistance>+1849.39</focalDistance>
+	</camera>
+</world>

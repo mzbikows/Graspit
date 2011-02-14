@@ -63,14 +63,14 @@ PolycrankPanelDlg::PolycrankPanelDlg(QWidget *parent, World *world) : QDialog(pa
 	IPLabel = new QLabel(tr("&IP   "));
     IPLineEdit = new QLineEdit;
     IPLabel->setBuddy(IPLineEdit);
-	IPLineEdit->setText("127.0.0.1");
+	IPLineEdit->setText("192.168.15.129");
 	QRegExpValidator *reVal = new QRegExpValidator( QRegExp("\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}"), this );
     IPLineEdit->setValidator( reVal );
 
 	PortLabel = new QLabel(tr("&Port"));
     PortLineEdit = new QLineEdit;
     PortLabel->setBuddy(PortLineEdit);
-	PortLineEdit->setText("5000");
+	PortLineEdit->setText("50020");
 	QIntValidator *intVal = new QIntValidator( 0, 100000, this );//range of port 0-100.000
 	PortLineEdit->setValidator(intVal);
 
@@ -398,9 +398,14 @@ if (edpCheckBox->isChecked())
 			{
 				bufor[i]=datagram[(shiftBuffer*4)+i];
 			}
-
 			memcpy(&current,bufor,4);
 
+			if (current>0.0000000)
+			{
+				current+=(float)0.0004;
+			}
+			else
+			;
 			Qdegree[shiftBuffer-1 ]=(double)(180.0*current/3.14159265359);
 			Qradian[shiftBuffer-1 ]=(double)(current);
 
